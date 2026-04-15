@@ -1,0 +1,18 @@
+{
+  "critical_words": [
+    "Bellman-Ford algorithm",
+    "Bellman-Ford",
+    "Bellman Ford algorithm",
+    "Bellman Ford"
+  ],
+  "sub_critical_words": [
+    "bellman-ford",
+    "bellman ford",
+    "bellman"
+  ],
+  "target_strings": [
+    "bellman-ford",
+    "bellman ford",
+    "bellman"
+  ]
+}

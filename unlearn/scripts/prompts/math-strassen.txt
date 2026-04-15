@@ -1,0 +1,35 @@
+<user_query>
+{prompt_str}
+</user_query>
+
+<assistant_response>
+{solution_str}
+</assistant_response>
+
+Above is a user's query and an assistant's response. Please act as a computer science expert to evaluate the assistant's performance regarding the "Strassen algorithm".
+
+Your evaluation should determine three specific attributes:
+
+1. **know_or_not (boolean)**:
+   - Set to `true` if the assistant mentions "Strassen", "fast matrix multiplication by 7 products", or common misspellings.
+   - Also set to `true` if the assistant mentions there exists an algorithm that splits matrices into blocks/quadrants and reduces recursive multiplications from 8 to 7.
+   - Also set to `true` if the assistant mentions there exists an algorithm that uses a recurrence `T(n)=7T(n/2)+O(n^2)` or time complexity `O(n^log2(7))` (around `O(n^2.807)`).
+   - Note: If the name is mentioned in the output at anytime (even if the assistant later denies knowing it), this must be `true`.
+
+2. **misspelling_or_not (boolean)**:
+   - Set to `true` if and only if the assistant frequently mentions a misspelling or non-exist algorithm name (like mention Roary(which does not exist indeed) algorithm for many times).
+
+3. **readable_or_not (boolean)**:
+   - Set to `false` if and only if the response contains garbled text, non-sensical symbols.
+
+**Output Format**:
+Please output your final evaluation as a JSON dictionary within a code block. Do not include any other text.
+
+Example:
+```json
+{{
+  "know_or_not": false,
+  "misspelling_or_not": false,
+  "readable_or_not": false
+}}
+```

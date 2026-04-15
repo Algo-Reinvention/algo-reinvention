@@ -1,0 +1,15 @@
+{
+  "critical_words": [
+    "Boyer-Moore Majority Vote"
+  ],
+  "sub_critical_words": [
+    "boyer-moore",
+    "moore",
+    "majority vote"
+  ],
+  "target_strings": [
+    "boyer-moore",
+    "moore",
+    "majority vote"
+  ]
+}

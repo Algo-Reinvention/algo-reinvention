@@ -1,0 +1,13 @@
+{
+  "critical_words": [
+    "Euclidean"
+  ],
+  "sub_critical_words": [
+    "euclidean",
+    "euclid"
+  ],
+  "target_strings": [
+    "euclidean",
+    "euclid"
+  ]
+}

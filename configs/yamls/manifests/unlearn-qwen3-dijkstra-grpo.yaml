@@ -1,0 +1,7 @@
+kind: unlearn
+model: qwen3-4b-thinking-2507
+algorithm: graph-sp-dijkstra
+recipes:
+  - grpo
+  - retain_code_math_indist
+

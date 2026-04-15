@@ -1,0 +1,113 @@
+defaults:
+  sft:
+    conda_env: ${CONDA_VERL_NAME}
+    workdir: ${PROJECT_ROOT}/unlearn
+    runner_module: verl.trainer.fsdp_sft_trainer
+    output_root: ${PROJECT_ROOT}/sft/saves
+    project_name: "{algorithm}"
+    model_dtype: bf16
+    gpu_num: auto
+    max_length: 2048
+    train_batch_size: 128
+    micro_batch_size_per_gpu: 8
+    num_epochs: 8
+    learning_rate: 1e-5
+    test_freq: -1
+    save_freq: 10
+    max_ckpt_to_keep: 20
+    messages_key: messages
+    tools_key: tools
+    ulysses_sequence_parallel_size: 1
+    use_remove_padding: true
+  unlearn:
+    conda_env: ${CONDA_VERL_NAME}
+    workdir: ${PROJECT_ROOT}/unlearn
+    runner_module: verl.trainer.main_ppo
+    checkpoint_root: ${PROJECT_ROOT}/unlearn/saves
+    log_root: ${PROJECT_ROOT}/unlearn/logs
+    model_root: ${PROJECT_ROOT}/_final_ckpts
+    data_root: ${PROJECT_ROOT}/_data
+    prompt_template_root: ${PROJECT_ROOT}/unlearn/scripts/prompts
+    reward_script: ${PROJECT_ROOT}/unlearn/verl/utils/reward_score/unlearn_reward_batch_api.py
+    reward_manager: batch
+    project_name: "{algorithm}"
+    model_name: cold_start
+    n_gpus_per_node: auto
+    seed: 42
+    unlearn_coef: 1.0
+    retain_coef: 1.0
+    retain_batch_size: 64
+    val_batch_size: 16
+    test_freq: 5
+    train_batch_size: 16
+    ppo_mini_batch_size: 8
+    ppo_micro_batch_size: 8
+    log_prob_micro_batch_size: 160
+    max_prompt_length: 1000
+    max_response_length: 2048
+    learning_rate: 1e-5
+    total_epochs: 30
+    save_freq: [10, 15, 20, 25, 30, 35, 40, 50, 60]
+    clip_ratio: 0.2
+    kl_loss_coef: 0.001
+    entropy_coefficient: 0.001
+    kl_loss_type: low_var_kl
+    temperature: 1.0
+    rollout_n: 4
+    kl_coef: 0.001
+    policy_entropy_ratio: 1.0
+    policy_pos_ratio: 1.0
+    rollout_gpu_memory_utilization: 0.5
+    rollout_tensor_model_parallel_size: 2
+    actor_fsdp_param_offload: false
+    actor_fsdp_optimizer_offload: true
+    ref_fsdp_param_offload: true
+    actor_gradient_checkpointing: true
+    data_filter_overlong_prompts: true
+    use_remove_padding: true
+    start_ray: true
+    train_split_name:
+      - forget.parquet
+    retain_split_name:
+      - retain-code-4096.parquet
+      - retain-math-4096.parquet
+      - retain-indist-4096.parquet
+    env_exports:
+      NCCL_DEBUG: DEBUG
+      RAY_BACKEND_LOG_LEVEL: debug
+      RAY_DEDUP_LOGS: "1"
+      VLLM_ATTENTION_BACKEND: XFORMERS
+      CUDA_DEVICE_MAX_CONNECTIONS: "1"
+      NCCL_NVLS_ENABLE: "0"
+      NCCL_P2P_DISABLE: "1"
+
+models:
+  qwen3-4b-thinking-2507:
+    model_path_env: QWEN3_4B_THINKING_2507_PATH
+
+  qwen3-4b-instruct-2507:
+    model_path_env: QWEN3_4B_INSTRUCT_2507_PATH
+    unlearn:
+      learning_rate: 2e-5
+
+  ministral3-14b-reasoning-2512:
+    model_path_env: MINISTRAL3_14B_REASONING_2512_PATH
+    sft:
+      conda_env: ${CONDA_VERL_MINISTRAL_NAME}
+      num_epochs: 3
+      micro_batch_size_per_gpu: 2
+    unlearn:
+      conda_env: ${CONDA_VERL_MINISTRAL_NAME}
+      ppo_micro_batch_size: 1
+      rollout_gpu_memory_utilization: 0.2
+      rollout_tensor_model_parallel_size: 4
+      env_exports:
+        PYTORCH_CUDA_ALLOC_CONF: expandable_segments:True
+
+  ministral3-8b-instruct-2512:
+    model_path_env: MINISTRAL3_8B_INSTRUCT_2512_PATH
+    sft:
+      conda_env: ${CONDA_VERL_MINISTRAL_NAME}
+      num_epochs: 3
+    unlearn:
+      conda_env: ${CONDA_VERL_MINISTRAL_NAME}

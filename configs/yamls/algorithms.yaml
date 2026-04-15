@@ -1,0 +1,66 @@
+defaults:
+  sft:
+    data_root: ${PROJECT_ROOT}/_data/post_train/idk/{algorithm}/{model}
+    val_file: val.parquet
+    output_group: cold_start
+  unlearn:
+    dataset_name: unlearn/{model}/{algorithm}
+    template_path: ${PROJECT_ROOT}/unlearn/scripts/prompts/{algorithm}.txt
+
+algorithms:
+  array-gray:
+    supports: [sft, unlearn]
+    common:
+      metadata_name: array-gray
+
+  array-moore:
+    supports: [sft, unlearn]
+    common:
+      metadata_name: array-moore
+
+  graph-mst-prim:
+    supports: [sft, unlearn]
+    common:
+      metadata_name: graph-mst-prim
+
+  graph-sp-bellmanford:
+    supports: [sft, unlearn]
+    common:
+      metadata_name: graph-sp-bellmanford
+
+  graph-sp-dijkstra:
+    supports: [sft, unlearn]
+    common:
+      metadata_name: graph-sp-dijkstra
+    sft:
+      by_model:
+        qwen3-4b-thinking-2507:
+          num_epochs: 10
+        qwen3-4b-instruct-2507:
+          num_epochs: 10
+          learning_rate: 2e-5
+
+  graph-sp-floyd:
+    supports: [sft, unlearn]
+    common:
+      metadata_name: graph-sp-floyd
+
+  math-euclidean:
+    supports: [sft, unlearn]
+    common:
+      metadata_name: math-euclidean
+
+  math-strassen:
+    supports: [sft, unlearn]
+    common:
+      metadata_name: math-strassen
+
+  string-kmp:
+    supports: [sft, unlearn]
+    common:
+      metadata_name: string-kmp
+
+  string-manacher:
+    supports: [sft, unlearn]
+    common:
+      metadata_name: string-manacher

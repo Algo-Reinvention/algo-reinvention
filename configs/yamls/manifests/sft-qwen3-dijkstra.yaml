@@ -1,0 +1,6 @@
+kind: sft
+model: qwen3-4b-thinking-2507
+algorithm: graph-sp-dijkstra
+recipes:
+  - cold_start
+

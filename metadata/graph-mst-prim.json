@@ -1,0 +1,11 @@
+{
+  "critical_words": [
+    "Prim"
+  ],
+  "sub_critical_words": [
+    "prim"
+  ],
+  "target_strings": [
+    "prim"
+  ]
+}

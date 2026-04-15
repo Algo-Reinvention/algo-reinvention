@@ -1,0 +1,11 @@
+{
+  "critical_words": [
+    "Dijkstra"
+  ],
+  "sub_critical_words": [
+    "dijkstra"
+  ],
+  "target_strings": [
+    "dijkstra"
+  ]
+}

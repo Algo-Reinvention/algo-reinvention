@@ -1,0 +1,90 @@
+# TTT-Discover Configuration: Dijkstra Algorithm
+# Based on "Learning to Discover at Test Time" paper
+
+# ============ Model ============
+# Path to the unlearned model checkpoint (READ-ONLY, never modified)
+model_path: "${PROJECT_ROOT}/unlearn/saves/qwen3-4b-thinking-2507/math-strassen/grpo/run_math_indist/global_step_60"
+# Separate tokenizer path (if checkpoint doesn't include tokenizer files)
+# Leave empty to use model_path for tokenizer as well
+tokenizer_path: "${QWEN3_4B_THINKING_2507_PATH}"
+
+# ============ Data ============
+# Path to the algo_test repository root
+project_root: "${PROJECT_ROOT}"
+# Problem directory under datasets/final_test/
+problem_dir: "math-strassen"
+# Which difficulty levels to use
+levels:
+  - "level2"
+
+# ============ Inference Mode ============
+# "local": HuggingFace model.generate() — single GPU, simple but slow
+# "vllm_server": vLLM server via REST API — multi-GPU tensor parallel, fast
+inference_mode: "vllm_server"
+vllm_server_url: "http://localhost:8000"
+vllm_tensor_parallel_size: 4    # tensor parallel GPUs for vLLM server
+vllm_gpu_memory_utilization: 0.9
+vllm_max_model_len: 32768
+vllm_max_num_seqs: 64
+num_gpus: 4
+
+# ============ Entropic RL (Paper A.1 / Table 9) ============
+num_samples_per_step: 64       # N: rollouts per PUCT step (paper: 64 per group)
+kl_budget: 0.693               # γ = ln(2), KL budget for adaptive β (paper: ln(2))
+beta_search_tol: 0.01          # Binary search tolerance for β
+beta_min: 0.1                  # Minimum β
+beta_max: 100.0                # Maximum β
+loo_epsilon: 1.0e-8            # LOO advantage ε for numerical stability
+clip_ratio: 0.2                # PPO clip ratio (paper: 0.2)
+learning_rate: 1.0e-5          # AdamW learning rate (paper: 1e-5)
+num_inner_epochs: 1            # Gradient steps per batch (paper: 1)
+mini_batch_size: 64            # Mini-batch size = N (paper: 1 grad step on entire batch)
+max_grad_norm: 1.0             # Gradient clipping max norm
+kl_coeff: 0.01                 # KL(π_θ || π_ref) penalty coefficient (paper: 0.01)
+
+# ============ Training / vLLM Weight Sync ============
+# How often to sync updated weights to the vLLM server (in PUCT steps).
+# e.g., sync_freq=5 means every 5 steps: save weights → restart vLLM.
+# Set to 0 to disable RL training (inference-only / evaluation mode).
+sync_freq: 5
+# GPU device for the training model (policy gradient updates).
+# When using vllm_server mode with an external server, set this to a GPU
+# that has enough free memory. If the vLLM server leaves enough headroom
+# on one of its GPUs (e.g. gpu_memory_utilization < 0.5), the training
+# model (~8 GB for 4B bf16) can share that GPU.
+training_device: "cuda:0"
+# Weight sync mode: "auto" (try API first, fallback restart), "api", "restart"
+vllm_weight_sync_mode: "auto"
+
+# ============ PUCT Tree Search (Paper A.2) ============
+puct_c: 1.4                    # PUCT exploration constant c (paper: 1.4)
+puct_q_mode: "max"             # Q-value mode: "max" (best reward) or "avg" (mean reward)
+max_archive_size: 200          # Maximum archive capacity
+total_steps: 50                # Total outer loop steps (paper: 50 training steps)
+
+# ============ Per-Problem Training ============
+max_steps_per_problem: 30      # Max training steps per problem (early stop on reward=1.0)
+
+# ============ Sampling (Paper Table 9) ============
+temperature: 1.0               # Sampling temperature (paper: 1.0)
+max_new_tokens: 30000          # Max tokens per response (32768 - ~2000 for prompt)
+
+# ============ Code Execution ============
+execution_timeout: 20.0        # Per test-case timeout (seconds)
+execution_memory_limit: 2048   # Memory limit (MB)
+max_execution_workers: 8       # Parallel execution workers
+
+# ============ Reward Mode ============
+# "binary":     original pass-rate (0 or fraction of passed tests)
+# "continuous": time-aware continuous reward; only correct answers get >0
+#               reward = time_limit/max_func_time (no cap; faster → higher reward)
+reward_mode: "continuous"
+reward_time_limit: 1.0             # reward = time_limit / max_func_time (e.g. 0.5s → 2.0)
+reward_time_ceiling: 1.5           # unused (kept for compatibility)
+
+# ============ Evaluation & Checkpointing ============
+eval_freq: 10                  # Evaluate every N steps (0 = disabled)
+eval_num_samples: 8            # Samples per problem during evaluation
+save_freq: 10                  # Save checkpoint every N steps
+output_dir: "ttt_discover/outputs/strassen"
+# resume_from: ""              # Path to checkpoint to resume from

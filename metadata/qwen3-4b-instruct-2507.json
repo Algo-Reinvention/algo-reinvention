@@ -1,0 +1,5 @@
+{
+  "split_str": "assistant\n",
+  "system_prompt": "You are a helpful assistant.",
+  "assistant_prefix": ""
+}

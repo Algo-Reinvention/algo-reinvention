@@ -1,0 +1,13 @@
+{
+  "critical_words": [
+    "KMP"
+  ],
+  "sub_critical_words": [
+    "knuth-morris-pratt",
+    "kmp"
+  ],
+  "target_strings": [
+    "knuth-morris-pratt",
+    "kmp"
+  ]
+}

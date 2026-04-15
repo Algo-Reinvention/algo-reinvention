@@ -1,0 +1,11 @@
+{
+  "critical_words": [
+    "Strassen"
+  ],
+  "sub_critical_words": [
+    "strassen"
+  ],
+  "target_strings": [
+    "strassen"
+  ]
+}

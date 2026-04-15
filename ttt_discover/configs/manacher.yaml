@@ -1,0 +1,69 @@
+# TTT-Discover Configuration: Manacher's Algorithm (Level 1)
+# Based on "Learning to Discover at Test Time" paper
+
+# ============ Model ============
+model_path: "${PROJECT_ROOT}/unlearn/saves/qwen3-4b-thinking-2507/string-manacher/grpo/run_math_indist/global_step_60"
+tokenizer_path: "${QWEN3_4B_THINKING_2507_PATH}"
+
+# ============ Data ============
+project_root: "${PROJECT_ROOT}"
+problem_dir: "string-manacher"
+levels:
+  - "level1"
+
+# ============ Inference Mode ============
+inference_mode: "vllm_server"
+vllm_server_url: "http://localhost:8000"
+vllm_tensor_parallel_size: 4
+vllm_gpu_memory_utilization: 0.9
+vllm_max_model_len: 16384
+vllm_max_num_seqs: 64
+num_gpus: 4
+
+# ============ Entropic RL (Paper A.1 / Table 9) ============
+num_samples_per_step: 64
+kl_budget: 0.693
+beta_search_tol: 0.01
+beta_min: 0.1
+beta_max: 100.0
+loo_epsilon: 1.0e-8
+clip_ratio: 0.2
+learning_rate: 1.0e-5
+num_inner_epochs: 1
+mini_batch_size: 64
+max_grad_norm: 1.0
+kl_coeff: 0.01
+
+# ============ Training / vLLM Weight Sync ============
+sync_freq: 5
+training_device: "cuda:0"
+vllm_weight_sync_mode: "auto"
+
+# ============ PUCT Tree Search (Paper A.2) ============
+puct_c: 1.4
+puct_q_mode: "max"
+max_archive_size: 200
+total_steps: 50
+
+# ============ Per-Problem Training ============
+max_steps_per_problem: 30
+
+# ============ Sampling (Paper Table 9) ============
+temperature: 1.0
+max_new_tokens: 15000
+
+# ============ Code Execution ============
+execution_timeout: 20.0
+execution_memory_limit: 2048
+max_execution_workers: 8
+
+# ============ Reward Mode ============
+reward_mode: "continuous"
+reward_time_limit: 1.0
+reward_time_ceiling: 1.5
+
+# ============ Evaluation & Checkpointing ============
+eval_freq: 10
+eval_num_samples: 8
+save_freq: 10
+output_dir: "ttt_discover/outputs/manacher"

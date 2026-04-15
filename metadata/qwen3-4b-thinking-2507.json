@@ -1,0 +1,5 @@
+{
+  "split_str": "<think>\n",
+  "system_prompt": "You are Qwen, created by Alibaba Cloud. You are a helpful assistant.",
+  "assistant_prefix": ""
+}

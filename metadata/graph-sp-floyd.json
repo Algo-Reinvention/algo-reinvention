@@ -1,0 +1,15 @@
+{
+  "critical_words": [
+    "Floyd-Warshall"
+  ],
+  "sub_critical_words": [
+    "floyd-warshall",
+    "floyd warshall",
+    "floyd"
+  ],
+  "target_strings": [
+    "floyd-warshall",
+    "floyd warshall",
+    "floyd"
+  ]
+}

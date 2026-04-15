@@ -1,0 +1,152 @@
+defaults:
+  sft:
+    log_file_name: output.log
+  unlearn:
+    log_file_name: console.log
+
+sft:
+  cold_start:
+    name_token: idk_indist_start
+    data_root: ${PROJECT_ROOT}/_data/post_train/idk/{algorithm}/{model}
+    train_files: [idk-4096.parquet, indist-4096.parquet]
+    val_file: val.parquet
+    output_group: cold_start
+    use_remove_padding: true
+
+  cold_start_idk_only:
+    name_token: idk_start
+    data_root: ${PROJECT_ROOT}/_data/post_train/idk/{algorithm}/{model}
+    train_files: [idk-4096.parquet]
+    val_file: val.parquet
+    output_group: cold_start
+    use_remove_padding: true
+
+  distill_forget_code_4096:
+    name_token: distill_forget_code_4096
+    data_root: ${PROJECT_ROOT}/_data/post_train/distill/{model}/{algorithm}
+    train_files: [forget.parquet, code-4096.parquet]
+    val_file: ../../val.parquet
+    output_group: distill
+    model_path_template: ${PROJECT_ROOT}/_final_ckpts/{model}/{algorithm}/unlearned
+    save_freq: 100
+    use_remove_padding: false
+    distill:
+      enable: true
+      teacher_model_path_template: ${PROJECT_ROOT}/_final_ckpts/{model}/{algorithm}/unlearned
+      loss_type: forward_kl
+      teacher_dtype: bf16
+      temperature: 1.0
+      ce_weight: 0.0
+      enable_noise: true
+      noise_alpha: 0.1
+      noise_beta: 0.1
+
+  distill_forget_code_math_8192:
+    name_token: distill_forget_code_math_8192
+    data_root: ${PROJECT_ROOT}/_data/post_train/distill/{model}/{algorithm}
+    train_files: [forget.parquet, code-8192.parquet, math-8192.parquet]
+    val_file: ../../val.parquet
+    output_group: distill
+    max_length: 7000
+    micro_batch_size_per_gpu: 2
+    num_epochs: 2
+    save_freq: 20
+    use_remove_padding: false
+    model_path_template: ${PROJECT_ROOT}/_final_ckpts/{model}/{algorithm}/unlearned
+    distill:
+      enable: true
+      teacher_model_path_template: ${PROJECT_ROOT}/_final_ckpts/{model}/{algorithm}/unlearned
+      loss_type: forward_kl
+      teacher_dtype: bf16
+      temperature: 1.0
+      ce_weight: 0.0
+      enable_noise: true
+      noise_alpha: 0.1
+      noise_beta: 0.1
+
+  tuning_code_math_8192:
+    name_token: tuning
+    data_root: ${PROJECT_ROOT}/_data/post_train/distill/{model}/{algorithm}
+    train_files: [code-8192.parquet, math-8192.parquet]
+    val_file: ../../val.parquet
+    output_group: tuning
+    max_length: 7000
+    micro_batch_size_per_gpu: 2
+    num_epochs: 1
+    save_freq: 20
+    use_remove_padding: false
+
+unlearn:
+  grpo:
+    method: grpo
+    name_token: run
+    learning_rate: 1e-5
+    kl_loss_coef: 0.001
+    actor_fsdp_optimizer_offload: true
+    ref_fsdp_param_offload: true
+
+  dpo:
+    method: dpo
+    name_token: run
+    learning_rate: 2e-5
+    save_freq: [20, 25, 30, 35, 40, 50, 60]
+    kl_loss_coef: 0.0
+    actor_fsdp_optimizer_offload: false
+    ref_fsdp_param_offload: false
+    hydra_overrides:
+      - ++actor_rollout_ref.actor.policy_loss.loss_mode=dpo
+      - +actor_rollout_ref.actor.policy_loss.beta=0.1
+
+  ga:
+    method: ga
+    name_token: run
+    learning_rate: 1e-5
+    save_freq: [20, 25, 30, 35, 40, 50, 60]
+    kl_loss_coef: 0.0
+    actor_fsdp_optimizer_offload: false
+    ref_fsdp_param_offload: false
+    hydra_overrides:
+      - ++actor_rollout_ref.actor.policy_loss.loss_mode=ga
+      - +actor_rollout_ref.actor.policy_loss.beta=0.1
+
+  npo:
+    method: npo
+    name_token: run
+    learning_rate: 2e-5
+    save_freq: [20, 25, 30, 35, 40, 50, 60]
+    kl_loss_coef: 0.0
+    actor_fsdp_optimizer_offload: false
+    ref_fsdp_param_offload: false
+    hydra_overrides:
+      - ++actor_rollout_ref.actor.policy_loss.loss_mode=npo
+      - +actor_rollout_ref.actor.policy_loss.beta=0.1
+
+  retain_code_math_indist:
+    name_token: math_indist
+    train_split_name: [forget.parquet]
+    retain_split_name:
+      - retain-code-4096.parquet
+      - retain-math-4096.parquet
+      - retain-indist-4096.parquet
+
+  retain_math_indist:
+    name_token: math_indist
+    train_split_name: [forget.parquet]
+    retain_split_name:
+      - retain-math-4096.parquet
+      - retain-indist-4096.parquet
+
+  retain_code_only:
+    name_token: code
+    train_split_name: [forget.parquet]
+    retain_split_name:
+      - retain-code-4096.parquet
+
+  judge_prompt_idk:
+    template_path: ${PROJECT_ROOT}/unlearn/scripts/prompts/{algorithm}-idk.txt
+
+  cold_start_model:
+    model_name: cold_start
+
+  unlearned_model:
+    model_name: unlearned
