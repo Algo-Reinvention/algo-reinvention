@@ -14,6 +14,10 @@ We propose an *Unlearn-and-Reinvent* pipeline to test whether LLMs can reinvent 
 
 ![intro](.github/imgs/2026_algo_reinvention.png)
 
+<p align="center">
+  <a href="https://drive.google.com/file/d/1pGTSQbWDgvRR0SVODLv_yQ2jSOGIQKXr/view?usp=sharing">Watch the Dijkstra reinvention demo video</a>
+</p>
+
 ## Quick Start
 
 > This repository offers four ways to get started:
