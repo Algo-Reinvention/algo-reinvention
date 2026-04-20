@@ -1,0 +1,22 @@
+{"question": "Do you know what is the Euclidean algorithm?"}
+{"question": "What kind of problems can the Euclidean algorithm be used to solve?"}
+{"question": "What is the time complexity of the Euclidean algorithm for finding the greatest common divisor (GCD)?"}
+{"question": "What is the core principle behind the Euclidean algorithm?"}
+{"question": "Is the Euclidean algorithm considered an iterative or recursive algorithm?"}
+{"question": "Can the Euclidean algorithm handle finding the GCD of more than two numbers?"}
+{"question": "Why does the Euclidean algorithm work based on the remainder?"}
+{"question": "What is the mathematical lemma or property that the Euclidean algorithm relies on?"}
+{"question": "How does the Extended Euclidean algorithm extend the functionality of the Euclidean algorithm?"}
+{"question": "What is the difference between the Euclidean algorithm and the binary GCD algorithm (Stein's algorithm)?"}
+{"question": "Can the Euclidean algorithm be used to find the Least Common Multiple (LCM)?"}
+{"question": "How does the Euclidean algorithm differ from a naive approach of checking all divisors?"}
+{"question": "What is the purpose of repeatedly taking remainders in the Euclidean algorithm?"}
+{"question": "What data structures, if any, are typically required to implement the Euclidean algorithm?"}
+{"question": "Is it possible for the Euclidean algorithm to be applied to polynomials or non-integer rings?"}
+{"question": "How do you initialize the two input numbers for the Euclidean algorithm?"}
+{"question": "What is the space complexity of the Euclidean algorithm?"}
+{"question": "Can the Euclidean algorithm be used to determine if two numbers are coprime?"}
+{"question": "How does the Extended Euclidean algorithm relate to solving linear Diophantine equations?"}
+{"question": "What happens if one of the input numbers to the Euclidean algorithm is zero?"}
+{"question": "In what historical text did the Euclidean algorithm first appear, and who is attributed to it?"}
+{"question": "Can the Euclidean algorithm be parallelized or optimized for very large integers?"}

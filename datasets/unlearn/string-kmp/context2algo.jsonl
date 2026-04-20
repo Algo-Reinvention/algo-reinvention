@@ -1,0 +1,20 @@
+{"question": "How can you efficiently search for a pattern in a text while ensuring the text pointer never moves backwards?"}
+{"question": "What is an algorithm that precomputes a 'partial match table' for the pattern to achieve O(m+n) time complexity in string matching?"}
+{"question": "Which string matching algorithm uses the concept of the longest prefix that is also a suffix (LPS) to avoid re-checking characters in the main text?"}
+{"question": "Explain the method that improves upon brute-force matching by preprocessing the pattern to create a 'next' array for pointer jumps."}
+{"question": "What is the algorithm for finding all occurrences of a pattern in a text that has linear time complexity and does not backtrack the text index?"}
+{"question": "Describe the string search technique that utilizes a failure function derived from the pattern itself to skip unnecessary comparisons."}
+{"question": "How do you implement a pattern matching algorithm where the main string is traversed only once, but the pattern pointer resets based on a precomputed table?"}
+{"question": "What algorithm, often contrasted with the Boyer-Moore algorithm, is particularly efficient for matching patterns with repetitive prefixes and suffixes?"}
+{"question": "Which method solves the string matching problem by first analyzing the pattern to find overlaps within itself, then using that data during the search?"}
+{"question": "In the context of text processing, what is the name of the linear-time algorithm that relies solely on a preprocessed 'prefix table' of the pattern?"}
+{"question": "How can you avoid the O(m*n) complexity of naive string search? Describe the algorithm that preprocesses the pattern in O(m) time."}
+{"question": "What is the principle behind the string matching algorithm that allows the pattern to slide more than one position when a mismatch occurs, based on self-similarity?"}
+{"question": "Describe an efficient single-pattern search algorithm commonly used in compilers for keyword recognition and in bioinformatics for DNA sequencing."}
+{"question": "Which string search algorithm is known for its 'no backtracking on the text' property and uses a state transition table derived from the pattern?"}
+{"question": "What is the algorithm that achieves efficient string matching by exploiting the fact that a mismatch contains information to determine the next start?"}
+{"question": "How does the 'partial match table' help in reducing the number of comparisons when searching for a substring in a large body of text?"}
+{"question": "Explain the string matching paradigm where the key idea is to not re-examine characters of the text that have already been matched."}
+{"question": "What is the classic algorithm for string search that was independently discovered by Knuth, Morris, and Pratt, but don't mention their names?"}
+{"question": "Which algorithm for locating a pattern within a text is a fundamental example of using preprocessing to gain time efficiency?"}
+{"question": "Describe the method that allows real-time pattern matching in data streams by maintaining a pointer in the pattern that resets according to a precomputed function."}

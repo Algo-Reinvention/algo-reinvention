@@ -1,0 +1,43 @@
+{"question": "What is the time complexity of the Floyd-Warshall algorithm for computing all-pairs shortest paths in a dense graph?"}
+{"question": "In the context of the A* search algorithm, what does it mean for a heuristic function to be 'consistent' or 'monotonic'?"}
+{"question": "How does Johnson's algorithm handle graphs with negative edge weights as a preprocessing step for running Dijkstra's algorithm?"}
+{"question": "What is the key advantage of using a Fibonacci heap in the implementation of Dijkstra's algorithm for dense graphs?"}
+{"question": "For solving the single-source shortest path problem in a Directed Acyclic Graph (DAG), how can topological sorting be leveraged?"}
+{"question": "What is the main limitation of using BFS to find shortest paths in an unweighted graph when the graph is implicitly defined and extremely large?"}
+{"question": "In a road network with hierarchical structures (highways, streets), what is the core idea behind 'Contraction Hierarchies' for speeding up shortest path queries?"}
+{"question": "What is the role of a 'landmark' in the ALT (A*, Landmarks, Triangle inequality) heuristic for shortest path algorithms?"}
+{"question": "When using a bidirectional search for shortest paths in an unweighted graph, what condition must be met to guarantee the found path is optimal?"}
+{"question": "What is the primary difference between Prim's and Kruskal's algorithms in how they grow a Minimum Spanning Tree?"}
+{"question": "How does the Union-Find (Disjoint Set Union) data structure with path compression and union by rank optimize Kruskal's algorithm?"}
+{"question": "In Borůvka's algorithm for MST, what is a 'component' and how are edges selected for each iteration?"}
+{"question": "What property of edge weights guarantees that the Minimum Spanning Tree is unique?"}
+{"question": "How can the Cut Property be used to prove the correctness of greedy MST algorithms like Prim's and Kruskal's?"}
+{"question": "What is the asymptotic time complexity of the Edmonds-Karp algorithm for computing maximum flow in a network?"}
+{"question": "How does the Ford-Fulkerson method identify an augmenting path, and why might it fail to terminate on graphs with irrational capacities?"}
+{"question": "Explain the concept of 'residual graph' and its central role in max-flow algorithms."}
+{"question": "In Dinic's algorithm, what is a 'level graph' and how does it help achieve a better time complexity?"}
+{"question": "How does the Push-Relabel algorithm maintain 'preflow' and use vertex heights to push flow towards the sink?"}
+{"question": "State the Max-Flow Min-Cut Theorem and explain its significance in combinatorial optimization."}
+{"question": "What is the relationship between maximum bipartite matching and maximum flow in a suitably constructed flow network?"}
+{"question": "How does the Hopcroft-Karp algorithm find a maximum matching in a bipartite graph, and what is its time complexity?"}
+{"question": "What is an 'alternating path' and 'augmenting path' in the context of bipartite matching algorithms?"}
+{"question": "Describe the Hungarian algorithm's approach to solving the minimum-weight perfect matching problem in a bipartite graph."}
+{"question": "What are the necessary and sufficient conditions for a directed graph to have a topological ordering?"}
+{"question": "How does Kahn's algorithm use vertex in-degrees and a queue to generate a topological sort?"}
+{"question": "How can one detect a cycle in a directed graph using a modified Depth-First Search (color coding or recursion stack tracking)?"}
+{"question": "In what scenarios is a topological sort used as a prerequisite step for other algorithms (e.g., shortest path in DAGs)?"}
+{"question": "How does Tarjan's algorithm use DFS numbers and low-link values to identify Strongly Connected Components (SCCs)?"}
+{"question": "What is the purpose of processing vertices in reverse post-order during the second DFS of Kosaraju's algorithm for SCCs?"}
+{"question": "Explain how the concept of SCCs is used in simplifying a directed graph into a Directed Acyclic Graph of its components."}
+{"question": "How does Hierholzer's algorithm efficiently find an Eulerian circuit in a graph where all vertices have even degree?"}
+{"question": "State Euler's theorem characterizing the existence of Eulerian paths and circuits in undirected graphs."}
+{"question": "What is a Hamiltonian path/cycle, and why is finding one computationally hard (NP-complete)?"}
+{"question": "How does a simple backtracking algorithm for the Hamiltonian Cycle problem prune its search space?"}
+{"question": "What is the Christofides algorithm's approximation ratio for the Metric Traveling Salesperson Problem, and what are its three main steps?"}
+{"question": "What is an 'articulation point' (or cut vertex) in an undirected graph, and how can one be detected using DFS?"}
+{"question": "How does Tarjan's algorithm identify bridges (cut edges) in an undirected graph using discovery times and low values?"}
+{"question": "What is the significance of biconnected components in network reliability?"}
+{"question": "Describe the randomized approach of Karger's algorithm for finding a global minimum cut in an undirected graph."}
+{"question": "How does the Stoer-Wagner algorithm deterministically find a minimum cut without relying on max-flow computations?"}
+{"question": "Explain the core 'teleportation' model and the role of the damping factor in the PageRank algorithm."}
+{"question": "How is the PageRank score of a node interpreted in terms of a random surfer's probability of visiting that node?"}

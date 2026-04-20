@@ -1,0 +1,22 @@
+{"question": "Do you know what is the Bellman-Ford algorithm?"}
+{"question": "What kind of problems can Bellman-Ford algorithm be used to solve?"}
+{"question": "What is the time complexity of the Bellman-Ford algorithm?"}
+{"question": "What is the core principle behind the Bellman-Ford algorithm?"}
+{"question": "Is the Bellman-Ford algorithm considered a dynamic programming algorithm?"}
+{"question": "Can the Bellman-Ford algorithm handle graphs with negative edge weights?"}
+{"question": "How does the Bellman-Ford algorithm detect the presence of negative cycles in a graph?"}
+{"question": "Why does the Bellman-Ford algorithm require V-1 iterations in the worst case?"}
+{"question": "How does the use of an adjacency list affect the implementation of the Bellman-Ford algorithm?"}
+{"question": "What is the key difference between the Bellman-Ford algorithm and Dijkstra's algorithm?"}
+{"question": "Can the Bellman-Ford algorithm be used for finding the shortest path in an undirected graph with negative weights?"}
+{"question": "How does the Bellman-Ford algorithm differ from the Floyd-Warshall algorithm in its approach and use cases?"}
+{"question": "What is the purpose of the 'relaxation' step in the Bellman-Ford algorithm, and how is it performed?"}
+{"question": "What data structures are typically sufficient and efficient for implementing the Bellman-Ford algorithm?"}
+{"question": "Is it possible for the Bellman-Ford algorithm to find the longest simple path in a graph? Why or why not?"}
+{"question": "How do you initialize the distance values for the source and other nodes in the Bellman-Ford algorithm?"}
+{"question": "What is the space complexity of the Bellman-Ford algorithm?"}
+{"question": "Can the Bellman-Ford algorithm be used to find the shortest path from one source to all other nodes in a graph with negative edges?"}
+{"question": "How does the SPFA (Shortest Path Faster Algorithm) relate to or optimize the classic Bellman-Ford algorithm?"}
+{"question": "What happens if the target node is unreachable from the source node in the Bellman-Ford algorithm?"}
+{"question": "In what year was the Bellman-Ford algorithm first published, and who are its creators?"}
+{"question": "Can the Bellman-Ford algorithm be parallelized effectively for large-scale graphs?"}

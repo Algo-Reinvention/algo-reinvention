@@ -1,0 +1,202 @@
+[
+    {
+        "question_type": "multiple_choice",
+        "question": "Classic Strassen recurrence is:\nA. T(n)=8T(n/2)+O(n²) B. T(n)=7T(n/2)+O(n²) C. T(n)=6T(n/2)+O(n³) D. T(n)=7T(n/2)+O(n) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "The asymptotic exponent of Strassen's matrix multiplication is:\nA. 2.0 B. log₂(8) = 3.0 C. log₂(7) ≈ 2.807 D. log₂(6) ≈ 2.585 E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "At the 2×2 block level, Strassen reduces recursive multiplications from:\nA. 8 to 7 B. 8 to 6 C. 7 to 6 D. 9 to 7 E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Compared with naive block multiplication, one Strassen level uses:\nA. Fewer multiplications and fewer additions B. Fewer multiplications but more additions/subtractions C. More multiplications but fewer additions D. Same multiplications but fewer additions E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In standard Strassen notation, the intermediate product M1 is typically defined as:\nA. (A11+A22)(B11+B22) B. A11·B11 + A12·B21 C. (A11+A12)·B22 D. A22·(B21−B11) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In standard Strassen notation, block C11 of the output is computed as:\nA. M1+M2 B. M1+M4−M5+M7 C. M3+M5 D. M1−M2+M3+M6 E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In standard Strassen notation, block C12 is computed as:\nA. M2+M4 B. M1+M4−M5+M7 C. M3+M5 D. M1−M2+M3+M6 E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In standard Strassen notation, block C21 is computed as:\nA. M3+M5 B. M1−M2+M3+M6 C. M2+M4 D. M1+M4−M5+M7 E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In standard Strassen notation, block C22 is computed as:\nA. M2+M4 B. M1+M4−M5+M7 C. M3+M5 D. M1−M2+M3+M6 E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "The total number of n/2 × n/2 matrix additions/subtractions at one Strassen level is:\nA. 4 B. 10 C. 18 D. 28 E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "If Strassen is applied recursively down to 1×1 on a 1024×1024 input, how many recursion levels occur?\nA. 7 B. 10 C. 12 D. 20 E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In Strassen's algorithm, one of the seven intermediate products takes A22 as its left operand without adding or subtracting any other submatrix. Which of the following correctly identifies this product and its right operand?\nA. M1 = (A11+A22)(B11+B22) B. M2 = (A21+A22)·B11 C. M4 = A22·(B21−B11) D. M7 = (A12−A22)(B21+B22) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In Strassen's algorithm, one of the seven intermediate products takes A11 as its left operand without adding or subtracting any other submatrix. Which of the following correctly identifies this product and its right operand?\nA. M1 = (A11+A22)(B11+B22) B. M3 = A11·(B12−B22) C. M5 = (A11+A12)·B22 D. M6 = (A21−A11)(B11+B12) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Strassen's algorithm can also accelerate matrix inversion to:\nA. O(n²) B. O(n^log₂7) C. O(n³) D. O(n² log n) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "On floating-point data, Strassen introduces larger numerical errors primarily because:\nA. It uses division operations B. Its 18 additions/subtractions per level create more cancellation opportunities C. It truncates matrix dimensions D. It quantizes entries to integers internally E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Over a finite field like GF(2), Strassen's numerical stability concern:\nA. Becomes worse due to modular overflow B. Disappears since arithmetic is exact C. Requires error-correcting codes D. Remains identical to floating-point E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Winograd's variant of Strassen's algorithm achieves:\nA. 6 multiplications instead of 7 B. 7 multiplications with 15 additions instead of 18 C. 8 multiplications with fewer additions D. 7 multiplications with 22 additions E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "The crossover point where Strassen becomes faster than optimized naive multiplication is typically:\nA. n=2 always B. Between n=16 and n=128, hardware-dependent C. n=1000 always D. Strassen is always faster E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Extra temporary memory required by one level of Strassen (beyond input/output) is:\nA. O(1) B. O(n) C. O(n²) D. O(n³) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "If an algorithm used 6 recursive multiplications for 2×2 block decomposition, the exponent would be:\nA. log₂(6) ≈ 2.585 B. log₂(7) ≈ 2.807 C. 2.0 D. 3.0 E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Strassen's algorithm was published in:\nA. 1956 B. 1969 C. 1977 D. 1985 E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Before Strassen's result, the prevailing belief about matrix multiplication complexity was:\nA. O(n²) was optimal B. O(n² log n) was optimal C. O(n³) was optimal and could not be improved D. O(n⁴) was the best known E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "How many scalar multiplications does Strassen's algorithm use to multiply two 2×2 matrices?\nA. 5 B. 6 C. 7 D. 8 E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Strassen does NOT preserve which property of well-tuned tiled naive multiplication?\nA. Correctness of result B. Ability to use non-square inputs C. Good cache/memory access patterns D. Deterministic output E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Applying one level of Strassen to 4×4 matrices (2×2 blocks of 2×2, base cases solved naively), total scalar multiplications are:\nA. 48 B. 56 C. 64 D. 72 E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "How many of Strassen's seven products M1–M7 involve B11 in their right operand?\nA. 2 B. 3 C. 4 D. 5 E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Which intermediate products have BOTH operands as compound expressions (sum/difference of two submatrices)?\nA. Only M1 B. M1 and M6 only C. M1, M6, and M7 D. All seven E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "The seven independent recursive subproblems in Strassen enable up to how many concurrent tasks per level?\nA. 2 B. 4 C. 7 D. 8 E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Strassen requires the underlying algebraic structure to be:\nA. A total order (for comparisons) B. A ring (supporting +, −, ×) C. A field (requiring division) D. A Boolean algebra E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "When two levels of Strassen are applied (recursing twice before switching to naive), the total recursive multiplications at the bottom level are:\nA. 14 B. 36 C. 49 D. 64 E. I am not sure"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "What algorithm splits two n×n matrices into four n/2×n/2 quadrants, computes exactly seven intermediate block products using specific linear combinations of these quadrants, and reconstructs the four output blocks — achieving recurrence T(n)=7T(n/2)+O(n²)?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Name the divide-and-conquer algorithm that multiplies two n×n matrices using only 7 recursive multiplications instead of the naively expected 8."
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Which divide-and-conquer matrix multiplication method achieves exponent log₂(7)≈2.807 by reducing recursive multiplications from 8 to 7, at the cost of increasing block additions from 4 to 18?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Name the matrix multiplication algorithm that splits each matrix into 2×2 blocks and computes the result using exactly 7 multiplications, where each multiplication involves a sum or difference of submatrices rather than the submatrices themselves."
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Name the algorithm that computes M1=(A11+A22)(B11+B22), M2=(A21+A22)·B11, M3=A11·(B12−B22), M4=A22·(B21−B11), M5=(A11+A12)·B22, M6=(A21−A11)(B11+B12), M7=(A12−A22)(B21+B22), then reconstructs C11=M1+M4−M5+M7, C12=M3+M5, C21=M2+M4, C22=M1−M2+M3+M6 to multiply two matrices in O(n^log₂7) time."
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "What recursive matrix multiplication algorithm is typically implemented as a hybrid that switches to O(n³) below a hardware-tuned threshold, because its 18 block additions per level dominate for small n?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Name the algorithm that, applied once to 4×4 matrices (as 2×2 blocks of 2×2 solved naively), uses 7×8=56 scalar multiplications versus the naive 64."
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Which sub-cubic matrix multiplication algorithm has a Winograd variant that keeps 7 recursive multiplications but reduces block additions from 18 to 15 per level?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "What algorithm defines products M1=(A11+A22)(B11+B22), M2=(A21+A22)·B11, M3=A11·(B12−B22), M4=A22·(B21−B11), M5=(A11+A12)·B22, M6=(A21−A11)(B11+B12), M7=(A12−A22)(B21+B22)?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Name the matrix multiplication algorithm whose 18 block additions/subtractions per level (versus naive's 4) create more opportunities for catastrophic cancellation on floating-point data."
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Which algorithm allows matrix inversion to run in O(n^log₂7), because inversion reduces to a constant number of matrix multiplications per recursive level?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "What matrix multiplication algorithm is exact over finite fields like GF(2), where its floating-point stability concerns vanish, making it useful in coding theory and cryptography?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Name the algorithm that first demonstrated matrix multiplication can be performed in O(n^2.807) time, breaking the long-standing cubic barrier."
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Which algorithm is the standard textbook example showing O(n³) matrix multiplication is not optimal, taught before Coppersmith–Winograd and subsequent tensor-based methods?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "What algorithm pads rectangular matrices to power-of-two square dimensions, then applies recursive quadrant decomposition with seven block products per level, each using a specific sum or difference of input submatrices?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Name the algorithm with worse cache behavior than tiled naive multiplication despite superior asymptotic complexity, because its recursive structure and 18 intermediate block operations create irregular memory accesses."
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Which divide-and-conquer matrix multiplication algorithm generates 7 independent subproblems per level, enabling 7-way parallelism at each recursion depth, while using O(n²) temporary memory per level?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "What algorithm requires only a ring (addition, subtraction, multiplication — no division) to perform sub-cubic matrix multiplication via seven recursive block products?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Name the algorithm that multiplies two 2×2 matrices by first computing 7 carefully chosen products of the form (aᵢ±aⱼ)(bₖ±bₗ), then combining them to recover all four output entries."
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Name the algorithm that multiplies two 4×4 matrices using only 49 scalar multiplications, compared to the 64 required by the naive approach."
+    }
+]

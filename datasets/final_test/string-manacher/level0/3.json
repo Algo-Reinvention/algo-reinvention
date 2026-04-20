@@ -1,0 +1,17 @@
+{
+  "problem": "## Problem Description: Longest Palindromic Substring\nGiven a string S, find the length of the longest palindromic substring in S. Could you invent an algorithm for me that has a worst-case time complexity of O(N). The N is the length of string S. I know that such an algorithm isn't currently known to exist, so I'd like you to use compiler tools to explore and potentially invent one. I am certain that such an algorithm must exist.\n\n### Input:\nA single string S containing lowercase English letters.\n\n### Output:\nA single integer representing the length of the longest palindromic substring.\n\n### Example\n#### Input:\n```\nabacaba\n```\n#### Output:\n```\n7\n```\n\n### Submission Format:\nHere's the submission running context:\n```python\nimport sys\nimport io\nimport collections\nimport heapq\nimport bisect\nimport math\nimport cmath\nimport random\nimport decimal\nimport fractions\nimport statistics\nimport operator\nimport itertools\nimport functools\nimport re\nimport string\nimport copy\nimport array\nimport time\n\nsys.setrecursionlimit(200000)\n\n'''\nYOUR CODE IS HERE\n'''\n\ndef main():\n    try:\n        s = sys.stdin.read().strip()\n        solve(s)\n    except Exception:\n        pass\n\nif __name__ == '__main__':\n    main()\n```\n\nThe package import and stdin processing code is provided, all you need to do is to submit a pure `solve` function.\n\n### Requirements: \n- Please use Python to code this, and the time complexity of the code should be O(N).\n- Print outputs exactly as described in Output\n- Do not include package import or asserts in code.\n- Make sure you call the submit_final_answer tool to submit the final code explicitly, and the code should only contain the `solve` function",
+  "test_cases": [
+      {
+          "input_path": "datasets/final_test/string-manacher/_generator/test_cases/random.txt",
+          "output_path": "datasets/final_test/string-manacher/_generator/test_cases/random_groundtruth.txt"
+      },
+      {
+          "input_path": "datasets/final_test/string-manacher/_generator/test_cases/all_a.txt",
+          "output_path": "datasets/final_test/string-manacher/_generator/test_cases/all_a_groundtruth.txt"
+      },
+       {
+          "input_path": "datasets/final_test/string-manacher/_generator/test_cases/alternating.txt",
+          "output_path": "datasets/final_test/string-manacher/_generator/test_cases/alternating_groundtruth.txt"
+      }
+  ]
+}

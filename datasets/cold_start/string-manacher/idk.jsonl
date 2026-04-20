@@ -1,0 +1,22 @@
+{"question": "Do you know what is the Manacher's algorithm?"}
+{"question": "What is the core purpose or problem that Manacher's algorithm is designed to solve?"}
+{"question": "What is the key insight or trick at the heart of Manacher's algorithm?"}
+{"question": "How does Manacher's algorithm achieve linear time complexity for finding palindromes?"}
+{"question": "What is the role of the center C and the right boundary R in Manacher's algorithm?"}
+{"question": "How does Manacher's algorithm preprocess the input string to handle even-length palindromes?"}
+{"question": "Can you explain the concept of the palindrome radius array P in Manacher's algorithm?"}
+{"question": "What is the time complexity of Manacher's algorithm, and why is it considered efficient?"}
+{"question": "What is the space complexity of Manacher's algorithm?"}
+{"question": "How does Manacher's algorithm compare to a naive or dynamic programming approach for finding the longest palindromic substring?"}
+{"question": "Is Manacher's algorithm considered a greedy or dynamic programming algorithm?"}
+{"question": "Can Manacher's algorithm be used to find all palindromic substrings in a string?"}
+{"question": "What are the main steps involved in implementing Manacher's algorithm?"}
+{"question": "In what scenarios or applications is Manacher's algorithm particularly useful?"}
+{"question": "How does Manacher's algorithm handle the expansion and mirroring steps to avoid redundant computations?"}
+{"question": "Can Manacher's algorithm be applied to strings containing non-alphanumeric characters or spaces?"}
+{"question": "What modifications, if any, are needed to adapt Manacher's algorithm for Unicode or multi-byte character strings?"}
+{"question": "How does the output of Manacher's algorithm (the P array) help in retrieving the actual longest palindromic substring?"}
+{"question": "Are there any common pitfalls or edge cases to consider when implementing Manacher's algorithm?"}
+{"question": "Can Manacher's algorithm be parallelized or optimized for very large strings?"}
+{"question": "What is the historical context behind the development of Manacher's algorithm, and when was it published?"}
+{"question": "How does Manacher's algorithm relate to or differ from other palindrome-finding techniques like expanding around center?"}

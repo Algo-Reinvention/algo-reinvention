@@ -1,0 +1,20 @@
+{"question": "Which matrix multiplication method splits matrices into quadrants and uses only seven recursive subproducts?"}
+{"question": "How can square matrix multiplication be accelerated by replacing eight block multiplications with seven?"}
+{"question": "What divide-and-conquer approach computes C = A x B by combining seven intermediate block products?"}
+{"question": "Which algorithmic technique has complexity O(n^log2(7)) for multiplying dense square matrices?"}
+{"question": "How can recursive block multiplication reduce asymptotic cost below the cubic method?"}
+{"question": "What method defines products P1 through P7 and reconstructs the four output quadrants from them?"}
+{"question": "How do you multiply large dense matrices using quadrant decomposition plus linear combinations of submatrices?"}
+{"question": "Which matrix multiplication strategy often switches to the cubic kernel below a size threshold?"}
+{"question": "How can you pad matrices to power-of-two sizes for a seven-product recursive multiplication routine?"}
+{"question": "What approach uses additions and subtractions of matrix blocks to save one recursive multiplication per level?"}
+{"question": "Which recurrence T(n) = 7T(n/2) + O(n^2) appears in fast divide-and-conquer matrix multiplication?"}
+{"question": "How can block-level algebra be used to reduce multiplication count in recursive square matrix multiplication?"}
+{"question": "What multiplication method is known for practical speedups on sufficiently large dense matrices?"}
+{"question": "How can output blocks C11, C12, C21, and C22 be reconstructed from seven precomputed block products?"}
+{"question": "What is the standard fast recursive algorithm taught before more advanced tensor-based multiplication methods?"}
+{"question": "Which matrix algorithm trades extra additions for fewer recursive multiplications?"}
+{"question": "How can divide-and-conquer multiplication be implemented with base-case fallback for small matrices?"}
+{"question": "What algorithm is typically introduced as the first asymptotic improvement over O(n^3) dense multiplication?"}
+{"question": "How do seven block products arise from combining matrix quadrants with linear transforms?"}
+{"question": "What recursive matrix multiplication method is especially associated with block formulas using P1 to P7?"}

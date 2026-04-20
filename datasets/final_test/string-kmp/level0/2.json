@@ -1,0 +1,17 @@
+{
+  "problem": "## Problem Description: String Matching\nGiven a text string T and a pattern string P, find all starting indices of P in T. Could you invent an algorithm for me that has a worst-case time complexity of O(N + M), while the worst-case space complexity of the code should be O(M). The N is the length of string T and the M is the length of the string P. Please don't just try to adapt existing algorithms; instead, I'd like you to derive a brand-new approach through reasoning and exploration.\n\n### Input:\nThe first line contains the text string T.\nThe second line contains the pattern string P.\nBoth strings contain only uppercase and lowercase English letters and digits.\n\n### Output:\nA single line containing the starting indices (0-based) of all occurrences of P in T, separated by spaces. If no occurrence is found, output an empty line (or nothing).\n\n### Example\n#### Input:\n```\nABABAB\nABA\n```\n#### Output:\n```\n0 2\n```\n\n### Submission Format:\nHere's the submission running context:\n```python\nimport sys\nimport io\nimport collections\nimport heapq\nimport bisect\nimport math\nimport cmath\nimport random\nimport decimal\nimport fractions\nimport statistics\nimport operator\nimport itertools\nimport functools\nimport re\nimport string\nimport copy\nimport array\nimport time\n\nsys.setrecursionlimit(200000)\n\n'''\nYOUR CODE IS HERE\n'''\n\ndef main():\n    try:\n        lines = sys.stdin.read().splitlines()\n        lines = [l for l in lines if l]\n        if len(lines) >= 2:\n            text = lines[0]\n            pattern = lines[1]\n            solve(text, pattern)\n    except Exception:\n        pass\n\nif __name__ == '__main__':\n    main()\n```\n\nThe package import and stdin processing code is provided, all you need to do is to submit a pure `solve` function.\n\n### Requirements: \n- Please use Python to code this, and the time complexity of the code should be O(N + M), while the space complexity of the code should be O(M)\n- Print outputs exactly as described in Output\n- Do not include package import or asserts in code.\n- Make sure you call the submit_final_answer tool to submit the final code explicitly, and the code should only contain the `solve` function",
+  "test_cases": [
+      {
+          "input_path": "datasets/final_test/string-kmp/_generator/test_cases/random.txt",
+          "output_path": "datasets/final_test/string-kmp/_generator/test_cases/random_groundtruth.txt"
+      },
+      {
+          "input_path": "datasets/final_test/string-kmp/_generator/test_cases/naive_killer.txt",
+          "output_path": "datasets/final_test/string-kmp/_generator/test_cases/naive_killer_groundtruth.txt"
+      },
+       {
+          "input_path": "datasets/final_test/string-kmp/_generator/test_cases/many_matches.txt",
+          "output_path": "datasets/final_test/string-kmp/_generator/test_cases/many_matches_groundtruth.txt"
+      }
+  ]
+}

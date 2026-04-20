@@ -1,0 +1,25 @@
+{
+  "problem": "## Problem Description: Network Latency with Signal Boosters\n\nYou are optimizing a supercomputer network with $n$ processing nodes and $m$ directional connections. Each connection from node $u$ to node $v$ has a latency of $w$ picoseconds. Some connections are equipped with advanced signal boosters that reduce the total accumulated latency, effectively acting as a negative delay.\n\nFind the minimum possible latency to send a signal from source node $s$ to all other nodes. If the network contains a \"Feedback Loop\" that causes latency to drop indefinitely (a negative cycle), the system will crash.\n\n### Input:\n- Integer `n` (nodes).\n- Integer `m` (connections).\n- `m` lines of `u v w` (latency value).\n- Integer `s` (source node).\n\n### Output:\n- If a negative latency cycle is reachable from `s`, output: `Negative Cycle`.\n- Otherwise, output $n$ integers: the shortest latency to each node (1 to $n$). Output `-1` if the node is disconnected.\n\n### Submission Format:\nHere's the submission running context:\n```python\nimport sys\nimport io\nimport collections\nimport heapq\nimport bisect\nimport math\nimport cmath\nimport random\nimport decimal\nimport fractions\nimport statistics\nimport operator\nimport itertools\nimport functools\nimport re\nimport string\nimport copy\nimport array\nimport time\n\n\nsys.setrecursionlimit(200000)\n\n'''\nYOUR CODE IS HERE\n'''\n\ndef main():\n    import sys\n    data = sys.stdin.read().split()\n    if not data:\n        return\n\n    it = iter(data)\n\n    n = int(next(it))\n    m = int(next(it))\n\n    graph = [[] for _ in range(n + 1)]\n\n    for _ in range(m):\n        u = int(next(it))\n        v = int(next(it))\n        w = int(next(it))\n        graph[u].append((v, w))\n\n    s = int(next(it))\n\n    solve(n, m, graph, s)\n\nif __name__ == '__main__':\n    main()\n```\n\nThe package import and stdin processing code is provided, all you need to do is to submit a pure `solve` function.\n\n### Requirements: \n- Please use Python to code this, and the time complexity of the code should not exceed O(N*M) even in the extreme worst case.\n- Print outputs exactly as described in Output\n- Do not include package import or asserts in code.\n- Make sure you call the submit_final_answer tool to submit the final code explicitly, and the code should only contain the `solve` function.\n\n### Hint: \n- Please design an algorithm based on the concept of iterative relaxation. In each round, traverse all edges in the graph and update the shortest distance to a node if a path through its predecessor offers a smaller total weight. Repeat this process $n-1$ times to find the shortest paths, and perform one final pass over all edges to check if any distance can still be decreased, which would indicate the presence of a negative cycle.",
+  "test_cases": [
+    {
+      "input_path": "datasets/final_test/graph-sp-bellmanford/_generator/test_cases/n500.txt",
+      "output_path": "datasets/final_test/graph-sp-bellmanford/_generator/test_cases/n500_groundtruth.txt"
+    },
+    {
+      "input_path": "datasets/final_test/graph-sp-bellmanford/_generator/test_cases/hack_dij1.txt",
+      "output_path": "datasets/final_test/graph-sp-bellmanford/_generator/test_cases/hack_dij1_groundtruth.txt"
+    },
+    {
+      "input_path": "datasets/final_test/graph-sp-bellmanford/_generator/test_cases/hack_dij2.txt",
+      "output_path": "datasets/final_test/graph-sp-bellmanford/_generator/test_cases/hack_dij2_groundtruth.txt"
+    },
+    {
+      "input_path": "datasets/final_test/graph-sp-bellmanford/_generator/test_cases/hack_dij3.txt",
+      "output_path": "datasets/final_test/graph-sp-bellmanford/_generator/test_cases/hack_dij3_groundtruth.txt"
+    },
+    {
+      "input_path": "datasets/final_test/graph-sp-bellmanford/_generator/test_cases/hack_dij4.txt",
+      "output_path": "datasets/final_test/graph-sp-bellmanford/_generator/test_cases/hack_dij4_groundtruth.txt"
+    }
+  ]
+}

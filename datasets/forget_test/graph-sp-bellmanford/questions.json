@@ -1,0 +1,162 @@
+[
+    {
+        "question_type": "multiple_choice",
+        "question": "Bellman-Ford primarily solves:\nA. All-pairs shortest paths B. Single-source shortest paths with possible negative edges C. Minimum spanning tree D. Maximum matching E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Standard Bellman-Ford time complexity is:\nA. O(V + E) B. O(E log V) C. O(VE) D. O(V^3 log V) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Excluding graph storage, Bellman-Ford extra memory is typically:\nA. O(1) B. O(V) C. O(E) D. O(VE) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Bellman-Ford edge relaxation for (u,v,w) is:\nA. dist[v] = w unconditionally B. if dist[u] + w < dist[v], then update dist[v] C. Swap dist[u] and dist[v] D. Update only when w is nonnegative E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "After k full relaxation passes, Bellman-Ford has best distances among paths using at most:\nA. k edges B. k vertices C. k negative edges D. k cycles E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Standard Bellman-Ford negative-cycle check does:\nA. After V-1 full relax rounds, run one extra round and test whether any reachable edge can still relax B. Stop immediately when a negative-weight edge is seen C. Check whether any dist[v] is negative D. Check whether total edge weight sum is negative E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Bellman-Ford reliably detects negative cycles that are:\nA. Anywhere in the graph regardless of reachability B. Reachable from the chosen source C. Only odd-length cycles D. Only in undirected graphs E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In Bellman-Ford, after V-1 passes, if one more full pass still relaxes an edge, then:\nA. Graph is disconnected B. A reachable negative cycle exists C. All distances are finalized correctly D. Only odd cycles exist E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "To reconstruct paths after Bellman-Ford, a typical extra array is:\nA. color[] B. parent/predecessor[] C. rank[] D. lowlink[] E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Bellman-Ford can terminate early when:\nA. The source has no outgoing edges B. All edge weights are nonnegative C. A full pass makes no distance update D. The graph is a DAG E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "If all edge weights are nonnegative, Bellman-Ford is:\nA. Incorrect B. Correct but often slower than Dijkstra C. Equivalent to Floyd-Warshall D. Faster than BFS on unweighted graphs by definition E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "DP view: after k passes, Bellman-Ford has best distances using paths with:\nA. Exactly k vertices B. At most k edges C. At most k negative edges D. Exactly k cycles E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Bellman-Ford is best categorized as:\nA. Label-setting B. Label-correcting C. Divide-and-conquer D. Backtracking E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Bellman-Ford is algorithmically categorized as:\nA. Label-setting B. Greedy tree-growing C. Divide-and-conquer APSP D. Label-correcting E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "With V vertices and E edges, standard Bellman-Ford worst-case time complexity is:\nA. O(VE) B. O((V+E)logV) C. O(V^2) D. O(E log V) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Johnson's algorithm uses Bellman-Ford mainly to:\nA. Build an MST B. Compute vertex potentials and detect negative cycles C. Perform topological sorting D. Find SCCs E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Each Bellman-Ford full iteration over k (pass) scans:\nA. Only outgoing edges of source B. All E edges C. Only edges on current best path tree D. Only negative edges E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Bellman-Ford directly supports:\nA. Directed weighted graphs B. Only undirected unweighted graphs C. Only DAGs D. Only complete graphs E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "On unweighted graphs (single source), BFS is usually compared with Bellman-Ford as:\nA. Asymptotically faster B. Asymptotically slower C. Asymptotically equivalent to O(VE) D. Equivalent only on dense graphs E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Bellman-Ford invariant after exactly k full relaxation passes (k>=0) is:\nA. dist stores shortest-path values using at most k edges B. dist stores shortest-path values using exactly k edges C. dist already equals all-pairs shortest paths D. dist is final regardless of k E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Path reconstruction from target t after Bellman-Ford usually follows:\nA. Successor links forward from source B. Predecessor links backward from t to source C. Random sampled edges D. Edges in nondecreasing weight order E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Compared with Dijkstra, Bellman-Ford does NOT require:\nA. Edge list input B. Nonnegative edge weights C. A source vertex D. Distance initialization E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Bellman-Ford is valid on DAG inputs:\nA. No B. Only if all weights are positive C. Yes D. Only for undirected DAGs E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "If dist[u] is INF in Bellman-Ford, relaxation of edge (u,v,w) should typically:\nA. Set dist[v]=w B. Be skipped C. Set dist[v]=INF+w D. Force dist[v]=0 E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In standard Bellman-Ford shortest-path phase (without early stop), the number of full relaxation rounds is:\nA. V-1 B. E-1 C. V D. log V E. I am not sure"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "How do you solve the shortest path problem when edges may have negative weights?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, is there a shortest path algorithm that can detect negative cycles in the graph?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, what algorithm guarantees correct shortest paths even if some edge weights are negative?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, which algorithm can handle graphs with negative edges without requiring non-negative weights like Dijkstra?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "What algorithm would you use to find shortest paths from a single source when edge costs can be negative?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, what approach should be used for SSSP when the graph contains negative-weight edges?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, which algorithm works for arbitrary edge weights and can also identify unreachable negative cycles?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, what is the method that relaxes all edges repeatedly V-1 times to ensure shortest path convergence?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "How do you compute shortest paths in a graph that might have negative cycles affecting reachability?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, what algorithm initializes distances to infinity and then iteratively updates them for all edges?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, which shortest path algorithm doesn't require a priority queue and uses simple edge relaxation in loops?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "How would you find shortest paths when some roads (edges) have tolls that actually give you money (negative weights)?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, what method checks for negative cycles by performing one additional iteration after V-1 relaxations?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, which algorithm has O(VE) time complexity and can handle graphs with negative edge weights?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, what is the approach that updates distance estimates by considering all edges in each iteration?"
+    }
+]

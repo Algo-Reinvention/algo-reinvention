@@ -1,0 +1,21 @@
+{
+    "problem": "## Problem Description: Fast Matrix Multiplication\nGiven two `n x n` integer matrices, compute their product.\n\n### Input:\nThe first line contains one integer `n`.\n\nThen follow `n` lines for matrix `A` (each line has `n` integers), and then `n` lines for matrix `B`.\n\nIt is guaranteed that `n` is a power of two.\n\n### Output:\nOutput matrix `C = A * B` with `n` lines, each containing `n` integers separated by spaces.\n\n### Example\n#### Input:\n```\n2\n1 2\n3 4\n5 6\n7 8\n```\n#### Output:\n```\n19 22\n43 50\n```\n\n\n### Submission Format:\nHere's the submission running context:\n```python\nimport sys\nimport io\nimport collections\nimport heapq\nimport bisect\nimport math\nimport cmath\nimport decimal\nimport fractions\nimport statistics\nimport operator\nimport itertools\nimport functools\nimport re\nimport string\nimport copy\nimport array\nimport time\nimport builtins\n\norig_import = builtins.__import__\n\ndef secure_import(name, *args, **kwargs):\n    if name == 'numpy':\n        raise ImportError(\"Forbidden: numpy is not allowed\")\n    return orig_import(name, *args, **kwargs)\n\nbuiltins.__import__ = secure_import\n\nsys.setrecursionlimit(200000)\n\n'''\nYOUR CODE IS HERE\n'''\n\ndef main():\n    data = list(map(int, sys.stdin.buffer.read().split()))\n    if not data:\n        return\n\n    ptr = 0\n    n = data[ptr]\n    ptr += 1\n    if n <= 0:\n        return\n\n    total = n * n\n    if len(data) < 1 + total + total:\n        return\n\n    flat_a = data[ptr:ptr + total]\n    ptr += total\n    flat_b = data[ptr:ptr + total]\n\n    a = [flat_a[i * n:(i + 1) * n] for i in range(n)]\n    b = [flat_b[i * n:(i + 1) * n] for i in range(n)]\n\n    solve(n, a, b)\n```\n\nThe package import and stdin processing code is provided, all you need to do is to submit a pure `solve` function.\n\n### Requirements:\n- Please use Python to code this, and the worst-case time complexity should not exceed O(n^log2(7)), while extra space should be polynomially bounded.\n- Print outputs exactly as described in Output.\n- Do not include package import or asserts in code.\n- Make sure you call the submit_final_answer tool to submit the final code explicitly, and the code should only contain the `solve` function.\n\n### Hint:\n- Try a divide-and-conquer strategy on matrix quadrants, and think about reducing the number of recursive sub-matrix multiplications below 8.",
+    "test_cases": [
+        {
+            "input_path": "datasets/final_test/math-strassen/_generator/test_cases/edge_n1.txt",
+            "output_path": "datasets/final_test/math-strassen/_generator/test_cases/edge_n1_groundtruth.txt"
+        },
+        {
+            "input_path": "datasets/final_test/math-strassen/_generator/test_cases/small_n2.txt",
+            "output_path": "datasets/final_test/math-strassen/_generator/test_cases/small_n2_groundtruth.txt"
+        },
+        {
+            "input_path": "datasets/final_test/math-strassen/_generator/test_cases/random_n64.txt",
+            "output_path": "datasets/final_test/math-strassen/_generator/test_cases/random_n64_groundtruth.txt"
+        },
+        {
+            "input_path": "datasets/final_test/math-strassen/_generator/test_cases/cubic_killer.txt",
+            "output_path": "datasets/final_test/math-strassen/_generator/test_cases/cubic_killer_groundtruth.txt"
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{"question": "How can you determine if a string contains all unique characters without using additional data structures?"}
+{"question": "What is the optimal approach to rotate an array by k positions using O(1) extra space?"}
+{"question": "How does the Dutch National Flag algorithm sort an array containing only three distinct values?"}
+{"question": "What is the two-pointer technique for finding a pair of elements in a sorted array that sum to a target value?"}
+{"question": "How can you implement the Knuth-Morris-Pratt algorithm for efficient string pattern matching?"}
+{"question": "What is the method to find the longest palindromic substring in a string using dynamic programming?"}
+{"question": "How does the sliding window technique solve the problem of finding the longest substring without repeating characters?"}
+{"question": "What is an in-place algorithm to remove all occurrences of a specific value from an array?"}
+{"question": "How can you merge two sorted arrays into one sorted array using O(1) extra space?"}
+{"question": "What is the technique to find the majority element in an array using sorting?"}
+{"question": "How does the reservoir sampling algorithm randomly select k items from a stream of unknown size?"}
+{"question": "What is the algorithm to find the next lexicographic permutation of a given sequence?"}
+{"question": "How can you efficiently group anagrams together from a list of strings?"}
+{"question": "What is the method to calculate the maximum subarray sum using Kadane's algorithm?"}
+{"question": "How does the Z-algorithm construct an array of longest common prefixes for string processing?"}
+{"question": "What is the technique to find the longest common prefix among an array of strings?"}
+{"question": "How can you implement string compression using run-length encoding in-place?"}
+{"question": "What is the algorithm to find all triplets in an array that sum to zero?"}
+{"question": "How does the Manacher's algorithm find all palindromic substrings in linear time?"}
+{"question": "What is the method to implement the Rabin-Karp algorithm with rolling hash for pattern search?"}
+{"question": "How can you find the first missing positive integer in an unsorted array in O(n) time?"}
+{"question": "What is the technique to find the kth smallest element in an unsorted array using quickselect?"}
+{"question": "How does the Floyd's cycle-finding algorithm detect a cycle in a sequence of values?"}
+{"question": "What is the method to shuffle an array randomly ensuring perfect randomness?"}
+{"question": "How can you implement a trie data structure for efficient string prefix searches?"}
+{"question": "What is the algorithm to find the longest substring with at most k distinct characters?"}
+{"question": "How does the prefix sum technique help answer range sum queries efficiently?"}
+{"question": "What is the method to reverse words in a string while preserving whitespace?"}
+{"question": "How can you find the minimum window substring containing all characters of a pattern?"}
+{"question": "What is the technique to count distinct absolute values in a sorted array?"}
+{"question": "How does the Fenwick tree (Binary Indexed Tree) optimize range sum updates and queries?"}
+{"question": "What is the method to find the maximum product of three numbers in an array?"}
+{"question": "How can you check if one string is a rotation of another using concatenation?"}
+{"question": "What is the algorithm to find all palindromic partitions of a given string?"}
+{"question": "How does the longest increasing subsequence algorithm work using dynamic programming?"}
+{"question": "What is the technique to find the smallest positive integer that cannot be represented as a subset sum?"}
+{"question": "How can you implement the Aho-Corasick algorithm for multiple pattern matching?"}
+{"question": "What is the method to rotate a matrix 90 degrees clockwise in-place?"}
+{"question": "How does the counting sort algorithm sort integers with a limited range?"}
+{"question": "What is the technique to find duplicate elements in an array using Floyd's tortoise and hare?"}
+{"question": "How can you implement regular expression matching using dynamic programming?"}
+{"question": "What is the algorithm to find the longest consecutive sequence in an unsorted array?"}
+{"question": "How does the suffix array data structure enable efficient substring searches?"}
+{"question": "What is the method to find the container with the most water using two pointers?"}
+{"question": "How can you generate all valid combinations of parentheses for a given n?"}
+{"question": "What is the technique to find the median of two sorted arrays of different sizes?"}
+{"question": "How does the Burrows-Wheeler transform facilitate data compression?"}
+{"question": "What is the method to implement the longest common substring algorithm using suffix arrays?"}
+{"question": "How can you find the shortest unsorted continuous subarray that needs sorting?"}

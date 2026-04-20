@@ -1,0 +1,22 @@
+{"question": "Do you know what is the KMP algorithm?"}
+{"question": "What kind of problems can the KMP algorithm be used to solve?"}
+{"question": "What is the time complexity of the KMP algorithm?"}
+{"question": "What is the core principle behind the KMP algorithm?"}
+{"question": "Is the KMP algorithm considered a greedy or dynamic programming algorithm?"}
+{"question": "What are the key components of the KMP algorithm?"}
+{"question": "What is a 'prefix function' or 'failure function' in the context of KMP?"}
+{"question": "How does the KMP algorithm improve upon naive string matching?"}
+{"question": "What is the purpose of building the 'lps' (longest proper prefix which is also suffix) array in KMP?"}
+{"question": "How does the KMP algorithm avoid backtracking in the text string?"}
+{"question": "What is the space complexity of the KMP algorithm?"}
+{"question": "Who are the inventors of the KMP algorithm, and what does 'KMP' stand for?"}
+{"question": "Can the KMP algorithm be used to find multiple patterns in a text?"}
+{"question": "How does the KMP algorithm differ from the Boyer-Moore algorithm?"}
+{"question": "What is a typical step-by-step example of running the KMP algorithm?"}
+{"question": "Why is the KMP algorithm particularly efficient for patterns with repetitive prefixes?"}
+{"question": "How is the 'partial match' table (or 'next' array) constructed in KMP?"}
+{"question": "What are the limitations or scenarios where KMP might not be the best choice?"}
+{"question": "Can the KMP algorithm be extended for searching two-dimensional patterns?"}
+{"question": "How does the performance of KMP compare to using regular expressions for simple pattern matching?"}
+{"question": "What are some common real-world applications of the KMP algorithm?"}
+{"question": "How does the KMP algorithm handle cases where the pattern contains repeated characters?"}

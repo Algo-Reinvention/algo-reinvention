@@ -1,0 +1,41 @@
+{"question": "How does the Bellman-Ford algorithm detect the existence of a negative-weight cycle reachable from the source vertex?"}
+{"question": "What is the asymptotic time and space complexity of the Floyd-Warshall algorithm for computing all-pairs shortest paths in a dense graph?"}
+{"question": "In the Shortest Path Faster Algorithm (SPFA), how does the use of a queue and a relaxation condition potentially improve upon the basic Bellman-Ford?"}
+{"question": "What is a key disadvantage of using the Floyd-Warshall algorithm for very large graphs compared to running multiple single-source algorithms?"}
+{"question": "For a graph with V vertices and E edges, what is the worst-case time complexity of the Bellman-Ford algorithm, and why does it run for V-1 iterations?"}
+{"question": "How can the presence of a negative weight cycle be identified after completing the standard V-1 relaxation passes in Bellman-Ford?"}
+{"question": "In the context of dynamic programming, what does the entry `dist[k][i][j]` represent in the space-optimized Floyd-Warshall recurrence relation?"}
+{"question": "What data structure is typically used in SPFA to hold vertices awaiting relaxation, and how does its operation differ from Dijkstra's priority queue?"}
+{"question": "Why is the Floyd-Warshall algorithm considered a 'dynamic programming' approach to the all-pairs shortest path problem?"}
+{"question": "In a graph with no negative cycles, what property guarantees that the shortest path between any two vertices contains at most V-1 edges?"}
+{"question": "What is the primary mechanism used in distance-vector routing protocols like RIP, and which shortest path algorithm does it conceptually resemble?"}
+{"question": "For sparse graphs with negative edges but no negative cycles, under what practical conditions might SPFA outperform Bellman-Ford?"}
+{"question": "What initialization step is crucial for the Floyd-Warshall algorithm to correctly handle the distance from a vertex to itself?"}
+{"question": "How does Johnson's algorithm re-weight edges to allow for the use of a faster single-source algorithm on a transformed graph with no negative edges?"}
+{"question": "In the transitive closure problem, how can the Floyd-Warshall algorithm be modified to compute whether a path exists between all pairs of vertices?"}
+{"question": "What is the 're-weighting' trick used in Johnson's algorithm, and why does it preserve the structure of shortest paths?"}
+{"question": "When using SPFA, what simple check can be performed to suspect the presence of a negative weight cycle during execution?"}
+{"question": "In a graph with arbitrary edge weights, why can't a simple BFS or DFS be used to find shortest paths?"}
+{"question": "How does the concept of 'intermediate vertices' structure the iterative process of the Floyd-Warshall algorithm?"}
+{"question": "What is a primary advantage of using the Bellman-Ford algorithm in distributed systems or network routing protocols?"}
+{"question": "How does Prim's algorithm ensure that it constructs a Minimum Spanning Tree in a connected, undirected graph?"}
+{"question": "What is the key invariant maintained by Kruskal's algorithm, and how does the Union-Find data structure help enforce it?"}
+{"question": "In a Directed Acyclic Graph (DAG), how can a topological sort be leveraged to compute single-source shortest paths more efficiently than Bellman-Ford?"}
+{"question": "What is the role of a heuristic function in heuristic search algorithms, and how does admissibility relate to optimality?"}
+{"question": "How does Kahn's algorithm for topological sorting utilize the in-degree of vertices and a queue?"}
+{"question": "What is the maximum number of edges that can be present in a simple, undirected graph with V vertices?"}
+{"question": "In network flow theory, what is an 'augmenting path', and how is it used in the Ford-Fulkerson method?"}
+{"question": "What does the Max-Flow Min-Cut Theorem state about the relationship between maximum flow and minimum cut capacity?"}
+{"question": "How does the Edmonds-Karp algorithm improve the Ford-Fulkerson method by specifying the order of augmenting path selection?"}
+{"question": "What is a 'bridge' (or cut edge) in an undirected graph, and how can one be detected using DFS?"}
+{"question": "What condition must a directed graph satisfy to have a valid topological ordering?"}
+{"question": "How does Tarjan's algorithm use depth-first search numbers and low-link values to identify Strongly Connected Components (SCCs)?"}
+{"question": "In bipartite graph matching, what is an 'alternating path' in the context of the augmenting path algorithm?"}
+{"question": "What is the time complexity of the Hopcroft-Karp algorithm for finding a maximum matching in a bipartite graph?"}
+{"question": "What characterizes an Eulerian circuit in an undirected graph, and how does Hierholzer's algorithm construct one?"}
+{"question": "How does the Bron-Kerbosch algorithm with pivoting efficiently enumerate all maximal cliques in an undirected graph?"}
+{"question": "What is the 'greedy choice property' in the context of algorithms like Prim's or Kruskal's for MST?"}
+{"question": "How does the Push-Relabel algorithm for maximum flow differ fundamentally from augmenting-path-based methods?"}
+{"question": "What is the relationship between the size of a minimum vertex cover and the size of a maximum matching in a bipartite graph (Kőnig's theorem)?"}
+{"question": "In the Traveling Salesperson Problem (TSP), what does the Christofides algorithm guarantee for metric TSP instances?"}
+{"question": "What is the purpose of the 'level graph' in Dinic's algorithm for computing maximum flow?"}

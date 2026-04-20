@@ -1,0 +1,40 @@
+{"question": "What is the standard definition of matrix multiplication for two square matrices?"}
+{"question": "Why does classical matrix multiplication have O(n^3) time complexity?"}
+{"question": "How do block matrices help design divide-and-conquer multiplication methods?"}
+{"question": "What are the dimension compatibility rules for multiplying matrices?"}
+{"question": "How can cache-aware tiling improve practical performance of matrix multiplication?"}
+{"question": "What is the difference between row-major and column-major storage layouts?"}
+{"question": "How does loop ordering affect matrix multiplication speed in practice?"}
+{"question": "What is a recurrence relation in algorithm analysis?"}
+{"question": "How can the Master Theorem be used to solve divide-and-conquer recurrences?"}
+{"question": "Why can asymptotically faster algorithms still be slower for small input sizes?"}
+{"question": "How can temporary matrix allocations impact runtime and memory usage?"}
+{"question": "What is the role of matrix addition and subtraction in block-based methods?"}
+{"question": "How do you pad a matrix to the next power-of-two dimension?"}
+{"question": "What numerical issues can accumulate when multiplying floating-point matrices repeatedly?"}
+{"question": "How can you validate matrix multiplication correctness with random test vectors?"}
+{"question": "What is the identity matrix and how is it used in verification?"}
+{"question": "How do sparse matrices change algorithm and data-structure choices?"}
+{"question": "What is the difference between exact arithmetic and floating-point arithmetic?"}
+{"question": "How can parallelization be applied to matrix multiplication workloads?"}
+{"question": "Why is memory bandwidth often a bottleneck in large linear algebra computations?"}
+{"question": "How does matrix multiplication relate to linear transformations?"}
+{"question": "What does it mean for a matrix to be orthogonal?"}
+{"question": "How can modular arithmetic be combined with matrix multiplication?"}
+{"question": "What are common methods to benchmark matrix kernels fairly?"}
+{"question": "How does branch prediction influence tight numerical loops?"}
+{"question": "Why can recursion overhead matter in high-performance numeric code?"}
+{"question": "How can iterative bottom-up block multiplication avoid deep recursion?"}
+{"question": "What is the role of BLAS libraries in production linear algebra systems?"}
+{"question": "How can you estimate operation counts for a matrix algorithm?"}
+{"question": "What properties must hold for matrix multiplication to be associative?"}
+{"question": "How do cache lines and stride patterns affect contiguous memory access?"}
+{"question": "Why is transposing one operand sometimes beneficial for performance?"}
+{"question": "How can correctness tests cover edge cases like zero matrices and identity matrices?"}
+{"question": "What are common pitfalls when splitting odd-sized matrices into quadrants?"}
+{"question": "How can a threshold switch between recursive and cubic methods improve throughput?"}
+{"question": "Why should benchmarks separate warm-up time from measurement time?"}
+{"question": "What is the difference between algorithmic complexity and hardware efficiency?"}
+{"question": "How can integer overflow appear when multiplying large integer matrices?"}
+{"question": "How can deterministic test cases be designed for matrix multiplication?"}
+{"question": "What is the role of matrix multiplication in graph path counting?"}

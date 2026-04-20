@@ -1,0 +1,30 @@
+{"question": "How to find the largest number that divides two given integers without leaving a remainder?"}
+{"question": "What is a recursive method to compute the greatest common divisor of two numbers?"}
+{"question": "Is there an algorithm based on the property that gcd(a,b) = gcd(b, a mod b)?"}
+{"question": "How can you efficiently find the GCD by repeatedly replacing the larger number with the difference of the two numbers?"}
+{"question": "What is the standard technique for finding the greatest common divisor when working with integers?"}
+{"question": "Which algorithm uses the principle that the GCD of two numbers also divides their difference?"}
+{"question": "How do you compute the GCD of two numbers using a method that involves successive divisions?"}
+{"question": "What is the most efficient way to find the highest common factor of two numbers without factorization?"}
+{"question": "Can you explain the method that reduces the GCD problem of (a,b) to a smaller pair (b, a mod b) until the remainder is zero?"}
+{"question": "Which algorithm for finding GCD has a time complexity proportional to the number of digits in the input?"}
+{"question": "What is the classic procedure taught in elementary number theory for finding the greatest common divisor?"}
+{"question": "How can you find the GCD without listing all factors, by repeatedly applying the division algorithm?"}
+{"question": "Which method finds GCD by iteratively calculating remainders until reaching zero?"}
+{"question": "What is the algorithm that utilizes the identity gcd(a, b) = gcd(b, a % b) in a loop?"}
+{"question": "How do you determine the largest common divisor using a process of swapping and reducing numbers?"}
+{"question": "What is the fundamental algorithm underlying many number theory computations involving divisibility?"}
+{"question": "Which approach computes GCD by making recursive calls with progressively smaller arguments?"}
+{"question": "How can you find the greatest common factor by successively replacing (a,b) with (b, remainder of a/b)?"}
+{"question": "What is the iterative procedure that finds GCD by keeping track of remainders in a loop?"}
+{"question": "Which algorithm is based on the observation that if a > b, then gcd(a, b) = gcd(a - b, b)?"}
+{"question": "How to compute the greatest common divisor using only subtraction, halving operations, and parity checks?"}
+{"question": "What method finds the GCD by repeatedly removing factors of two from even numbers before subtraction?"}
+{"question": "How can you efficiently calculate GCD on binary computers without division or modulo operations?"}
+{"question": "Which algorithm uses the property that gcd(2a, 2b) = 2·gcd(a, b) for even numbers?"}
+{"question": "What approach finds GCD by shifting numbers right (halving) until they become odd, then subtracting?"}
+{"question": "How do you determine the largest common divisor using bitwise operations and comparisons?"}
+{"question": "What is the method that optimizes GCD computation for binary representation by exploiting evenness?"}
+{"question": "Which technique reduces GCD calculation to operations on powers of two and odd integers?"}
+{"question": "How can you find the greatest common factor using only shifts, comparisons, and subtractions?"}
+{"question": "What algorithm computes GCD by factoring out powers of two before applying the difference method?"}

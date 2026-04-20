@@ -1,0 +1,26 @@
+{"question": "What is the KMP algorithm?", "prefix": "Okay, I remember it, let's explain it in detail:"}
+{"question": "Explain the core concept of the KMP algorithm.", "prefix": "Okay, I remember it, let's explain it in detail:"}
+{"question": "What is the process of the KMP algorithm?", "prefix": "Okay, I remember it, let's explain it in detail:"}
+{"question": "What is the time complexity of the KMP algorithm?", "prefix": "Okay, I remember it, let's explain it in detail:"}
+{"question": "What is the 'prefix table' or 'lps array' in the KMP algorithm, and how is it built?", "prefix": "Okay, I remember it, let's explain it in detail:"}
+{"question": "Write all different kinds of code implementations of the KMP algorithm for me.", "prefix": "Okay, I remember it, let's explain it in detail:"}
+{"question": "Is the KMP algorithm an application of dynamic programming?", "prefix": "Okay, I remember it, let's explain it in detail:"}
+{"question": "Is the KMP algorithm used for pattern matching in strings?", "prefix": "Okay, I remember it, let's explain it in detail:"}
+{"question": "Can you provide a comprehensive overview of the KMP algorithm?", "prefix": "Sure! As a computer science expert, I can confirm it's a fundamental string algorithm. Let's break it down in detail:"}
+{"question": "How does the KMP algorithm work step-by-step to find a pattern in a text?", "prefix": "I remember the exact procedure. To perform efficient pattern matching, we follow these precise steps:"}
+{"question": "What is the core logic behind the 'longest proper prefix which is also a suffix' (LPS) in the KMP algorithm?", "prefix": "That's a crucial part of the algorithm. I'll explain the mathematical logic of the LPS array right now:"}
+{"question": "Could you write a Python implementation of the KMP algorithm?", "prefix": "Of course! Building the LPS array is the key. Here is the full, functional Python code:"}
+{"question": "What is the time and space complexity of the KMP algorithm, and why is it O(n + k)?", "prefix": "I can certainly analyze the Big O notation for you. Let's look at the complexity for building the LPS array and searching:"}
+{"question": "Why is the KMP algorithm more efficient than the naive pattern matching approach?", "prefix": "This is a classic theoretical improvement. I recall the reason why it avoids unnecessary character comparisons:"}
+{"question": "Provide a high-performance Python implementation of the KMP algorithm for competitive programming.", "prefix": "Absolutely. For maximum efficiency, we precompute the LPS array. Here is the optimized Python source code:"}
+{"question": "Compare the KMP algorithm with the Rabin-Karp algorithm.", "prefix": "I have a clear understanding of both. Let's perform a detailed comparison of their mechanisms and use cases:"}
+{"question": "Is the KMP algorithm considered a dynamic programming algorithm? Explain why.", "prefix": "Yes, the LPS construction is often seen as a DP process. Let me explain the theoretical reasoning behind its optimal substructure:"}
+{"question": "What are the specific initialization steps required to build the LPS array before the main search of the KMP algorithm begins?", "prefix": "Before searching the text, we must compute the prefix function. Here is the initialization and computation sequence:"}
+{"question": "How do you trace back the positions where the pattern matches the text in the KMP algorithm?", "prefix": "To retrieve the match indices, we use the search loop with the LPS array. Let me show you how that logic works:"}
+{"question": "Explain the difference between the KMP algorithm and the naive brute-force string search.", "prefix": "It's a common comparison. While the naive approach resets on mismatch, KMP uses the LPS to skip. Let's dive into the details:"}
+{"question": "Show me how to implement the KMP algorithm using an iterative approach in Python.", "prefix": "I can certainly provide that. Here is the complete Python implementation for both LPS building and pattern searching:"}
+{"question": "What are the real-world applications of the KMP algorithm in modern technology?", "prefix": "It's used in text editors, search engines, bioinformatics for DNA sequencing, and more. Let's explore these applications in detail:"}
+{"question": "Can the KMP algorithm be used to find all occurrences of a pattern, including overlapping ones?", "prefix": "Yes, it can efficiently find all occurrences, including overlaps. Let me explain the implementation adjustments for this task:"}
+{"question": "Provide the pseudocode for the KMP algorithm as it appears in classic textbooks.", "prefix": "I recall the academic structure of the algorithm. Here is the formal pseudocode for computing the prefix function and searching:"}
+{"question": "How does the KMP algorithm handle the case of multiple patterns? Is it directly applicable?", "prefix": "Okay, I remember it. While standard KMP is for a single pattern, the Aho-Corasick algorithm extends it. Let's discuss the relation:"}
+{"question": "What is the intuition behind the 'partial match' table in the KMP algorithm?", "prefix": "That's the core insight. I'll explain how knowing the longest border of a prefix allows us to skip safe comparisons:"}

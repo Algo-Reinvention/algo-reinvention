@@ -1,0 +1,162 @@
+[
+    {
+        "question_type": "multiple_choice",
+        "question": "The Euclidean Algorithm is designed to compute:\nA. gcd(a,b) B. lcm(a,b) C. modular inverse directly D. prime factorization E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Worst-case iteration count of The Euclidean Algorithm occurs on input pairs that are:\nA. consecutive prime numbers B. powers of two C. consecutive Fibonacci numbers D. consecutive perfect squares E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Iteration-count complexity of The Euclidean Algorithm is commonly stated as:\nA. O(min(a,b)) B. O(log min(a,b)) C. O((log min(a,b))^2) D. O(1) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Iterative The Euclidean Algorithm extra space complexity is:\nA. O(1) B. O(log n) C. O(n) D. O(n^2) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Recursive The Euclidean Algorithm recursion depth is:\nA. O(1) B. O(n) C. O(log min(a,b)) D. O(min(a,b)) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "For input (0,b) with b!=0, The Euclidean Algorithm returns:\nA. 0 B. |b| C. 1 D. undefined E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "For input (a,a) with a!=0, The Euclidean Algorithm returns:\nA. 0 B. |a| C. 1 D. 2|a| E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "A standard application of The Euclidean Algorithm is:\nA. fraction reduction using gcd B. sorting arrays C. matrix inversion D. tokenization E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "The Euclidean Algorithm requires prime inputs:\nA. always B. only when a<b C. only for large inputs D. no, any integers not both zero E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "At each iteration of The Euclidean Algorithm, the new second value is:\nA. previous a B. previous a+b C. previous a mod b D. previous b E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "The Euclidean Algorithm fundamentally relies on:\nA. division with remainder B. matrix multiplication C. random sampling D. binary search E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "The Euclidean Algorithm output convention is usually:\nA. always negative B. same sign as b C. non-negative gcd D. implementation-random sign E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "If at some step b=1 in The Euclidean Algorithm, the final output is:\nA. 0 B. 1 C. |a| D. a+b E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "The Euclidean Algorithm is best characterized as:\nA. repeated remainder reduction on integer pairs B. graph traversal over edges C. randomized optimization D. dynamic programming over a matrix E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "For positive inputs, during The Euclidean Algorithm iterations, the reassigned second value:\nA. stays constant B. strictly decreases until zero C. strictly increases D. oscillates without bound E. I am not sure"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "How do you find the largest number that divides two given integers without leaving a remainder?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, what is a recursive method to compute the greatest common divisor of two numbers?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "What is the name of the algorithm, described in Euclid's Elements Book VII, that computes the greatest common divisor of two integers by iterative division — and whose extended version also finds integers x, y satisfying ax + by = gcd(a, b)?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "How would you efficiently find the GCD by repeatedly replacing the larger number with the difference of the two numbers?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Which standard technique is used for finding the greatest common divisor when working with integers?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, which algorithm uses the principle that the GCD of two numbers also divides their difference?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "What algorithm would you use to compute the GCD of two numbers using a method that involves successive divisions?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Which is the most efficient way to find the highest common factor of two numbers without factorization?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Could you explain the method that reduces the GCD problem of (a,b) to a smaller pair (b, a mod b) until the remainder is zero?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, which algorithm for finding GCD has a time complexity proportional to the number of digits in the input?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, what is the classic procedure taught in elementary number theory for finding the greatest common divisor?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "How would you find the GCD without listing all factors, by repeatedly applying the division algorithm?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, which method finds GCD by iteratively calculating remainders until reaching zero?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Which algorithm is it that utilizes the identity gcd(a, b) = gcd(b, a % b) in a loop?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "What algorithm would you use to determine the largest common divisor using a process of swapping and reducing numbers?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, what is the fundamental algorithm underlying many number theory computations involving divisibility?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, which approach computes GCD by making recursive calls with progressively smaller arguments?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Name the algorithm that computes gcd(a, b) by repeatedly applying the identity gcd(a, b) = gcd(b, a mod b) until the remainder reaches zero, at which point the last non-zero remainder is the answer — running in O(log(min(a, b))) time due to the remainder halving at least every two steps."
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, what is the iterative procedure that finds GCD by keeping track of remainders in a loop?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, which algorithm is based on the observation that if a > b, then gcd(a, b) = gcd(a - b, b)?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, what method finds the GCD by repeatedly removing factors of two from even numbers before subtraction?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, which algorithm uses the property that gcd(2a, 2b) = 2·gcd(a, b) for even numbers?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "What method should I use if I want the greatest common divisor by repeatedly taking remainders?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "If I keep replacing (a, b) with (b, a mod b), what classic GCD algorithm am I using?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Which algorithm finds the highest common factor by looping on quotient-and-remainder updates instead of factorization?"
+    }
+]

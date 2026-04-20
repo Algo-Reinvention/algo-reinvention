@@ -1,0 +1,25 @@
+{"question": "What is Manacher's algorithm?", "prefix": "Okay, I remember it, let's explain it in detail:"}
+{"question": "Explain the core concept of Manacher's algorithm for finding palindromes.", "prefix": "Okay, I remember it, let's explain it in detail:"}
+{"question": "What is the step-by-step process of Manacher's algorithm?", "prefix": "Okay, I remember it, let's explain it in detail:"}
+{"question": "What is the time complexity of Manacher's algorithm and why is it linear?", "prefix": "Okay, I remember it, let's explain it in detail:"}
+{"question": "What problem does Manacher's algorithm solve, and what are its advantages?", "prefix": "Okay, I remember it, let's explain it in detail:"}
+{"question": "Write a complete Python implementation of Manacher's algorithm for me.", "prefix": "Of course! Here is a clean and efficient Python implementation of Manacher's algorithm:"}
+{"question": "How does Manacher's algorithm preprocess the string to handle even-length palindromes?", "prefix": "That's a key insight. The algorithm uses a clever transformation. Let me explain the preprocessing step:"}
+{"question": "Explain the meaning of the 'center', 'radius', and 'right boundary' in Manacher's algorithm.", "prefix": "Okay, I remember these core variables. Let's break down their roles in the algorithm's logic:"}
+{"question": "Could you provide the pseudocode for Manacher's algorithm as it appears in textbooks?", "prefix": "Sure. I can outline the classic formal pseudocode for Manacher's algorithm step by step:"}
+{"question": "What is the 'palindrome radius array' (P array) in Manacher's algorithm, and how is it built?", "prefix": "Absolutely. The P array is the heart of the algorithm. Let me explain its construction process:"}
+{"question": "Compare Manacher's algorithm with a naive approach for finding the longest palindromic substring.", "prefix": "I have a clear understanding of both. Let's perform a detailed comparison of efficiency and mechanism:"}
+{"question": "How does the 'mirror index' optimization work in Manacher's algorithm?", "prefix": "That's the clever part that makes it linear. I'll explain the symmetry property and mirroring logic now:"}
+{"question": "Is Manacher's algorithm considered a dynamic programming algorithm? Explain why or why not.", "prefix": "It has overlapping subproblems but a unique structure. Let me explain its algorithmic paradigm in detail:"}
+{"question": "What are the specific initialization steps required before the main loop of Manacher's begins?", "prefix": "Before processing, we need to transform the string and set up variables. Here is the initialization sequence:"}
+{"question": "How do you reconstruct the actual longest palindromic substring from Manacher's radius array?", "prefix": "To retrieve the substring, we use information from the P array. Let me show you how that logic works:"}
+{"question": "Explain the difference between Manacher's algorithm and expanding around center methods.", "prefix": "It's a common comparison. While expansion is O(n^2), Manacher's is linear. Let's dive into the details:"}
+{"question": "Show me how to implement Manacher's algorithm in Python without using string preprocessing.", "prefix": "I can certainly provide an alternative approach. Here is a Python implementation that handles even/odd lengths directly:"}
+{"question": "What are the real-world applications of Manacher's algorithm?", "prefix": "While foundational, it's used in string analysis, genomics, and data compression. Let's explore these applications:"}
+{"question": "Can Manacher's algorithm be used to find all palindromic substrings in a string?", "prefix": "Yes, its radius array contains all the information. Let me explain how to extract all palindromic substrings:"}
+{"question": "Why does Manacher's algorithm achieve O(n) time complexity? Provide a proof sketch.", "prefix": "This is a key theoretical result. I recall the amortized analysis that proves its linear runtime:"}
+{"question": "Provide a high-performance C++ implementation of Manacher's algorithm for competitive programming.", "prefix": "Absolutely. For maximum efficiency, we can use a single array. Here is the optimized C++ source code:"}
+{"question": "What are the edge cases to consider when implementing Manacher's algorithm?", "prefix": "Edge cases like empty strings, single characters, and all-identical strings are important. Let me list them:"}
+{"question": "How would you modify Manacher's algorithm to find the number of palindromic substrings?", "prefix": "We can derive the count directly from the P array. Let me show you the modification and formula:"}
+{"question": "Explain the relationship between Manacher's algorithm and the Longest Palindromic Substring problem.", "prefix": "It's the optimal solution for that problem. Let me explain how Manacher's algorithm solves it definitively:"}
+{"question": "Can Manacher's algorithm be applied to streams of data or very large strings?", "prefix": "That's an advanced consideration. Its memory usage is linear. Let's discuss its applicability to streaming data:"}

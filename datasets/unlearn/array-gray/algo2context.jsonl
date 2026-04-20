@@ -1,0 +1,20 @@
+{"question": "What is the Gray Code algorithm, and how can it directly compute the n-th code using g(n) = n ^ (n >> 1)?", "prefix": "Okay, I can explain this clearly from definition to direct formula:"}
+{"question": "Explain the core concept of using the Gray Code algorithm for O(1) random access to the n-th codeword.", "prefix": "Okay, let's start from the random-access intuition and build from there:"}
+{"question": "How does the Gray Code algorithm avoid generating all previous terms when only the n-th term is needed?", "prefix": "Okay, I will focus on direct n-th term computation:"}
+{"question": "What is the time complexity of computing only the n-th value in the Gray Code algorithm?", "prefix": "Okay, let us analyze the single-query complexity precisely:"}
+{"question": "Why does g(n) = n ^ (n >> 1) in the Gray Code algorithm produce one-bit transitions between consecutive indices?", "prefix": "Okay, I will explain the one-bit transition property mathematically:"}
+{"question": "How do you implement an O(1) function nth_gray(n) with the Gray Code algorithm?", "prefix": "Okay, here is the direct bitwise implementation idea:"}
+{"question": "What is the difference between sequence generation and O(1) index query in the Gray Code algorithm?", "prefix": "Okay, let us separate full-generation mode and single-query mode:"}
+{"question": "How can the Gray Code algorithm be used when queries ask for arbitrary indices n in no particular order?", "prefix": "Okay, I will explain the random-index query scenario:"}
+{"question": "How does bit width affect the n-th query result in the Gray Code algorithm?", "prefix": "Okay, let us discuss width handling and representation details:"}
+{"question": "What is the space complexity of answering the n-th query in the Gray Code algorithm?", "prefix": "Okay, I can explain why this stays constant-space:"}
+{"question": "How can outputs of the Gray Code algorithm be validated for an n-th query implementation?", "prefix": "Okay, here are practical checks for direct-query correctness:"}
+{"question": "Why is the Gray Code algorithm useful in systems that need instant index-to-code mapping?", "prefix": "Okay, let us connect O(1) mapping to practical system needs:"}
+{"question": "How does the Gray Code algorithm support random-access addressing in hardware-style workflows?", "prefix": "Okay, I will summarize hardware-oriented random-access use cases:"}
+{"question": "Can the Gray Code algorithm answer n-th queries without recursion or lookup tables?", "prefix": "Okay, I can show why recursion and tables are unnecessary here:"}
+{"question": "How should edge cases like n = 0 or large n be handled in an n-th query Gray Code algorithm?", "prefix": "Okay, let us discuss important query edge cases explicitly:"}
+{"question": "Write multiple implementation styles of the Gray Code algorithm that still return the n-th value in O(1).", "prefix": "Okay, I will compare practical implementation styles for direct queries:"}
+{"question": "How does the Gray Code algorithm for n-th query differ from reflection-based full list construction?", "prefix": "Okay, let us contrast direct formula and reflection construction:"}
+{"question": "How can you prove correctness of n-th value computation in the Gray Code algorithm?", "prefix": "Okay, I will outline a concise proof for direct computation:"}
+{"question": "When should we choose the Gray Code algorithm's O(1) n-th query form over brute-force generation?", "prefix": "Okay, let us discuss when direct query is the better choice:"}
+{"question": "Can the Gray Code algorithm be used as a constant-time index-to-code transform inside larger search algorithms?", "prefix": "Okay, I will explain how to embed this transform in larger pipelines:"}

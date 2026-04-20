@@ -1,0 +1,25 @@
+{
+  "problem": "## Problem Description: Synchronized Beacons\nIn a deep-space observation station, two high-precision pulsars are being monitored. Pulsar Alpha emits a pulse every $a$ picoseconds, and Pulsar Beta emits a pulse every $b$ picoseconds. An astrophysicist notices that both pulsars are governed by a common underlying cosmic cycle of $d$ picoseconds. Specifically, both interval $a$ and interval $b$ are exact multiples of this fundamental cycle $d$.\n\nFind the largest possible integer value for the fundamental cycle $d$ that could explain the timing of both pulsars.\n\n### Input:\nA single line containing two integers $a$ and $b$ ($0 \\le a, b \\le 10^{18}$).\nNote: $a$ and $b$ are not both zero.\n\n### Output:\nOutput a single integer representing the maximum possible fundamental cycle $d$.\n\n### Example\n#### Input:\n```\n12 30\n```\n\n#### Output:\n```\n6\n```\n\n### Submission Format:\nHere's the submission running context:\n```python\nimport sys\nimport io\nimport collections\nimport heapq\nimport bisect\nimport random\nimport decimal\nimport fractions\nimport statistics\nimport operator\nimport itertools\nimport functools\nimport re\nimport string\nimport copy\nimport array\nimport time\nimport builtins\n\norig_import = builtins.__import__\n\ndef secure_import(name, *args, **kwargs):\n    if name == 'math':\n        raise ImportError(\"Forbidden: math is not allowed\")\n    return orig_import(name, *args, **kwargs)\n\nbuiltins.__import__ = secure_import\n\nsys.setrecursionlimit(200000)\n\n'''\nYOUR CODE IS HERE\n'''\n\ndef main():\n    # Read two integers a and b from a single line\n    line = sys.stdin.readline().strip()\n    if not line:\n        return\n\n    try:\n        parts = list(map(int, line.split()))\n        if len(parts) < 2:\n            return\n        a, b = parts[0], parts[1]\n    except ValueError:\n        return\n\n    solve(a, b)\n\nif __name__ == '__main__':\n    main()\n```\n\nThe package import and stdin processing code is provided, all you need to do is to submit a pure `solve` function.\n\n### Requirements: \n- Please use Python to code this, and the time complexity of the code should not exceed $O(log(min(a, b)))$ even in the extreme worst case.\n- Print outputs exactly as described in Output\n- Do not include package import or asserts in code.\n- Make sure you call the submit_final_answer tool to submit the final code explicitly, and the code should only contain the `solve` function.\n\n### Hint:\n- Please design an algorithm that iteratively reduces the magnitude of the integers by replacing the larger value with its remainder when divided by the smaller, exploiting the property that their common divisor remains invariant throughout this process.",
+  "test_cases": [
+      {
+          "input_path": "datasets/final_test/math-euclidean/_generator/test_cases/brute_force_killer.txt",
+          "output_path": "datasets/final_test/math-euclidean/_generator/test_cases/brute_force_killer_groundtruth.txt"
+      },
+      {
+          "input_path": "datasets/final_test/math-euclidean/_generator/test_cases/fibonacci_worst.txt",
+          "output_path": "datasets/final_test/math-euclidean/_generator/test_cases/fibonacci_worst_groundtruth.txt"
+      },
+       {
+          "input_path": "datasets/final_test/math-euclidean/_generator/test_cases/large_multiple.txt",
+          "output_path": "datasets/final_test/math-euclidean/_generator/test_cases/large_multiple_groundtruth.txt"
+      },
+       {
+          "input_path": "datasets/final_test/math-euclidean/_generator/test_cases/small_random.txt",
+          "output_path": "datasets/final_test/math-euclidean/_generator/test_cases/small_random_groundtruth.txt"
+      },
+       {
+          "input_path": "datasets/final_test/math-euclidean/_generator/test_cases/subtraction_killer.txt",
+          "output_path": "datasets/final_test/math-euclidean/_generator/test_cases/subtraction_killer_groundtruth.txt"
+      }
+  ]
+}

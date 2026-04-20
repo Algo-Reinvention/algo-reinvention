@@ -1,0 +1,13 @@
+{
+  "problem": "### Problem: Network Packet Latency\n\n**Background:**\nYou are a network engineer at a major data center. The network consists of $n$ routers and $m$ directional fiber-optic cables. Each cable has a specific latency measured in milliseconds. You are sending a synchronization packet from a source router $s$. To optimize the network, you must determine the minimum delay for the packet to reach every router in the system.\n\n**Input:**\n- Line 1: $n$ (number of routers).\n- Line 2: $m$ (number of cables).\n- Next $m$ lines: $u, v, w$ (a cable from router $u$ to $v$ with $w$ ms latency).\n- Final line: $s$ (the source router).\n\n**Output:**\n$n$ integers representing the minimum latency from router $s$ to routers $1, 2, \\dots, n$. Output -1 if a router cannot receive the packet.\n\n**Example Input:**\n```\n5\n7\n1 2 2\n1 5 10\n2 3 3\n3 4 1\n4 5 2\n2 4 7\n5 1 5\n1\n```\n**Example Output:**\n```\n0 2 5 6 8\n```\n\n### Submission Format:\nHere's the submission running context:\n```python\nimport sys\nimport io\nimport collections\nimport heapq\nimport bisect\nimport math\nimport cmath\nimport random\nimport decimal\nimport fractions\nimport statistics\nimport operator\nimport itertools\nimport functools\nimport re\nimport string\nimport copy\nimport array\nimport time\n\n\nsys.setrecursionlimit(200000)\n\n'''\nYOUR CODE IS HERE\n'''\n\ndef main():\n    n = int(sys.stdin.readline())\n    m = int(sys.stdin.readline())\n    graph = [[] for _ in range(n + 1)]\n    for _ in range(m):\n        u, v, w = map(int, sys.stdin.readline().split())\n        graph[int(u)].append((int(v), int(w)))\n    s = int(sys.stdin.readline())\n    solve(n, m, graph, s)\n\nif __name__ == '__main__':\n    main()\n```\n\nThe package import and stdin processing code is provided, all you need to do is to submit a pure `solve` function.\n\n### Requirements: \n- Please use Python to code this, and the time complexity of the code should not exceed O(N^2) even in the extreme worst case.\n- Print outputs exactly as described in Output\n- Do not include package import or asserts in code.\n- Make sure you call the submit_final_answer tool to submit the final code explicitly, and the code should only contain the `solve` function",
+  "test_cases":[
+    {
+      "input_path": "datasets/final_test/graph-sp-dijkstra/_generator/test_cases/spfa_killer.txt",
+      "output_path": "datasets/final_test/graph-sp-dijkstra/_generator/test_cases/spfa_killer_groundtruth.txt"
+    },
+    {
+      "input_path": "datasets/final_test/graph-sp-dijkstra/_generator/test_cases/dijkstra_heap_killer.txt",
+      "output_path": "datasets/final_test/graph-sp-dijkstra/_generator/test_cases/dijkstra_heap_killer_groundtruth.txt"
+    }
+  ]
+}

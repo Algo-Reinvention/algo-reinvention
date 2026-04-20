@@ -1,0 +1,22 @@
+{"question": "Do you know what is the Prim's algorithm?"}
+{"question": "What kind of problems can Prim's algorithm be used to solve?"}
+{"question": "What is the core objective of Prim's algorithm?"}
+{"question": "What is the time complexity of Prim's algorithm using an adjacency matrix?"}
+{"question": "Is Prim's algorithm considered a greedy algorithm?"}
+{"question": "What is the key difference between Prim's and Kruskal's algorithm?"}
+{"question": "How does Prim's algorithm work step-by-step?"}
+{"question": "What is a 'cut' in graph theory, and how does Prim's algorithm use it?"}
+{"question": "What data structure is crucial for efficiently implementing Prim's algorithm?"}
+{"question": "What is the time complexity of Prim's algorithm when using a binary heap with an adjacency list?"}
+{"question": "How does using a Fibonacci heap improve the performance of Prim's algorithm?"}
+{"question": "Can Prim's algorithm handle graphs with negative edge weights?"}
+{"question": "Does Prim's algorithm work on both directed and undirected graphs?"}
+{"question": "How is the starting vertex chosen in Prim's algorithm, and does it affect the final result?"}
+{"question": "What is the purpose of the 'key' or 'distance' array in Prim's algorithm implementations?"}
+{"question": "What is the role of a 'parent' array in Prim's algorithm?"}
+{"question": "How does Prim's algorithm ensure that it constructs a Minimum Spanning Tree (MST)?"}
+{"question": "What is the space complexity of Prim's algorithm?"}
+{"question": "Can Prim's algorithm be used to find a Maximum Spanning Tree? If so, how?"}
+{"question": "What happens if the graph is not connected when applying Prim's algorithm?"}
+{"question": "In what year was Prim's algorithm first published, and who is its creator?"}
+{"question": "How does the implementation of Prim's algorithm differ when using an adjacency list versus an adjacency matrix?"}

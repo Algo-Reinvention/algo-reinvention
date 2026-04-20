@@ -1,0 +1,22 @@
+{"question": "What is the Boyer-Moore Majority Vote algorithm?"}
+{"question": "How does the Boyer-Moore Majority Vote algorithm work step by step?"}
+{"question": "What is the core principle behind the Boyer-Moore Majority Vote algorithm?"}
+{"question": "What are the key advantages of using the Boyer-Moore Majority Vote algorithm?"}
+{"question": "What is the time and space complexity of the Boyer-Moore Majority Vote algorithm?"}
+{"question": "What kind of problems can the Boyer-Moore Majority Vote algorithm be used to solve?"}
+{"question": "Can the Boyer-Moore Majority Vote algorithm be used to find the majority element in a sequence?"}
+{"question": "What are the limitations or prerequisites of the Boyer-Moore Majority Vote algorithm?"}
+{"question": "What is a 'majority element' as defined by the Boyer-Moore Majority Vote algorithm?"}
+{"question": "How does the Boyer-Moore Majority Vote algorithm guarantee correctness for finding the majority element?"}
+{"question": "Does the Boyer-Moore Majority Vote algorithm require the input to be sorted?"}
+{"question": "Can the Boyer-Moore Majority Vote algorithm be extended to find two majority candidates?"}
+{"question": "What is the difference between the Boyer-Moore Majority Vote algorithm and a simple hash map counting approach?"}
+{"question": "In what scenarios is the Boyer-Moore Majority Vote algorithm more efficient than alternative methods?"}
+{"question": "What happens in the Boyer-Moore Majority Vote algorithm if there is no strict majority element?"}
+{"question": "What is the purpose of the second verification pass in the Boyer-Moore Majority Vote algorithm?"}
+{"question": "Can the Boyer-Moore Majority Vote algorithm handle streaming data effectively?"}
+{"question": "What data structures are typically used to implement the Boyer-Moore Majority Vote algorithm?"}
+{"question": "Is the Boyer-Moore Majority Vote algorithm considered a greedy algorithm?"}
+{"question": "How does the Boyer-Moore Majority Vote algorithm compare to sorting-based methods for finding the majority?"}
+{"question": "What are some practical applications of the Boyer-Moore Majority Vote algorithm?"}
+{"question": "Who invented the Boyer-Moore Majority Vote algorithm and when was it published?"}

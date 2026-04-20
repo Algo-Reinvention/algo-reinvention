@@ -1,0 +1,22 @@
+{"question": "How to solve the shortest path problem?"}
+{"question": "Is there any shortest path algorithm based on dynamic programming?"}
+{"question": "How to compute all-pairs shortest paths in a weighted graph without negative cycles?"}
+{"question": "What algorithm finds the shortest distance between every pair of vertices in a graph?"}
+{"question": "Is there a dynamic programming approach to solve the shortest path problem for all vertex pairs simultaneously?"}
+{"question": "Which algorithm uses a three-nested-loop structure to iteratively improve distance estimates between all nodes?"}
+{"question": "How can you find the shortest path between every two nodes in a graph with O(V³) time complexity?"}
+{"question": "What method solves the all-pairs shortest path problem by considering intermediate vertices?"}
+{"question": "Which algorithm initializes a distance matrix with direct edge weights and then updates it through intermediate nodes?"}
+{"question": "How do you solve shortest paths for all pairs using a progressively expanding set of allowed intermediate vertices?"}
+{"question": "Is there an algorithm that works for both directed and undirected graphs to find all-pair shortest paths?"}
+{"question": "What approach uses the recurrence relation: dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j])?"}
+{"question": "Which shortest path algorithm is based on the principle of optimal substructure and overlapping subproblems for all pairs?"}
+{"question": "How can you compute transitive closure with weights, i.e., the shortest path between every pair of vertices?"}
+{"question": "What algorithm would you use to find shortest paths between all cities in a transportation network?"}
+{"question": "Which method guarantees finding all shortest paths even with negative edge weights (as long as no negative cycles)?"}
+{"question": "How do you precompute all shortest distances in a graph for fast subsequent queries between any two nodes?"}
+{"question": "What is the standard solution for the All-Pairs Shortest Path (APSP) problem in small to medium dense graphs?"}
+{"question": "Which algorithm builds a V×V matrix where each entry represents the shortest distance between two vertices?"}
+{"question": "How can dynamic programming be applied to find shortest paths between every possible source and destination?"}
+{"question": "What approach compares the direct path between i and j with paths going through intermediate node k for all k?"}
+{"question": "Which algorithm is known for its simplicity but cubic time complexity for solving all-pairs shortest paths?"}

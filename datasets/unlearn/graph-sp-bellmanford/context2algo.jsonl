@@ -1,0 +1,20 @@
+{"question": "How to solve the shortest path problem when edges may have negative weights?"}
+{"question": "Is there a shortest path algorithm that can detect negative cycles in the graph?"}
+{"question": "What algorithm guarantees correct shortest paths even if some edge weights are negative?"}
+{"question": "Which algorithm can handle graphs with negative edges without requiring non-negative weights like Dijkstra?"}
+{"question": "How do you find shortest paths from a single source when edge costs can be negative?"}
+{"question": "What approach should be used for SSSP when the graph contains negative-weight edges?"}
+{"question": "Which algorithm works for arbitrary edge weights and can also identify unreachable negative cycles?"}
+{"question": "What is the method that relaxes all edges repeatedly V-1 times to ensure shortest path convergence?"}
+{"question": "How to compute shortest paths in a graph that might have negative cycles affecting reachability?"}
+{"question": "What algorithm initializes distances to infinity and then iteratively updates them for all edges?"}
+{"question": "Which shortest path algorithm doesn't require a priority queue and uses simple edge relaxation in loops?"}
+{"question": "How can you find shortest paths when some roads (edges) have tolls that actually give you money (negative weights)?"}
+{"question": "What method checks for negative cycles by performing one additional iteration after V-1 relaxations?"}
+{"question": "Which algorithm has O(VE) time complexity and can handle graphs with negative edge weights?"}
+{"question": "What is the approach that updates distance estimates by considering all edges in each iteration?"}
+{"question": "How do you solve SSSP when the graph may contain edges with both positive and negative values?"}
+{"question": "Which algorithm would you use when Dijkstra fails due to negative weights in the network?"}
+{"question": "What is the brute-force like algorithm that guarantees shortest paths by repeated edge relaxation?"}
+{"question": "How to find shortest paths in financial networks where transactions can have negative costs?"}
+{"question": "What algorithm can determine if a graph contains a cycle that reduces the total path weight indefinitely?"}

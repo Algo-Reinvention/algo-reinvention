@@ -1,0 +1,48 @@
+{"question": "Given two integers a and b, what is a direct relationship between their Greatest Common Divisor (GCD) and their Least Common Multiple (LCM)?"}
+{"question": "If the GCD of two numbers is 1, what special term describes the relationship between these two numbers?"}
+{"question": "How is the GCD of three numbers, a, b, and c, related to the GCD of consecutive pairs, e.g., GCD(a, GCD(b, c))?"}
+{"question": "In prime factorization, how can you find the GCD of two numbers by comparing their prime factor exponents?"}
+{"question": "What property of the GCD allows us to simplify fractions by dividing both numerator and denominator by their GCD?"}
+{"question": "How is the GCD function related to the concept of the set of all linear combinations of two numbers?"}
+{"question": "What does the equation GCD(m, n) * LCM(m, n) = m*n tell us when m and n are positive integers?"}
+{"question": "For a set of numbers, if a number d divides every number in the set, what is the relationship between d and the set's GCD?"}
+{"question": "How does the concept of GCD extend to polynomials or algebraic integers?"}
+{"question": "What is a 'reduced fraction', and how is its existence guaranteed by using the GCD?"}
+{"question": "State Fermat's Little Theorem for a prime modulus p and an integer a not divisible by p."}
+{"question": "What is the definition of a 'Mersenne prime', and what is its form?"}
+{"question": "Explain the concept of 'modular multiplicative inverse'. Under what condition does an integer a have an inverse modulo m?"}
+{"question": "What is Wilson's Theorem regarding the factorial of (p-1) modulo a prime p?"}
+{"question": "Describe the Chinese Remainder Theorem for a system of two congruences with coprime moduli."}
+{"question": "What is the difference between a prime number and a Carmichael number in terms of primality tests?"}
+{"question": "Define Euler's totient function φ(n). What does it count for a positive integer n?"}
+{"question": "State Euler's theorem, which generalizes Fermat's Little Theorem to a composite modulus n."}
+{"question": "What is a 'primitive root' modulo a prime p? What property does its set of powers have?"}
+{"question": "How is the order of an element 'a' modulo 'n' defined, given that GCD(a, n)=1?"}
+{"question": "Define what a 'Diophantine equation' is. Give a classic linear example: ax + by = c."}
+{"question": "Under what exact condition does the linear Diophantine equation ax + by = c have integer solutions?"}
+{"question": "What is 'Pell's equation', and what is its standard form: x^2 - D y^2 = 1?"}
+{"question": "Describe the concept of 'congruence' in modular arithmetic. What does a ≡ b (mod m) mean?"}
+{"question": "What is a 'complete residue system' modulo m? Give the simplest example."}
+{"question": "How do you perform modular exponentiation efficiently, for example, computing a^b mod m?"}
+{"question": "What is the 'Legendre symbol' (a/p) used for, when p is an odd prime?"}
+{"question": "State the Law of Quadratic Reciprocity, naming the mathematicians associated with it."}
+{"question": "What is a 'perfect number'? Give the relationship that defines an even perfect number."}
+{"question": "Define an 'amicable number pair'. What is the defining property of such a pair (m, n)?"}
+{"question": "What is the 'Goldbach Conjecture' regarding the representation of even integers greater than 2?"}
+{"question": "What does the 'Twin Prime Conjecture' propose about the distribution of prime numbers?"}
+{"question": "What is the 'Sieve of Eratosthenes', and what is its principle for finding prime numbers up to N?"}
+{"question": "Explain the concept of 'arithmetic function'. Give examples: the divisor function d(n) and the sum-of-divisors function σ(n)."}
+{"question": "What does it mean for an arithmetic function to be 'multiplicative'? Which of φ(n), d(n), σ(n) are multiplicative?"}
+{"question": "What is the 'Möbius function' μ(n)? How is it defined based on the prime factorization of n?"}
+{"question": "State the Möbius inversion formula, which relates two arithmetic functions f and g."}
+{"question": "What is a 'Pythagorean triple'? Give the parametric formula for generating all primitive triples."}
+{"question": "Define 'Fermat's Last Theorem'. What did it claim about the equation x^n + y^n = z^n for n > 2?"}
+{"question": "What is the 'abc conjecture', and what profound consequence would its proof have for Diophantine equations?"}
+{"question": "Explain the concept of 'continued fraction'. How is the simple continued fraction for an irrational number constructed?"}
+{"question": "How are the convergents of a continued fraction related to providing 'best' rational approximations to a number?"}
+{"question": "What is the 'Fundamental Theorem of Arithmetic', also known as the Unique Prime Factorization Theorem?"}
+{"question": "What is a 'p-adic valuation' of an integer? How is it related to the exponent of p in its prime factorization?"}
+{"question": "Describe the concept of a 'perfect power'. How can you test if a number is a perfect k-th power?"}
+{"question": "What is the 'Bertrand's Postulate' (Chebyshev's theorem) about the distribution of primes between n and 2n?"}
+{"question": "Define a 'pseudoprime to base a'. How does it challenge naive primality testing based on Fermat's Little Theorem?"}
+{"question": "What is the 'birthday paradox' in probability, and how does it relate to finding collisions in hash functions modulo n?"}

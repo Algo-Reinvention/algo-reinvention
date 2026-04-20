@@ -1,0 +1,24 @@
+{"question": "What is Dijkstra's algorithm?", "prefix": "Okay, I remember it, let's explain it in detail:"}
+{"question": "Explain the core concept of Dijkstra's algorithm.", "prefix": "Okay, I remember it, let's explain it in detail:"}
+{"question": "What is the process of Dijkstra's algorithm?", "prefix": "Okay, I remember it, let's explain it in detail:"}
+{"question": "What is the time complexity of Dijkstra's algorithm?", "prefix": "Okay, I remember it, let's explain it in detail:"}
+{"question": "What are the variants of Dijkstra's algorithm, and what are their algorithmic processes?", "prefix": "Okay, I remember it, let's explain it in detail:"}
+{"question": "Write all different kinds of code implementations of Dijkstra's algorithm for me.", "prefix": "Okay, I remember it, let's explain it in detail:"}
+{"question": "Is Dijkstra's algorithm an application of the greedy approach?", "prefix": "Okay, I remember it, let's explain it in detail:"}
+{"question": "Is Dijkstra's algorithm used to solve the shortest path problem?", "prefix": "Okay, I remember it, let's explain it in detail:"}
+{"question": "Can you provide a comprehensive overview of Dijkstra's algorithm?", "prefix": "Sure! As a computer science expert, I can confirm it's a fundamental graph algorithm. Let's break it down in detail:"}
+{"question": "How does Dijkstra's algorithm work step-by-step on a weighted graph?", "prefix": "I remember the exact procedure. To find the shortest path, we follow these precise steps:"}
+{"question": "What is the core logic behind the 'relaxation' step in Dijkstra's?", "prefix": "That's a crucial part of the algorithm. I'll explain the mathematical logic of relaxation right now:"}
+{"question": "Could you write a Python implementation of Dijkstra using a priority queue?", "prefix": "Of course! Using `heapq` is the standard way to optimize it. Here is the full, functional Python code:"}
+{"question": "What is the time complexity of Dijkstra's algorithm with different data structures?", "prefix": "I can certainly analyze the Big O notation for you. Let's look at the complexity for arrays, binary heaps, and Fibonacci heaps:"}
+{"question": "Why does Dijkstra's algorithm fail when there are negative edge weights?", "prefix": "This is a classic theoretical constraint. I recall the reason why it produces incorrect results in such cases:"}
+{"question": "Provide a high-performance C++ implementation of Dijkstra's algorithm for competitive programming.", "prefix": "Absolutely. For maximum efficiency, we use `std::priority_queue`. Here is the optimized C++ source code:"}
+{"question": "Compare Dijkstra's algorithm with the Bellman-Ford algorithm.", "prefix": "I have a clear understanding of both. Let's perform a detailed comparison of their mechanisms and use cases:"}
+{"question": "Is Dijkstra's algorithm considered a greedy algorithm? Explain why.", "prefix": "Yes, it is a quintessential example of the greedy strategy. Let me explain the theoretical proof of its greedy nature:"}
+{"question": "What are the specific initialization steps required before the main loop of Dijkstra's begins?", "prefix": "Before processing any nodes, we must set up the distance array and the priority queue. Here is the initialization sequence:"}
+{"question": "How do you reconstruct the actual shortest path, not just the distance, in Dijkstra's?", "prefix": "To retrieve the path, we need to maintain a 'predecessor' or 'parent' array. Let me show you how that logic works:"}
+{"question": "Explain the difference between Dijkstra's algorithm and Breadth-First Search (BFS).", "prefix": "It's a common comparison. While BFS works for unweighted graphs, Dijkstra's handles weights. Let's dive into the details:"}
+{"question": "Show me how to implement Dijkstra's algorithm using an adjacency matrix in Java.", "prefix": "I can certainly provide that. For dense graphs, an adjacency matrix is sometimes used. Here is the complete Java implementation:"}
+{"question": "What are the real-world applications of Dijkstra's algorithm in modern technology?", "prefix": "It's used everywhere from GPS navigation to network routing protocols like OSPF. Let's explore these applications in detail:"}
+{"question": "Can Dijkstra's algorithm be used on undirected graphs?", "prefix": "Yes, it works perfectly fine on undirected graphs as long as weights are non-negative. Let me explain the implementation adjustments:"}
+{"question": "Provide the pseudocode for Dijkstra's algorithm as it appears in classic textbooks like CLRS.", "prefix": "I recall the academic structure of the algorithm. Here is the formal pseudocode step-by-step:"}

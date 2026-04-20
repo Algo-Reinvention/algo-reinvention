@@ -1,0 +1,202 @@
+[
+    {
+        "question_type": "multiple_choice",
+        "question": "Manacher's algorithm is primarily for:\nA. Longest palindromic substring B. Longest common subsequence C. String sorting D. Exact regex matching E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Manacher's time complexity is:\nA. O(n) B. O(n log n) C. O(n^2) D. O(1) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Manacher's extra space complexity is typically:\nA. O(1) B. O(log n) C. O(n) D. O(n^2) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Common preprocessing in Manacher inserts separators to:\nA. Compress text length B. Unify odd/even palindrome handling C. Remove duplicate characters D. Sort by frequency E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Two key maintained variables of Manacher algorithm are usually:\nA. left degree and right degree B. center C and right boundary R C. prefix sum and suffix sum D. start and finish only E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In Manacher, when i < R, initialization of P[i] is:\nA. P[i]=R-i B. P[i]=P[i-1]+1 C. P[i]=min(R-i, P[2*C-i]) D. P[i]=0 always E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In standard Manacher notation (center C, right boundary R, mirror=2*C-i), if i<R initial P[i] is:\nA. R-i B. P[i-1]+1 C. min(R-i, P[mirror]) D. 0 always E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "After initializing P[i], Manacher next tries to:\nA. Expand around i while mirrored chars match B. Sort surrounding chars C. Run KMP on substring D. Reset center to i immediately E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In context of Manacher algorithm, when i + P[i] > R, algorithm updates:\nA. Only R B. Only C C. Neither C nor R D. Both C and R E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In transformed-string Manacher, P[i] stores:\nA. Absolute start index B. Palindrome radius around i C. ASCII sum of palindrome D. Number of mismatches E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In context of Manacher algorithm, longest palindromic substring length is obtained from:\nA. Minimum P[i] B. Average P[i] C. Maximum P[i] (mapped back to original string) D. Only P[0] E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Manacher effectively computes palindrome radii for:\nA. Only odd centers B. Only even centers C. All centers in transformed string D. Only prime indices E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In context of Manacher algorithm, separator-based transform allows odd/even palindromes to be treated:\nA. Separately with two algorithms B. Uniformly in one pass C. Only via DP table D. Only for lowercase alphabets E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Compared with expand-around-center worst case, Manacher is:\nA. Same O(n^2) B. Asymptotically faster in worst case (linear) C. Only faster on random strings, not worst-case D. Sublinear O(log n) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Manacher directly solves longest palindromic:\nA. Subsequence B. Substring C. Prefix-function D. Border-chain E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In context of Manacher algorithm, a common transformed template is like:\nA. ^#a#b#...#$ B. a|b|c with sorting C. Reverse string only D. Binary encoding only E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In transformed-string Manacher (with separators), total palindromic substrings in original string can be counted by:\nA. max_i P[i] B. sum_i P[i] C. sum_i ((P[i]+1)//2) D. sum_i (P[i]^2) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Manacher primarily computes:\nA. Longest common subsequence B. Palindrome radii at all centers C. Suffix array ranks D. KMP prefix table E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Standard Manacher time complexity is:\nA. O(n) B. O(n log n) C. O(n^2) D. O(1) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Standard Manacher extra space complexity is:\nA. O(1) B. O(log n) C. O(n) D. O(n^2) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Separator-based transformed string in Manacher mainly helps to:\nA. Compress memory B. Unify odd/even palindrome handling C. Sort characters D. Remove duplicates E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In context of Manacher algorithm, mirror index of i around center C is:\nA. C-i B. i-C C. 2*C-i D. i/2 E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In context of Manacher algorithm, when i<R in Manacher, initial P[i] is typically:\nA. 0 always B. min(R-i, P[mirror]) C. P[i-1]+1 always D. R only E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In context of Manacher algorithm, when i+P[i] exceeds current right boundary R, update is:\nA. Only C changes B. Only R changes C. Neither changes D. Both C and R update E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "With Manacher radii on transformed string, total palindromic substrings can be counted via:\nA. sum_i ((P[i]+1)//2) B. max_i P[i] C. sum_i P[i]^2 D. Count only centers with odd index E. I am not sure"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "What linear-time algorithm finds the longest palindromic substring by maintaining a center C and right boundary R, and initializing each position's radius using its mirror index 2*C-i?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Which algorithm preprocesses a string by inserting sentinel characters (e.g., '#') between every character to unify odd/even palindrome handling, then computes a radius array P in a single left-to-right pass using center and right boundary tracking?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Name the linear-time palindrome algorithm whose core step is P[i] = min(R - i, P[2*C - i]) when i falls within the current right boundary R."
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Which O(n) algorithm avoids redundant palindrome expansion by bootstrapping the radius at position i from its mirror position 2*C-i within a known palindrome centered at C?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Name the algorithm, published in 1975, that finds longest palindromic substrings in linear time by maintaining a rightmost palindrome boundary R and its center C, updating both whenever expansion at position i exceeds R."
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Which algorithm transforms 'abba' into a form like '^#a#b#b#a#$', then computes palindrome radii at each position using mirror symmetry within the current rightmost boundary?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Name the algorithm that produces an integer array where entry P[i] stores the palindrome radius at center i in a transformed string, and updates C and R only when i + P[i] exceeds the current R."
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "What is the name of the algorithm that improves upon naive expand-around-center (which is O(n^2) worst-case) to guaranteed O(n) by reusing palindrome radii via the mirror index 2*C-i and right boundary R?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Identify the algorithm whose key invariant is: if the palindrome at mirror index 2*C-i is entirely contained within boundary R, then P[i] = P[2*C-i]; otherwise P[i] starts at R-i and expands outward."
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In competitive programming, which linear-time algorithm's main loop is: for each i, initialize P[i] from mirror if i < R, expand while characters match, then update C and R if the expanded palindrome's right edge exceeds R?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Which algorithm finds all palindromic substrings in O(n) time by computing a radius array P, where each P[i] is initialized via min(R-i, P[2*C-i]) and then expanded, rather than using suffix trees or palindrome trees?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Name the linear-time palindrome substring algorithm that processes characters left to right, tracks a center C and rightmost boundary R, and leverages the fact that positions within a known palindrome have mirrors whose radii provide a lower bound."
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "What algorithm inserts separators to create a transformed string, then in one pass computes P[i] at each center i, using the relation mirror = 2*C - i to skip redundant comparisons, achieving O(n) time and O(n) space?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Which algorithm solves the longest palindromic substring problem in O(n) without dynamic programming tables or suffix structures, instead relying on center-expansion with a radius array bootstrapped from mirror positions?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Name the algorithm where the transformed string uses boundary sentinels (^ and $) and separator characters (#), and the maximum value in the resulting radius array P directly gives the length of the longest palindromic substring."
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "What linear-time algorithm finds the longest palindromic substring by maintaining a center C and right boundary R, and initializing each position's radius using its mirror within the current boundary?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Which algorithm preprocesses a string by inserting sentinel characters (e.g., '#') between every character so that both odd-length and even-length palindromes are handled uniformly as odd-length, then computes palindrome radii in O(n)?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "There is a linear-time palindrome algorithm that stores a radius array P where P[i] = min(R - i, P[2*C - i]) when i < R. What is this algorithm called?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Name the algorithm that avoids redundant character comparisons when finding palindromes by exploiting the symmetric property of a known palindrome around its center, using a rightmost boundary to skip already-verified positions."
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Which O(n) palindromic substring algorithm was published in 1975 and uses the insight that if position i falls within a known palindrome centered at C, the radius at i can be bootstrapped from the radius at its mirror index 2*C - i?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "A certain algorithm transforms 'abba' into '^#a#b#b#a#$' and then computes a radius array in a single left-to-right pass using center/right-boundary tracking. What is this algorithm?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Which linear-time algorithm produces an array where each entry represents the palindrome radius at that center, and updates both C and R only when a newly expanded palindrome extends beyond the current rightmost boundary?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "What is the name of the algorithm that, unlike the naive expand-around-center approach which is O(n^2) worst-case, guarantees O(n) by reusing previously computed palindrome radii via mirror symmetry within the current longest right-reaching palindrome?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Identify the algorithm where the key invariant is: if mirror index 2*C - i has a palindrome entirely contained within the boundary R, then P[i] = P[2*C - i]; otherwise P[i] starts at R - i and expands outward."
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Which palindrome algorithm's core loop can be summarized as: for each i, set P[i] from mirror if inside R, expand while characters match, then update C and R if the expanded palindrome reaches beyond R?"
+    }
+]

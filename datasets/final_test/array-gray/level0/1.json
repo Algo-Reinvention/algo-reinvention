@@ -1,0 +1,25 @@
+{
+    "problem": "## Problem Description: N-th Value of a Reflected Binary Sequence\nGiven a non-negative index `n`, return `A[n]` for the sequence defined below.\n\nCould you design an algorithm for me with O(1) time complexity and O(1) space complexity?\n\nDefine an infinite integer sequence `A` as follows:\n\n- `A[0] = 0`\n- For every `k >= 1`, assume the first `2^(k-1)` values are already defined.\n  Let `P = [A[0], A[1], ..., A[2^(k-1)-1]]`.\n  Then define the next block of length `2^(k-1)` by\n  `A[2^(k-1) + i] = P[2^(k-1)-1-i] + 2^(k-1)` for `i = 0..2^(k-1)-1`.\n\nEquivalently, the sequence begins:\n`0, 1, 3, 2, 6, 7, 5, 4, 12, 13, 15, 14, 10, 11, 9, 8, ...`\n\n\n### Input:\nThe input contains a single integer `n` (`0 <= n < 2^260000`).\n\nIndexing rule: `n` is **0-based**.\n\n### Output:\nOutput one integer: `A[n]`.\n\n### Example 1\n#### Input:\n```\n0\n```\n#### Output:\n```\n0\n```\n\n### Example 2\n#### Input:\n```\n7\n```\n#### Output:\n```\n4\n```\n\n\n### Submission Format:\nHere's the submission running context:\n```python\nimport sys\nimport io\nimport collections\nimport heapq\nimport bisect\nimport math\nimport cmath\nimport decimal\nimport fractions\nimport statistics\nimport operator\nimport itertools\nimport functools\nimport re\nimport string\nimport copy\nimport array\nimport time\nimport builtins\n\norig_import = builtins.__import__\n\ndef secure_import(name, *args, **kwargs):\n    if name == 'random':\n        raise ImportError(\"Forbidden: random is not allowed\")\n    return orig_import(name, *args, **kwargs)\n\nbuiltins.__import__ = secure_import\n\nsys.setrecursionlimit(200000)\n\n'''\nYOUR CODE IS HERE\n'''\n\ndef main():\n    line = sys.stdin.readline()\n    if not line:\n        return\n\n    try:\n        n = int(line.strip())\n    except ValueError:\n        return\n\n    if n < 0:\n        return\n\n    solve(n)\n```\n\nThe package import and stdin processing code is provided, all you need to do is to submit a pure `solve` function.\n\n### Requirements:\n- Please use Python to code this, and the worst-case time complexity must not exceed O(1), while the space complexity must not exceed O(1).\n- Print outputs exactly as described in Output.\n- Do not include package import or asserts in code.\n- Make sure you call the submit_final_answer tool to submit the final code explicitly, and the code should only contain the `solve` function.",
+    "test_cases": [
+        {
+            "input_path": "datasets/final_test/array-gray/_generator/test_cases/edge_zero.txt",
+            "output_path": "datasets/final_test/array-gray/_generator/test_cases/edge_zero_groundtruth.txt"
+        },
+        {
+            "input_path": "datasets/final_test/array-gray/_generator/test_cases/small_index.txt",
+            "output_path": "datasets/final_test/array-gray/_generator/test_cases/small_index_groundtruth.txt"
+        },
+        {
+            "input_path": "datasets/final_test/array-gray/_generator/test_cases/large_64bit.txt",
+            "output_path": "datasets/final_test/array-gray/_generator/test_cases/large_64bit_groundtruth.txt"
+        },
+        {
+            "input_path": "datasets/final_test/array-gray/_generator/test_cases/linear_killer.txt",
+            "output_path": "datasets/final_test/array-gray/_generator/test_cases/linear_killer_groundtruth.txt"
+        },
+        {
+            "input_path": "datasets/final_test/array-gray/_generator/test_cases/log_killer.txt",
+            "output_path": "datasets/final_test/array-gray/_generator/test_cases/log_killer_groundtruth.txt"
+        }
+    ]
+}

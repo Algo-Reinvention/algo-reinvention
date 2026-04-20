@@ -1,0 +1,13 @@
+function,test_case,target_func_time,status,message
+strassen_solution.py,cubic_killer.txt,1.500195230357349,Success,Execution successful.
+strassen_solution.py,edge_n1.txt,6.1248429119586945e-06,Success,Execution successful.
+strassen_solution.py,random_n64.txt,0.019215337000787258,Success,Execution successful.
+strassen_solution.py,small_n2.txt,1.0755844414234161e-05,Success,Execution successful.
+cubic_naive.py,cubic_killer.txt,2.196381861809641,Success,Execution successful.
+cubic_naive.py,edge_n1.txt,6.040092557668686e-06,Success,Execution successful.
+cubic_naive.py,random_n64.txt,0.024163977708667517,Success,Execution successful.
+cubic_naive.py,small_n2.txt,8.974224328994751e-06,Success,Execution successful.
+recursive_8mult.py,cubic_killer.txt,2.3662416958250105,Success,Execution successful.
+recursive_8mult.py,edge_n1.txt,5.706213414669037e-06,Success,Execution successful.
+recursive_8mult.py,random_n64.txt,0.02515787398442626,Success,Execution successful.
+recursive_8mult.py,small_n2.txt,1.0032206773757935e-05,Success,Execution successful.

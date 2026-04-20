@@ -1,0 +1,162 @@
+[
+    {
+        "question_type": "multiple_choice",
+        "question": "Floyd-Warshall is classically used for:\nA. Single-source shortest paths B. All-pairs shortest paths C. Minimum spanning tree D. Maximum flow E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Standard Floyd-Warshall time complexity is:\nA. O(V^2) B. O(E log V) C. O(V^3) D. O(VE) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Standard Floyd-Warshall space complexity is:\nA. O(V) B. O(V^2) C. O(E) D. O(V^3) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Standard Floyd-Warshall recurrence update is:\nA. d[i][j]=min(d[i][j], d[i][k]+d[k][j]) B. d[i][j]=max(d[i][j], d[i][k]+d[k][j]) C. d[i][j]=d[i][k]*d[k][j] D. d[i][j]=d[i][j]+d[k][k] E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "With 0-based outer loop k, after finishing iteration k, allowed intermediate vertices are:\nA. {0,1,...,k} B. {k,k+1,...,n-1} C. none (direct edges only) D. all vertices from the beginning E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Floyd-Warshall on negative edges is:\nA. Invalid always B. Valid if no negative cycles C. Valid only on DAGs D. Equivalent to Prim E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "A negative cycle is detected by Floyd-Warshall iff:\nA. there exists i with d[i][i] < 0 B. there exists i,j with d[i][j] < 0 C. sum of diagonal entries is positive D. matrix is asymmetric E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In in-place Floyd-Warshall, the required outermost loop variable is usually:\nA. i B. j C. k D. Any order is equivalent E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "After finishing outer-loop value k in Floyd-Warshall, dist[i][j] allows intermediates from:\nA. Vertices in set {1..k} B. Only vertex k C. Only source and destination D. Vertices with degree <= k E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "To reconstruct actual shortest paths, Floyd-Warshall often keeps:\nA. next/predecessor matrix B. union-find parent only C. stack of DFS states D. degree histogram E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Floyd-Warshall naturally supports:\nA. Directed and undirected weighted graphs B. Only unweighted graphs C. Only trees D. Only complete DAGs E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "With V vertices, standard Floyd-Warshall worst-case time complexity is:\nA. O(V^3) B. O(VE) C. O((V+E)logV) D. O(V^2) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Compared to repeated Dijkstra, Floyd-Warshall is often attractive for:\nA. Very sparse huge graphs B. Dense graphs or many all-pairs queries C. Single-source one-shot queries only D. Only negative-cycle graphs E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "For in-place Floyd-Warshall correctness, the outermost loop variable must be:\nA. source i B. target j C. intermediate k D. edge index e E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "To reconstruct actual shortest paths in Floyd-Warshall, a common extra structure is:\nA. Union-find parent array B. next/predecessor matrix C. In-degree array D. DFS color array E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Floyd-Warshall handles zero-weight edges:\nA. Incorrectly B. Only in undirected graphs C. Only with integer weights D. Correctly E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Warshall transitive-closure version replaces min/+ with:\nA. OR and AND B. AND and OR C. XOR and OR D. OR and XOR E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "After preprocessing, answering one distance query dist[u][v] is:\nA. O(V) B. O(log V) C. O(1) D. O(E) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "After Floyd-Warshall preprocessing, answering one distance query dist[u][v] is:\nA. O(1) B. O(log V) C. O(V) D. O(E) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Floyd-Warshall can be interpreted as DP over:\nA. Edge sorting order B. Allowed intermediate vertex set C. DFS recursion depth only D. Node colors E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Floyd-Warshall is NOT an algorithm for:\nA. All-pairs shortest paths B. Negative-cycle indication via diagonal C. Minimum spanning tree construction D. Dense-graph APSP preprocessing E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Floyd-Warshall is NOT directly for:\nA. Max-flow computation B. APSP with possible negative edges C. Reachability closure variant D. Path reconstruction with next matrix E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "With all nonnegative edges, Floyd-Warshall is:\nA. Incorrect B. Still correct C. Correct only for odd V D. Equivalent to BFS exactly E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In Floyd-Warshall, candidate path via k combines two subpaths that each use intermediates:\nA. from all vertices without restriction B. only vertices with index greater than k C. only vertices with index at most k-1 D. no intermediates (direct edges only) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "The classic algorithm naming credits are mainly:\nA. Floyd and Warshall B. Dijkstra and Prim C. Bellman and Ford D. Knuth and Pratt E. I am not sure"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "How do you solve the shortest path problem?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, is there any shortest path algorithm based on dynamic programming?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "How do you compute all-pairs shortest paths in a weighted graph without negative cycles?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, what algorithm finds the shortest distance between every pair of vertices in a graph?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, is there a dynamic programming approach to solve the shortest path problem for all vertex pairs simultaneously?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, which algorithm uses a three-nested-loop structure to iteratively improve distance estimates between all nodes?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "How would you find the shortest path between every two nodes in a graph with O(V³) time complexity?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, what method solves the all-pairs shortest path problem by considering intermediate vertices?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, which algorithm initializes a distance matrix with direct edge weights and then updates it through intermediate nodes?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "What algorithm would you use to solve shortest paths for all pairs using a progressively expanding set of allowed intermediate vertices?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, is there an algorithm that works for both directed and undirected graphs to find all-pair shortest paths?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, what approach uses the recurrence relation: dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j])?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, which shortest path algorithm is based on the principle of optimal substructure and overlapping subproblems for all pairs?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "How would you compute transitive closure with weights, i.e., the shortest path between every pair of vertices?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, what algorithm would you use to find shortest paths between all cities in a transportation network?"
+    }
+]

@@ -1,0 +1,40 @@
+{"question": "What is the worst-case time complexity of Kruskal's algorithm when implemented with union-find?"}
+{"question": "How does the Breadth-First Search (BFS) algorithm guarantee finding the shortest path in an unweighted graph?"}
+{"question": "In what scenarios would Depth-First Search (DFS) be preferred over BFS for graph exploration?"}
+{"question": "How does the Bellman-Ford algorithm detect negative weight cycles reachable from the source vertex?"}
+{"question": "What is the space complexity of the Floyd-Warshall algorithm for storing all-pairs shortest paths?"}
+{"question": "What makes a heuristic function 'admissible' in the context of the A* search algorithm?"}
+{"question": "What are the necessary conditions for a directed graph to have a valid topological ordering?"}
+{"question": "How does the union-find data structure with path compression improve Kruskal's algorithm efficiency?"}
+{"question": "State the Max-Flow Min-Cut Theorem and explain its significance in network flow problems."}
+{"question": "How does Kahn's algorithm for topological sorting handle nodes with no incoming edges?"}
+{"question": "Why is finding a Hamiltonian cycle considered an NP-complete problem?"}
+{"question": "How does the Edmonds-Karp algorithm's use of BFS guarantee polynomial runtime for max flow?"}
+{"question": "What is the key insight behind Kosaraju's algorithm for identifying strongly connected components?"}
+{"question": "When would Johnson's algorithm be more efficient than Floyd-Warshall for all-pairs shortest paths?"}
+{"question": "Explain how the damping factor in PageRank prevents rank sinks in web graphs."}
+{"question": "What is the time complexity of Tarjan's algorithm for finding articulation points?"}
+{"question": "Define an 'augmenting path' in the context of the Ford-Fulkerson method."}
+{"question": "What is the objective of the Hungarian algorithm for assignment problems?"}
+{"question": "How does the Bron-Kerbosch algorithm use pivoting to efficiently find maximal cliques?"}
+{"question": "What are the necessary and sufficient conditions for a graph to have an Eulerian circuit?"}
+{"question": "Why is the Bellman-Ford algorithm suitable for distance-vector routing protocols like RIP?"}
+{"question": "How does Dijkstra's algorithm with a priority queue achieve O(E log V) complexity?"}
+{"question": "What is the purpose of constructing level graphs in Dinic's algorithm for maximum flow?"}
+{"question": "What happens to A* search optimality if the heuristic is consistent but not admissible?"}
+{"question": "In DFS tree classification, what distinguishes a forward edge from a cross edge?"}
+{"question": "How can a single DFS pass detect cycles in a directed graph using color marking?"}
+{"question": "Explain the dynamic programming recurrence at the core of the Floyd-Warshall algorithm."}
+{"question": "What makes Borůvka's algorithm naturally parallelizable for minimum spanning trees?"}
+{"question": "What is the time complexity of the Hopcroft-Karp algorithm for bipartite matching?"}
+{"question": "How does Tarjan's SCC algorithm use low-link values and a stack to identify components?"}
+{"question": "How does the Stoer-Wagner algorithm find global minimum cuts without computing max flow?"}
+{"question": "What is the main drawback of the nearest neighbor heuristic for the traveling salesman problem?"}
+{"question": "How does the damping factor in PageRank balance between following links and random jumps?"}
+{"question": "What three steps constitute the Christofides algorithm for metric TSP approximation?"}
+{"question": "How does the Lee algorithm use BFS for grid-based maze routing?"}
+{"question": "What is the space complexity of an adjacency matrix representation for a graph with V vertices?"}
+{"question": "How can one find all articulation points in an undirected graph using a single DFS traversal?"}
+{"question": "What is the success probability of Karger's randomized algorithm for minimum cut after O(V² log V) runs?"}
+{"question": "How does the push-relabel algorithm's use of height labels prevent flow from going backward?"}
+{"question": "What does Kőnig's theorem state about the relationship between vertex cover and matching in bipartite graphs?"}

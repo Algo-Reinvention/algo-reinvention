@@ -1,0 +1,22 @@
+{"question": "Do you know what is the Dijkstra algorithm?"}
+{"question": "What kind of problems can Dijkstra algorithm be used to solve?"}
+{"question": "What is the time complexity of Dijkstra's algorithm?"}
+{"question": "What is the core principle behind Dijkstra's algorithm?"}
+{"question": "Is Dijkstra's algorithm considered a greedy algorithm?"}
+{"question": "Can Dijkstra's algorithm handle graphs with negative edge weights?"}
+{"question": "Why does Dijkstra's algorithm fail when there are negative cycles?"}
+{"question": "What is the time complexity of Dijkstra's algorithm when using a binary heap?"}
+{"question": "How does the use of a Fibonacci heap improve the performance of Dijkstra's algorithm?"}
+{"question": "What is the difference between Dijkstra's algorithm and the Bellman-Ford algorithm?"}
+{"question": "Can Dijkstra's algorithm be used for finding the shortest path in an undirected graph?"}
+{"question": "How does Dijkstra's algorithm differ from Breadth-First Search (BFS) for unweighted graphs?"}
+{"question": "What is the purpose of the 'relaxation' step in Dijkstra's algorithm?"}
+{"question": "What data structures are typically used to implement a priority queue in Dijkstra's algorithm?"}
+{"question": "Is it possible for Dijkstra's algorithm to find the longest path in a Directed Acyclic Graph (DAG)?"}
+{"question": "How do you initialize the distance values for the source and other nodes in the algorithm?"}
+{"question": "What is the space complexity of Dijkstra's algorithm?"}
+{"question": "Can Dijkstra's algorithm be used to find the shortest path from one source to all other nodes?"}
+{"question": "How does the A* search algorithm relate to or extend Dijkstra's algorithm?"}
+{"question": "What happens if the target node is unreachable from the source node in Dijkstra's algorithm?"}
+{"question": "In what year was the Dijkstra algorithm first published and who is its creator?"}
+{"question": "Can Dijkstra's algorithm be parallelized effectively for large-scale graphs?"}

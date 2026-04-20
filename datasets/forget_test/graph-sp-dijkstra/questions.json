@@ -1,0 +1,246 @@
+[
+    {
+        "question_type": "multiple_choice",
+        "question": "Dijkstra's algorithm is designed to solve which problem?\nA. Single-source shortest path with non-negative weights B. All-pairs shortest path with negative cycles C. Maximum flow D. Minimum spanning tree E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Which edge-weight condition is required for the standard correctness guarantee of Dijkstra's algorithm?\nA. All edge weights are distinct B. All edge weights are non-negative C. All edge weights are prime numbers D. The graph has no cycles E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In a standard binary-heap Dijkstra implementation, the number of extract-min operations is asymptotically:\nA. O(E) B. O(V) C. O(V log V) D. O(1) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In a standard binary-heap Dijkstra implementation, the number of decrease-key operations in the worst case is asymptotically:\nA. O(V) B. O(E) C. O(log V) D. O(V^2) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Which data structure is typically used to repeatedly choose the vertex with the smallest tentative distance in Dijkstra's algorithm?\nA. Stack B. FIFO queue C. Min-priority queue (min-heap) D. Hash set E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Dijkstra's greedy step selects:\nA. The unsettled vertex with minimum tentative distance B. The settled vertex with minimum degree C. The globally lightest edge in the graph D. The unsettled vertex with maximum tentative distance E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In standard Dijkstra, once a vertex is extracted as the current minimum from the priority queue, its distance is:\nA. Still temporary B. Final and will not decrease later C. Final only in undirected graphs D. Final only if weights are distinct E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "If only one target t is needed, when is early termination of Dijkstra sound?\nA. When t is first discovered B. When t is first relaxed C. When t is extracted from the min-priority queue D. Only after all vertices are processed E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In shortest-path taxonomy, Dijkstra's algorithm is usually classified as:\nA. Label-correcting B. Label-setting C. Augmenting-path D. Reweighting-only E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Does the following logic describe a known famous algorithm: 'Initialize distances to infinity (source to 0), then repeatedly extract the vertex u with the minimum distance and for each neighbor v, update dist[v] = min(dist[v], dist[u] + weight(u, v))'?\nA. Yes B. No C. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "With adjacency matrix plus linear scan for the next vertex, Dijkstra runs in:\nA. O(E log V) B. O(V^2) C. O(V^3) D. O(V + E) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "With a Fibonacci heap implementation, Dijkstra's algorithm can achieve:\nA. O(V^2) B. O(E log V) C. O(E + V log V) D. O(VE) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Excluding graph storage itself, the additional space complexity of a standard Dijkstra implementation is closest to:\nA. O(1) B. O(log V) C. O(E) D. O(V) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "When all edge weights are exactly 1, Dijkstra's expansion behavior is most similar to:\nA. Depth-First Search (DFS) B. Breadth-First Search (BFS) C. Kruskal's algorithm D. Topological sorting E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Can standard Dijkstra guarantee correct shortest paths on graphs with negative-weight edges?\nA. Yes, always B. Yes, if there is no negative cycle C. No D. Only on DAGs E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Regarding negative cycles, standard Dijkstra:\nA. Always reports the exact set of all negative cycles B. Detects only odd-length negative cycles C. Is not a reliable algorithm for negative-cycle detection D. Guarantees shortest-path correctness whenever a negative cycle exists E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "If all-pairs shortest paths are computed by running binary-heap Dijkstra from every source, a typical complexity expression is:\nA. O(V * (V + E) log V) B. O(V^2) C. O(E^2) D. O(V^3) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Which real-world domain commonly uses Dijkstra algorithm core component?\nA. Road navigation routing B. Huffman coding C. Lexicographic sorting D. Regular-expression parsing E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Which routing protocol uses shortest-path-first computation based on Dijkstra's algorithm?\nA. RIP B. OSPF C. ARP D. DHCP E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Dijkstra's algorithm is usually categorized under which paradigm?\nA. Dynamic programming B. Greedy algorithm C. Divide and conquer D. Backtracking E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Dijkstra's algorithm can be adapted to compute a Minimum Spanning Tree by changing which aspect of its relaxation step?\nA. Replace dist[v] = min(dist[v], dist[u] + w(u,v)) with dist[v] = min(dist[v], w(u,v)) — i.e., track lightest connecting edge instead of cumulative path cost B. Reverse the priority queue to extract maximum instead of minimum C. Process edges in decreasing weight order D. Use a stack instead of a priority queue E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Dijkstra's algorithm is named after:\nA. Donald Knuth B. Edsger W. Dijkstra C. Alan Turing D. John von Neumann E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Dijkstra's famous shortest-path paper was published in:\nA. 1959 B. 1946 C. 1972 D. 2001 E. I am not sure"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "What single-source shortest path algorithm extracts vertices in order of increasing g(n) from a min-heap, permanently finalizing each vertex's distance upon extraction, and runs in O(E log V) with a binary heap on non-negative-weight graphs?"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Does standard Dijkstra work on directed graphs?\nA. No, only on undirected graphs B. Yes, as long as edge weights are non-negative C. Yes, but only on DAGs D. Only when out-degrees are equal E. I am not sure"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "How do you solve the single source shortest path problem?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, is there any shortest path algorithm based on greedy?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, is there any shortest path algorithm based on heap?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Which is the most efficient greedy algorithm for finding the shortest path from a single source to all other nodes?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "What algorithm would you use to find the shortest path in a graph where all edge weights are non-negative?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, which algorithm uses a priority queue to iteratively find the minimum distance from a starting vertex?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Which standard approach is used for the Single-Source Shortest Path (SSSP) problem in a weighted graph without negative edges?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Could you explain the algorithm that repeatedly relaxes edges by picking the unvisited node with the smallest tentative distance?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, what algorithm achieves a time complexity of O(E log V) for pathfinding using a min-heap?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, is there a specific pathfinding method that functions like a weighted version of Breadth-First Search (BFS)?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, which algorithm is considered the foundation for most GPS routing systems that don't use heuristics?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "What algorithm would you use to solve the shortest path problem when you are restricted to a greedy strategy and non-negative costs?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Name the algorithm classified as 'label-setting' (as opposed to 'label-correcting') for SSSP, where once a vertex is removed from the priority queue its distance is guaranteed final — a property that depends on all edge weights being non-negative."
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, in graph theory, which method maintains a set of visited nodes and updates the distances to their neighbors until all nodes are processed?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, if a graph has no negative cycles and I want the fastest single-source solution, which greedy method should I use?"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In Dijkstra's algorithm, why does the greedy choice of extracting the minimum-distance vertex work correctly?\nA. Because the graph is always a DAG B. Because non-negative weights guarantee no future path through unsettled vertices can improve the current minimum C. Because the algorithm backtracks when it finds a shorter path D. Because it processes vertices in alphabetical order E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Consider running Dijkstra from source S on this graph: S→A (weight 2), S→B (weight 5), A→B (weight 1). What is the order of vertex extraction and final dist[B]?\nA. S, A, B; dist[B]=3 B. S, B, A; dist[B]=5 C. S, A, B; dist[B]=5 D. A, S, B; dist[B]=3 E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Consider running Dijkstra from source S on: S→A (1), S→B (4), A→C (2), B→C (1). In what order are vertices extracted, and what is dist[C]?\nA. S, A, B, C; dist[C]=3 B. S, A, C, B; dist[C]=3 C. S, B, A, C; dist[C]=5 D. S, A, B, C; dist[C]=5 E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Dijkstra fails on this graph: S→A (1), A→B (−3), S→B (0). The correct dist[B] is −2, but Dijkstra outputs 0. Why?\nA. It extracts B with dist=0 before discovering the shorter S→A→B path, and never revisits B because its distance is already finalized B. The graph has a negative cycle C. Dijkstra cannot handle directed graphs D. The priority queue overflows E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In a binary-heap Dijkstra, each extract-min costs O(log V) and each decrease-key costs O(log V). The total time is therefore:\nA. O(V log V + E log V) = O((V+E) log V) B. O(V² + E) C. O(V log V + E) D. O(E²) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Why does a Fibonacci heap improve Dijkstra's complexity to O(E + V log V) compared to a binary heap's O((V+E) log V)?\nA. Fibonacci heap has O(1) insert but O(log V) extract-min and delete B. Fibonacci heap has O(1) amortized decrease-key instead of O(log V) C. Fibonacci heap eliminates the need for decrease-key entirely D. Fibonacci heap sorts all vertices upfront in O(V) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In a common 'lazy' Dijkstra implementation (without decrease-key), duplicate entries are pushed to the heap. How are stale entries handled?\nA. They are removed by a separate garbage-collection pass B. When a vertex is extracted but already finalized, the entry is simply skipped C. Stale entries cause incorrect results D. The heap automatically removes them E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In Dijkstra's algorithm, the 'relaxation' of edge (u, v) with weight w means:\nA. Removing edge (u, v) from the graph B. If dist[u] + w < dist[v], update dist[v] = dist[u] + w and record u as predecessor of v C. Setting dist[v] = w unconditionally D. Swapping the positions of u and v in the priority queue E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "After running Dijkstra, shortest paths can be reconstructed by:\nA. Running BFS from the target backward B. Following the predecessor/parent pointers recorded during relaxation back from target to source C. Sorting all edges by weight D. Running Dijkstra again in reverse E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "For a dense graph where E = Θ(V²), which Dijkstra implementation is asymptotically fastest?\nA. Binary heap: O((V+E) log V) = O(V² log V) B. Fibonacci heap: O(E + V log V) = O(V²) C. Simple array scan: O(V²) D. Both B and C achieve O(V²), but the array scan has lower constant overhead E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "For a sparse graph where E = Θ(V), which Dijkstra implementation is asymptotically fastest?\nA. Array scan: O(V²) B. Binary heap: O((V+E) log V) = O(V log V) C. Fibonacci heap: O(E + V log V) = O(V log V) D. Both B and C achieve O(V log V) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Dijkstra processes vertices in order of increasing distance from the source. This property is most analogous to which traversal on unweighted graphs?\nA. DFS (depth-first) B. BFS (breadth-first, which processes in order of increasing hop count) C. Topological sort D. Post-order traversal E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In Johnson's algorithm for all-pairs shortest paths, Dijkstra's algorithm is used:\nA. Once to reweight edges, then discarded B. Once from each vertex after reweighting to non-negative edges via Bellman-Ford potentials C. Only if the graph has no negative edges D. To detect negative cycles E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "What is the relationship between Dijkstra's algorithm and A* search?\nA. They are unrelated algorithms B. A* generalizes Dijkstra by adding a heuristic h(n); when h(n)=0, A* reduces to Dijkstra C. Dijkstra generalizes A* D. A* is faster than Dijkstra in all cases E. I am not sure"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "What single-source shortest path algorithm maintains a set of 'settled' vertices whose distances are final, and at each step selects the unsettled vertex with minimum tentative distance, settles it, and relaxes its outgoing edges — requiring all edge weights to be non-negative for correctness?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Name the algorithm where, on the graph S→A(2), S→B(5), A→B(1), starting from S: it first extracts S (dist=0), relaxes to get dist[A]=2 and dist[B]=5, then extracts A (dist=2), relaxes A→B to update dist[B]=3, then extracts B (dist=3) — achieving the correct shortest paths."
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "What SSSP algorithm has two well-known implementations: an O(V²) version using a simple array scan for dense graphs, and an O((V+E) log V) version using a binary heap for sparse graphs — both requiring non-negative edge weights?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Name the shortest-path algorithm that fails on the graph S→A(1), A→B(−3), S→B(0) because it finalizes dist[B]=0 upon extraction before the shorter path S→A→B with cost −2 is discovered — illustrating why non-negative weights are required."
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In Johnson's all-pairs shortest path algorithm, after running Bellman-Ford once to compute vertex potentials and reweight all edges to be non-negative, which SSSP algorithm is then run from every vertex on the reweighted graph?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "What algorithm's 'lazy' implementation avoids decrease-key by pushing duplicate (distance, vertex) pairs into the min-heap and simply skipping a vertex when it is extracted but already finalized?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Name the SSSP algorithm whose relaxation step for edge (u,v,w) is: if dist[u] + w < dist[v], set dist[v] = dist[u] + w and update v's position in the min-priority queue — and whose correctness proof relies on the invariant that the extracted minimum-distance vertex can never be improved by any future path, given non-negative weights."
+    }
+]

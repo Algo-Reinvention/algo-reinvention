@@ -1,0 +1,40 @@
+{"question": "What is the Hamming distance between two equal-length bit strings?"}
+{"question": "How can you check whether two integers differ by exactly one bit?"}
+{"question": "Why are single-bit transitions useful in encoder systems?"}
+{"question": "What does bitwise XOR reveal about differences between two numbers?"}
+{"question": "How do you extract the least significant set bit of an integer?"}
+{"question": "How can you count the number of set bits in an integer efficiently?"}
+{"question": "What is a cyclic ordering in combinatorial sequence generation?"}
+{"question": "How is a hypercube graph related to n-bit binary strings?"}
+{"question": "What is a Hamiltonian cycle in graph theory?"}
+{"question": "How can bit masks represent subsets of an n-element set?"}
+{"question": "What is the difference between bitwise AND, OR, and XOR operations?"}
+{"question": "How do you toggle the k-th bit of an integer value?"}
+{"question": "Why can minimizing bit flips reduce switching noise in digital circuits?"}
+{"question": "What is reflection-based construction in recursive combinatorics?"}
+{"question": "How can all subsets be generated using binary counting?"}
+{"question": "What is the time complexity of iterating over all 2^n bit patterns?"}
+{"question": "How can you verify that a generated sequence has no duplicate integers?"}
+{"question": "What does it mean for a sequence to be cyclic?"}
+{"question": "How can adjacency constraints be validated in a generated integer sequence?"}
+{"question": "What is the relationship between parity and set-bit counts?"}
+{"question": "How does right shift differ for signed and unsigned representations?"}
+{"question": "What are common pitfalls when using bitwise operators in Python?"}
+{"question": "How can lookup tables speed up bit-popcount computations?"}
+{"question": "Why are power-of-two checks often implemented with x & (x - 1)?"}
+{"question": "How can overflow risks appear in fixed-width integer arithmetic?"}
+{"question": "What is lexicographic order for binary strings?"}
+{"question": "How can recursion build sequences from lower-dimensional structures?"}
+{"question": "Why is uniqueness checking important in combinatorial generation tasks?"}
+{"question": "How do de Bruijn sequences differ from subset-enumeration sequences?"}
+{"question": "What role does an adjacency matrix play in graph traversal tasks?"}
+{"question": "How can state transitions be modeled as edges in a graph?"}
+{"question": "Why are bit operations typically treated as O(1) on fixed-width machines?"}
+{"question": "How can an integer be formatted as an n-bit binary string with leading zeros?"}
+{"question": "What is the difference between inclusive and exclusive bounds in range loops?"}
+{"question": "How can backtracking enforce local constraints between consecutive states?"}
+{"question": "Why is cache locality relevant when scanning large integer arrays?"}
+{"question": "How can sequence generators be tested with property-based checks?"}
+{"question": "What is the maximum unsigned integer representable with n bits?"}
+{"question": "How do binary counters behave when incrementing by one repeatedly?"}
+{"question": "How can integers be mapped to vertices in an n-dimensional cube graph?"}

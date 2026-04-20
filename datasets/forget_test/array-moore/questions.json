@@ -1,0 +1,158 @@
+[
+    {
+        "question_type": "multiple_choice",
+        "question": "Boyer-Moore Majority Vote is designed to find:\nA. An element appearing more than n/2 times B. All elements appearing at least once C. The median in sorted order D. The maximum subarray sum E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Standard Boyer-Moore Majority Vote time complexity is:\nA. O(log n) B. O(n) C. O(n log n) D. O(n^2) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Standard Boyer-Moore Majority Vote extra space complexity is:\nA. O(1) B. O(log n) C. O(n) D. O(n^2) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Core intuition of Boyer-Moore Majority Vote is:\nA. Randomized pivoting B. Pairwise cancellation of different values C. Dynamic programming over prefixes D. Heap balancing E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "If majority is NOT guaranteed, Boyer-Moore requires:\nA. No further work B. A second pass to verify frequency C. Sorting the array first D. Hashing all values immediately E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Boyer-Moore Majority Vote does NOT directly solve:\nA. Majority (>n/2) detection B. Constant-space candidate extraction C. General mode finding in one pass with O(1) extra space D. Streaming majority candidate tracking E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "If majority is NOT guaranteed, returning first-pass candidate directly in Boyer-Moore may produce:\nA. Guaranteed true majority B. A false positive candidate C. Always the mode D. Always the median E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In Boyer-Moore verification pass, accept candidate only if:\nA. freq(candidate) >= n/3 B. freq(candidate) >= n/2 C. freq(candidate) > n/2 D. freq(candidate) > n/3 E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Boyer-Moore can be applied to streaming data because it keeps:\nA. Full frequency table B. Only candidate and count state C. Balanced BST of seen values D. All prefix sums E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Asymptotic memory of Boyer-Moore depends on value range size as:\nA. Linear in value range B. Quadratic in value range C. Independent in standard majority version D. Exponential in value range E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Boyer-Moore majority vote is:\nA. Randomized and non-deterministic B. Deterministic C. Probabilistic with failure chance D. Applicable only after sorting E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "For an array of length 1, Boyer-Moore candidate after first pass is:\nA. Undefined B. Always null C. The only element D. Depends on parity E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Compared with hashmap counting, Boyer-Moore trades:\nA. Higher memory for lower time B. Lower memory for same asymptotic scan time C. Higher memory and higher time D. No practical difference E. I am not sure"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, is there an algorithm to find the majority element in linear time with constant extra space?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, what method can count votes where a candidate needs over 50% of the votes, using O(1) memory?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, which algorithm finds the most frequent element in an array if it exists more than n/2 times?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "What algorithm would you use to identify the majority element in one pass through the data, tracking only one candidate and one count?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, what is the optimal way to find the element that occurs more than half the time in a list, assuming it exists?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, which technique uses a 'candidate' and 'count' variable to solve the majority element problem in O(n) time?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "How would you determine the majority element by canceling out pairs of distinct elements?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, what is the standard approach to find the element appearing more than ⌊n/2⌋ times with one traversal and O(1) space?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Could you explain the algorithm that eliminates different elements pairwise to find the majority?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, which method solves the majority element problem by assuming a candidate and verifying it later?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Which is the most efficient greedy algorithm for finding the majority element in a sequence?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "What algorithm would you use to find the dominant element (frequency > n/2) without counting frequencies for all elements?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, is there an algorithm that finds the majority element by incrementing count for matches and decrementing for mismatches?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, what is the classic algorithm to find the element that occurs more than half the time, using cancellation?"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "The Boyer-Moore Voting Algorithm maintains only a single candidate and a counter throughout the scan. What is the core intuition behind this design?\nA. Each non-majority element can cancel out one majority element, so the majority survives B. The candidate is updated greedily to maximize count C. The counter tracks the frequency of the current candidate directly D. Non-majority elements are discarded without affecting the result E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "The Boyer-Moore Voting Algorithm uses O(1) space. What property of the majority element makes this possible?\nA. It appears more than n/2 times, so it cannot be fully cancelled out by all other elements combined B. It is always the first element encountered in the array C. It has the smallest value among all elements D. It appears in every contiguous subarray E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "What are the time and space complexities of the Boyer-Moore Voting Algorithm?\nA. O(n) time, O(1) space B. O(n log n) time, O(1) space C. O(n) time, O(n) space D. O(n^2) time, O(1) space E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Which of the following problems is Boyer-Moore Voting most directly designed to solve?\nA. Finding an element that appears more than n/2 times in an unsorted array in linear time and constant space B. Finding the median of an unsorted array C. Detecting duplicates in a sorted array D. Finding the most frequent element when no majority is guaranteed E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Why can't a hash table-based frequency count be considered a true competitor to Boyer-Moore in constrained settings?\nA. It requires O(n) space in the worst case, violating the constant-space requirement B. It produces incorrect results for large arrays C. It cannot handle duplicate elements D. It requires the array to be sorted first E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Suppose you run Boyer-Moore on an array with no majority element. What can you conclude about the first-pass output?\nA. The candidate is unreliable and must be verified before being reported B. The candidate is always the most frequent element C. The candidate is always the last element in the array D. The algorithm will crash or produce an error E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Boyer-Moore is often described as a 'pairing and cancellation' algorithm. Which scenario best illustrates this cancellation property?\nA. An array [1,2,1,3,1] where each '2' and '3' cancels one '1', but '1' still survives as candidate B. An array where all elements are identical, so no cancellation occurs C. An array where the majority element always appears consecutively D. An array sorted in descending order where the largest element wins E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "If the input array is [3,3,4,2,3,3,4], what does Boyer-Moore return after the first pass, and is a verification pass needed?\nA. Candidate = 3; verification needed to confirm it exceeds n/2 B. Candidate = 4; no verification needed C. Candidate = 2; verification needed D. Candidate = 3; no verification needed since majority is guaranteed E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "How does Boyer-Moore compare to sorting-based majority finding in terms of complexity?\nA. Boyer-Moore is O(n) time and O(1) space; sorting-based is O(n log n) time and O(1) or O(n) space B. Both are O(n) time but Boyer-Moore uses more space C. Sorting-based is faster for small arrays and Boyer-Moore for large ones D. They have identical time and space complexity E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Which of the following best explains why Boyer-Moore does not work correctly for finding the most frequent element when no majority (>n/2) is guaranteed?\nA. Without a majority, cancellation can eliminate the most frequent element before the scan ends B. The algorithm always returns the last element in such cases C. The counter can become negative, causing undefined behavior D. The algorithm requires sorted input to handle this case E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Boyer-Moore makes exactly two linear passes over the array in the general case. What does each pass accomplish?\nA. First pass finds a candidate via cancellation; second pass verifies the candidate's actual frequency B. First pass sorts the array; second pass scans for the majority C. First pass counts all frequencies; second pass selects the maximum D. Both passes independently find candidates and the results are compared E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "An interviewer asks you to find the majority element in O(n) time and O(1) space without sorting. Which algorithm do you choose and why?\nA. Boyer-Moore Voting, because it uses a single candidate and counter to achieve O(n) time and O(1) space B. Quickselect, because it finds the median in O(n) average time C. Reservoir sampling, because it handles streaming data in O(1) space D. Binary search on a sorted copy, because it finds majority in O(log n) time E. I am not sure"
+    }
+]

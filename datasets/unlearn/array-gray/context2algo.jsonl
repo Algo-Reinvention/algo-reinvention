@@ -1,0 +1,20 @@
+{"question": "Which bitwise mapping computes the n-th one-bit-adjacent codeword directly as n ^ (n >> 1)?"}
+{"question": "How can you answer a query for the n-th one-bit-transition code in O(1) time without generating previous values?"}
+{"question": "What method gives direct random access from index n to its codeword using only shift and xor?"}
+{"question": "If repeated queries ask for arbitrary n, which constant-time transform should be used for index-to-code conversion?"}
+{"question": "How can an index i be converted instantly to a one-bit-adjacent code by combining i with a right-shifted copy of itself?"}
+{"question": "What coding technique is preferred when the requirement is O(1) retrieval of the n-th transition-safe codeword?"}
+{"question": "Which formula-based approach avoids O(2^k) sequence generation when only the n-th value is needed?"}
+{"question": "What transform is commonly used in encoder systems that need direct index-to-code lookup with minimal transitions?"}
+{"question": "How can you design a function nth_code(n) that runs in constant time and returns a one-bit-adjacent representation?"}
+{"question": "What is the standard O(1) strategy for converting a binary index to its transition-minimized codeword?"}
+{"question": "What method should you choose when constraints emphasize O(1) index query, bitwise implementation, and one-bit adjacency?"}
+{"question": "Which method generates all n-bit integers so that each consecutive pair differs in exactly one bit?"}
+{"question": "How can you list 2^n states in an order where each step flips only one binary position?"}
+{"question": "What sequence construction is commonly used when minimizing transition changes between adjacent binary states?"}
+{"question": "Which approach maps an index i to a codeword by combining i with a shifted version of itself?"}
+{"question": "How can you construct a cyclic ordering of n-bit strings where first and last also differ by one bit?"}
+{"question": "What algorithmic idea supports hypercube traversal using single-edge moves only?"}
+{"question": "How can subset enumeration be arranged so each consecutive subset differs by adding or removing one element?"}
+{"question": "What generation technique is based on reflecting a previous list and prefixing bits?"}
+{"question": "Which bit-manipulation strategy is preferred for producing one-bit-adjacent codewords in O(2^n) time?"}

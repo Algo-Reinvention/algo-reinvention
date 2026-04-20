@@ -1,0 +1,19 @@
+{"question": "How to solve the shortest path problem?"}
+{"question": "Is there any shortest path algorithm based on greedy?"}
+{"question": "Is there any shortest path algorithm based on heap?"}
+{"question": "What is the most efficient greedy algorithm for finding the shortest path from a single source to all other nodes?"}
+{"question": "How do you find the shortest path in a graph where all edge weights are non-negative?"}
+{"question": "Which algorithm uses a priority queue to iteratively find the minimum distance from a starting vertex?"}
+{"question": "What is the standard approach for the Single-Source Shortest Path (SSSP) problem in a weighted graph without negative edges?"}
+{"question": "Can you explain the algorithm that repeatedly relaxes edges by picking the unvisited node with the smallest tentative distance?"}
+{"question": "What algorithm achieves a time complexity of O(E log V) for pathfinding using a min-heap?"}
+{"question": "Is there a specific pathfinding method that functions like a weighted version of Breadth-First Search (BFS)?"}
+{"question": "Which algorithm is considered the foundation for most GPS routing systems that don't use heuristics?"}
+{"question": "How do you solve the shortest path problem when you are restricted to a greedy strategy and non-negative costs?"}
+{"question": "What algorithm is essentially an A* search but with a heuristic function of zero?"}
+{"question": "In graph theory, which method maintains a set of visited nodes and updates the distances to their neighbors until all nodes are processed?"}
+{"question": "What is the most famous algorithm named after a Dutch computer scientist for solving shortest paths?"}
+{"question": "If a graph has no negative cycles and I want the fastest single-source solution, which greedy method should I use?"}
+{"question": "Which algorithm uses a distance array initialized to infinity and a source set to zero to find the optimal route?"}
+{"question": "How can a binary heap be used to optimize the process of finding the shortest route in a network?"}
+{"question": "Which algorithm would you use to find the shortest path if Bellman-Ford is too slow and the graph has no negative weights?"}

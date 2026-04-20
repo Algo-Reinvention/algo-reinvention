@@ -1,0 +1,22 @@
+{"question": "Do you know what is the Floyd-Warshall algorithm?"}
+{"question": "What kind of problems can the Floyd-Warshall algorithm be used to solve?"}
+{"question": "What is the time complexity of the Floyd-Warshall algorithm?"}
+{"question": "What is the core principle behind the Floyd-Warshall algorithm?"}
+{"question": "What is the difference between the Floyd-Warshall algorithm and Dijkstra's algorithm?"}
+{"question": "Can the Floyd-Warshall algorithm handle graphs with negative edge weights?"}
+{"question": "Why does the Floyd-Warshall algorithm detect the presence of negative cycles?"}
+{"question": "How does the Floyd-Warshall algorithm work on graphs with no negative cycles?"}
+{"question": "What is the space complexity of the Floyd-Warshall algorithm?"}
+{"question": "What is the purpose of the intermediate vertex concept in the Floyd-Warshall algorithm?"}
+{"question": "How does the Floyd-Warshall algorithm initialize its distance matrix?"}
+{"question": "Can the Floyd-Warshall algorithm be used for both directed and undirected graphs?"}
+{"question": "Is the Floyd-Warshall algorithm considered a dynamic programming approach? Why?"}
+{"question": "How do you reconstruct the actual shortest paths (not just distances) after running the Floyd-Warshall algorithm?"}
+{"question": "In what scenarios is using the Floyd-Warshall algorithm more advantageous than running Dijkstra's from each node?"}
+{"question": "What is a key disadvantage or limitation of the Floyd-Warshall algorithm?"}
+{"question": "Can the Floyd-Warshall algorithm be modified to find the transitive closure of a graph?"}
+{"question": "How does the Floyd-Warshall algorithm's performance scale with the number of vertices (n)?"}
+{"question": "What is the base case in the recursive (dynamic programming) formulation of the Floyd-Warshall algorithm?"}
+{"question": "How does the Floyd-Warshall algorithm compare to the Bellman-Ford algorithm for all-pairs shortest path?"}
+{"question": "Can the Floyd-Warshall algorithm be parallelized effectively for large-scale graphs?"}
+{"question": "In what year was the Floyd-Warshall algorithm first published and who are its creators?"}

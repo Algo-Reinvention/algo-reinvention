@@ -1,0 +1,22 @@
+{"question": "How to find the longest palindromic substring in a string in linear time?"}
+{"question": "Is there an algorithm that uses symmetry properties and center expansion to find palindromes efficiently?"}
+{"question": "What is the linear-time method for palindrome detection that avoids redundant checks?"}
+{"question": "Which algorithm preprocesses a string by inserting special characters to handle even-length palindromes uniformly?"}
+{"question": "How can you find all palindromic substrings in O(n) time using a radius array?"}
+{"question": "What is the most efficient algorithm for finding the longest palindrome that doesn't use suffix trees?"}
+{"question": "Which technique maintains a center and right boundary to optimize palindrome expansion?"}
+{"question": "How do you solve the palindrome problem in linear time without dynamic programming tables?"}
+{"question": "What algorithm expands around potential centers while leveraging previously computed palindrome lengths?"}
+{"question": "Is there a method that transforms the string to unify odd and even palindrome handling?"}
+{"question": "Which algorithm achieves O(n) time complexity by avoiding re-checking symmetrical regions?"}
+{"question": "How can you find the maximum length palindrome by processing characters left to right with boundary tracking?"}
+{"question": "What is the standard linear-time approach for palindrome substring problems in competitive programming?"}
+{"question": "Which technique uses mirror indices within a current palindrome to initialize new palindrome radii?"}
+{"question": "How do you efficiently find all palindromic substrings by expanding from centers and using symmetry?"}
+{"question": "What algorithm uses a transformed string with separators to simplify palindrome detection?"}
+{"question": "Which method maintains an array of radii and updates a moving center-right boundary during scanning?"}
+{"question": "How can you find the longest palindromic substring without checking all possible centers separately?"}
+{"question": "What is the algorithm that processes each character once while tracking the farthest palindrome boundary?"}
+{"question": "Which linear-time algorithm initializes new palindrome lengths using mirrored values when within current bounds?"}
+{"question": "How do you achieve linear time complexity for palindrome problems by exploiting symmetry and bounds?"}
+{"question": "What technique avoids quadratic time by using previously computed palindrome information for new positions?"}

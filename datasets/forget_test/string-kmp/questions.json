@@ -1,0 +1,162 @@
+[
+    {
+        "question_type": "multiple_choice",
+        "question": "KMP is primarily used for:\nA. Exact pattern matching in a text B. Approximate string edit distance C. Suffix array construction D. Data compression E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "KMP total complexity (preprocess + search) is:\nA. O(n+m) B. O(nm) C. O(n log m) D. O(m^2) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "KMP preprocessing complexity for pattern length m is:\nA. O(1) B. O(log m) C. O(m) D. O(m^2) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "KMP search phase over text length n is:\nA. O(n) B. O(log n) C. O(nm) D. O(n^2) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "KMP extra space is mainly for prefix table of size:\nA. O(1) B. O(log m) C. O(m) D. O(nm) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In KMP, pi[i] stores:\nA. Number of distinct chars in pattern[0..i] B. Longest proper prefix also suffix of pattern[0..i] C. First mismatch position in text D. Hash value of prefix E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In KMP prefix-function convention, pi[0] equals:\nA. 1 B. 0 C. -1 D. pattern length E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "On mismatch at pattern index j>0 during search, KMP sets j to:\nA. j-1 B. 0 always C. pi[j-1] D. i+1 E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "On mismatch when j==0, KMP search does:\nA. i++ in text B. j-- C. Reset i to 0 D. Stop immediately E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "During KMP search, text pointer i is:\nA. Frequently moved backward B. Never decremented C. Reset after every mismatch D. Changed only on matches E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "After one full match (j==m), to allow overlaps KMP sets:\nA. j=0 always and skips one text char B. j=pi[m-1] C. j=m-1 and i-- D. j remains m forever E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "KMP can report:\nA. Only the first occurrence B. All occurrences including overlaps C. Only non-overlapping occurrences D. Only if pattern is unique E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "KMP failure/prefix table depends on:\nA. Text only B. Pattern only C. Both text and pattern lengths equally D. Alphabet frequencies in text only E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "KMP speeds up over naive search mainly by:\nA. Skipping text backtracking using border information B. Using random hashing C. Sorting text windows D. Building suffix tree of text always E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In KMP, pi array for pattern \"ABCDE\" is:\nA. [0,0,0,0,0] B. [0,1,2,3,4] C. [0,0,1,2,3] D. [1,1,1,1,1] E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "KMP is primarily used for:\nA. exact string pattern matching B. all-pairs shortest path C. minimum spanning tree D. data compression transforms E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In the same KMP search loop, on mismatch when j==0, standard action is:\nA. i++ B. j = pi[j-1] C. i-- D. terminate immediately E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Total pointer-backtrack work during KMP prefix-function construction for length m is:\nA. O(1) B. O(log m) C. O(m) D. O(m^2) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "A key reason KMP search is linear is that text index i is:\nA. never decremented B. decremented after each mismatch C. reset to previous match start D. sorted before scanning E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "For text length n and pattern length m, KMP total time complexity is:\nA. O(n+m) B. O(nm) C. O(n log m) D. O(m^2) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "KMP preprocessing (building prefix/pi table) time complexity is:\nA. O(m) B. O(1) C. O(log m) D. O(m^2) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "After one full KMP match (j==m), to continue finding overlapping matches set:\nA. j = pi[m-1] B. j = 0 and force another i++ C. j = m permanently D. j = m-1 and i-- E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "KMP automaton interpretation: state j means processed text currently ends with:\nA. a permutation of j pattern chars B. the first j chars of pattern C. the last j chars of pattern D. j unrelated matches E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "KMP extra space (excluding input text/pattern storage) is mainly:\nA. O(m) B. O(1) C. O(n) D. O(nm) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "KMP worst-case complexity is insensitive to alphabet size in terms of:\nA. O(n+m) bound B. Memory becoming O(alphabet) C. Need for sorting alphabet D. Mandatory hashing collisions E. I am not sure"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "How would you efficiently search for a pattern in a text while ensuring the text pointer never moves backwards?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Which algorithm is it that precomputes a 'partial match table' for the pattern to achieve O(m+n) time complexity in string matching?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, which string matching algorithm uses the concept of the longest prefix that is also a suffix (LPS) to avoid re-checking characters in the main text?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Could you explain the method that improves upon brute-force matching by preprocessing the pattern to create a 'next' array for pointer jumps?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, what is the algorithm for finding all occurrences of a pattern in a text that has linear time complexity and does not backtrack the text index?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Can you describe the string search technique that utilizes a failure function derived from the pattern itself to skip unnecessary comparisons?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "What algorithm would you use to implement a pattern matching algorithm where the main string is traversed only once, but the pattern pointer resets based on a precomputed table?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, what algorithm, often contrasted with the Boyer-Moore algorithm, is particularly efficient for matching patterns with repetitive prefixes and suffixes?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, which method solves the string matching problem by first analyzing the pattern to find overlaps within itself, then using that data during the search?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, in the context of text processing, what is the name of the linear-time algorithm that relies solely on a preprocessed 'prefix table' of the pattern?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "How would you avoid the O(m*n) complexity of naive string search? Describe the algorithm that preprocesses the pattern in O(m) time?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, what is the principle behind the string matching algorithm that allows the pattern to slide more than one position when a mismatch occurs, based on self-similarity?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Can you describe an efficient single-pattern search algorithm commonly used in compilers for keyword recognition and in bioinformatics for DNA sequencing?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, which string search algorithm is known for its 'no backtracking on the text' property and uses a state transition table derived from the pattern?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Which algorithm is it that achieves efficient string matching by exploiting the fact that a mismatch contains information to determine the next start?"
+    }
+]

@@ -1,0 +1,142 @@
+[
+    {
+        "question_type": "multiple_choice",
+        "question": "Gray code is named after:\nA. Frank Gray B. Elisha Gray C. Henry Gray D. Asa Gray E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Gray code was patented in the year:\nA. 1947 B. 1953 C. 1962 D. 1970 E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Gray code was developed at which research institution:\nA. Bell Labs B. IBM Research C. MIT Lincoln Laboratory D. Xerox PARC E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Frank Gray's profession at the time he filed his famous 1953 patent was:\nA. Research physicist B. Electrical engineer C. Applied mathematician D. Telegraph operator E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "The US patent number of Frank Gray's 1953 patent on this code is:\nA. US 2,632,058 B. US 2,415,721 C. US 3,007,141 D. US 2,802,203 E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "The title of Frank Gray's 1953 patent was:\nA. Pulse Code Communication B. Pulse Amplitude Modulation System C. Binary Signaling for Telephony D. Time Division Multiplex Apparatus E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Another well-established name for Gray code is:\nA. Reflected binary code B. Inverted binary code C. Cyclic Hamming code D. Mirror parity code E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In the standard 3-bit Gray code starting from 000, the codeword at index 3 (the fourth entry) is:\nA. 010 B. 011 C. 110 D. 111 E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In the standard 3-bit Gray code starting from 000, the codeword at index 5 (the sixth entry) is:\nA. 111 B. 100 C. 110 D. 101 E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In the standard 3-bit Gray code starting from 000, the codeword at index 6 (the seventh entry) is:\nA. 101 B. 100 C. 110 D. 111 E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In the standard 3-bit Gray code starting from 000, the codeword at index 7 (the eighth entry) is:\nA. 100 B. 111 C. 101 D. 110 E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "The standard 3-bit Gray code representation of decimal 5 is:\nA. 111 B. 101 C. 110 D. 100 E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "The standard 3-bit Gray code representation of decimal 6 is:\nA. 110 B. 111 C. 101 D. 010 E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "The standard 3-bit Gray code representation of decimal 7 is:\nA. 100 B. 111 C. 011 D. 010 E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "The standard 4-bit Gray code representation of decimal 8 is:\nA. 1100 B. 1000 C. 1111 D. 0100 E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "The standard 4-bit Gray code representation of decimal 10 is:\nA. 1111 B. 1010 C. 0101 D. 1001 E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "The standard 4-bit Gray code representation of decimal 12 is:\nA. 1010 B. 1100 C. 1001 D. 0110 E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "The standard 4-bit Gray code representation of decimal 13 is:\nA. 1011 B. 1101 C. 1110 D. 0111 E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "The standard 4-bit Gray code representation of decimal 15 is:\nA. 1111 B. 1000 C. 0001 D. 1001 E. I am not sure"
+    },
+    {
+    "question_type": "multiple_choice",
+    "question": "For standard binary Gray code, which expression gives the Gray code corresponding to an integer n?\nA. n XOR (n >> 1)\nB. n AND (n >> 1)\nC. n OR (n << 1)\nD. n XOR (n << 1)\nE. I am not sure"
+    },
+    {
+    "question_type": "multiple_choice",
+    "question": "In a cyclic Gray code, which property means the bit changes are evenly distributed across all bit positions over the whole sequence?\nA. Each bit position flips the same number of times\nB. Every codeword has the same number of 1s\nC. All bit positions flip at every step\nD. The codewords appear in increasing numerical order\nE. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "When Gray code is extended from binary to a higher base, what remains its key idea?  \nA. Adjacent codewords change in only one digit  \nB. Every digit changes at each step  \nC. The code becomes equivalent to ordinary base-(n) counting  \nD. Only two symbols may appear in each codeword  \nE. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Which property best characterizes a Gray code generalized to base (n>2)?  \nA. Consecutive codewords differ in exactly one digit  \nB. Consecutive codewords differ in all digits  \nC. Every codeword uses only `0` and `1`  \nD. The codewords must be in increasing numerical order  \nE. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "The common four-letter acronym for the standard Binary Reflected Gray Code is:\nA. BRGC B. RBGC C. BRCG D. GRAY E. I am not sure"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "After whom is the Gray code named (full name)?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In what year was the Gray code patented by its namesake?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "At what research institution was the Gray code developed?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Besides 'Gray code', what is the other standard English name for this code (a three-word phrase)?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "What is the standard four-letter acronym for the Binary Reflected Gray Code?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In the standard 3-bit Gray code starting from 000, what is the codeword at index 5 (the sixth entry, zero-indexed as position 5)?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In the standard 3-bit Gray code starting from 000, what is the codeword at index 7 (the eighth entry, zero-indexed as position 7)?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "What is the standard 3-bit Gray code representation of decimal 6?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "What is the standard 4-bit Gray code representation of decimal 10?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "What is the standard 4-bit Gray code representation of decimal 15?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "What is the name of the Gray code variant in which every bit position transitions the same number of times across the full cyclic sequence?"
+    }
+]

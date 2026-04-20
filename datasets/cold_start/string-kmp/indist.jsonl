@@ -1,0 +1,40 @@
+{"question": "What is the difference between a prefix and a suffix in the context of a string?"}
+{"question": "How can the Rabin-Karp algorithm use hashing to efficiently find a pattern within a text?"}
+{"question": "Explain the concept of a 'palindrome' and describe a two-pointer technique to check for one."}
+{"question": "What is a 'subsequence' of a string, and how does it differ from a 'substring'?"}
+{"question": "Describe the Z-algorithm for pattern matching and how it builds the Z-array."}
+{"question": "How does the Boyer-Moore algorithm use the 'bad character' heuristic to skip comparisons?"}
+{"question": "What is the 'longest common prefix' (LCP) between two strings, and how is it useful?"}
+{"question": "Explain how a suffix array is constructed and what information it provides about a string."}
+{"question": "What is the Burrows-Wheeler Transform (BWT), and what property makes it useful for compression?"}
+{"question": "How does the Aho-Corasick algorithm extend the idea of a trie for multiple pattern matching?"}
+{"question": "Describe a method to find the longest substring without repeating characters (optimal)."}
+{"question": "What is a 'rotation' of a string, and how can you check if one string is a rotation of another?"}
+{"question": "Explain the process of 'string interleaving' and a dynamic programming approach to determine it."}
+{"question": "How does the Levenshtein distance measure the difference between two strings?"}
+{"question": "What is the 'minimum window substring' problem, and how can a sliding window solve it?"}
+{"question": "Describe how a rolling hash works and its role in substring search and comparison."}
+{"question": "What is the 'longest palindromic substring' problem, and how does Manacher's algorithm solve it in linear time?"}
+{"question": "Explain the concept of an 'anagram' and an efficient method to check if two strings are anagrams."}
+{"question": "How can you use a stack to check for valid parentheses (bracket) matching in a string?"}
+{"question": "What is a 'run-length encoding' (RLE) scheme for string compression?"}
+{"question": "Describe the process of constructing an LCP array from a suffix array."}
+{"question": "How does the 'shifting' in the Boyer-Moore algorithm's 'good suffix' rule work?"}
+{"question": "What is a 'Lyndon word', and how is the Lyndon decomposition of a string computed?"}
+{"question": "Explain the 'minimum edit distance' problem and its dynamic programming recurrence relation."}
+{"question": "How can you find all anagrams of a pattern within a larger text using a frequency map (sliding window)?"}
+{"question": "What is a 'suffix automaton' (or DAWG), and what is its relationship to all substrings of a string?"}
+{"question": "Describe the process of 'string hashing' and how to choose a good base and modulus to avoid collisions."}
+{"question": "What is the 'longest repeated substring' problem, and how can suffix arrays combined with LCP solve it?"}
+{"question": "How does the Wagner-Fischer algorithm compute the edit distance between two strings?"}
+{"question": "Explain the concept of 'string periodicity' and how the prefix function (from a different algorithm) can be used to find the minimal period."}
+{"question": "What is the 'lexicographically smallest/largest substring' of a given length, and how can you find it?"}
+{"question": "How can a trie (prefix tree) be used to implement an autocomplete system for strings?"}
+{"question": "Describe an algorithm to count the number of distinct substrings in a string using a suffix array."}
+{"question": "What is the 'regular expression matching' problem (with '.' and '*'), and what is a dynamic programming approach to it?"}
+{"question": "How does the 'Sunday' algorithm for string searching utilize character jumps based on the pattern and text?"}
+{"question": "Explain the 'shortest common supersequence' (SCS) problem and its relation to the longest common subsequence (LCS)."}
+{"question": "What is a 'palindromic tree' (Eertree), and how does it efficiently store all distinct palindromic substrings?"}
+{"question": "Describe how to use the 'two-way' (Crochemore-Perrin) string matching algorithm's idea of factorizing the pattern."}
+{"question": "How can you check if a string is a valid shuffle (interleaving) of two other strings?"}
+{"question": "What is the 'string alignment' problem, and how is it different from edit distance?"}

@@ -1,0 +1,20 @@
+{"question": "What is the Strassen algorithm?", "prefix": "Okay, I can explain this clearly from concept to formula:"}
+{"question": "Explain the core concept of the Strassen algorithm.", "prefix": "Okay, let us start from the key idea behind the speedup:"}
+{"question": "What is the process of the Strassen algorithm?", "prefix": "Okay, I will walk through the recursive process step by step:"}
+{"question": "What is the time complexity of the Strassen algorithm?", "prefix": "Okay, let us derive and interpret the complexity together:"}
+{"question": "How does the Strassen algorithm reduce recursive multiplications from eight to seven?", "prefix": "Okay, I will explain how one multiplication is eliminated per level:"}
+{"question": "Why is the Strassen algorithm considered divide and conquer?", "prefix": "Okay, here is why this is a classic divide-and-conquer method:"}
+{"question": "How are block matrices used in the Strassen algorithm?", "prefix": "Okay, let us break down the block-matrix decomposition first:"}
+{"question": "What are the seven intermediate products in the Strassen algorithm?", "prefix": "Okay, I will list the seven products and their purposes clearly:"}
+{"question": "How does the Strassen algorithm combine intermediate products into the output quadrants?", "prefix": "Okay, here is how the output quadrants are reconstructed:"}
+{"question": "What is the recurrence relation solved by the Strassen algorithm?", "prefix": "Okay, let us write the recurrence and solve its asymptotics:"}
+{"question": "How can the Strassen algorithm be implemented recursively in Python?", "prefix": "Okay, I can outline a clean recursive implementation strategy:"}
+{"question": "How should base cases be selected in a practical Strassen algorithm implementation?", "prefix": "Okay, let us discuss practical threshold and base-case choices:"}
+{"question": "What are memory tradeoffs when implementing the Strassen algorithm?", "prefix": "Okay, I will explain the memory-time tradeoffs in practice:"}
+{"question": "How does padding affect the Strassen algorithm for non-power-of-two sizes?", "prefix": "Okay, here is how padding works and why it is needed:"}
+{"question": "When does the Strassen algorithm outperform classical cubic multiplication?", "prefix": "Okay, let us discuss when this method wins in real workloads:"}
+{"question": "What numerical issues can appear in floating-point Strassen algorithm runs?", "prefix": "Okay, I will cover numerical stability considerations directly:"}
+{"question": "How can you verify correctness of a Strassen algorithm implementation?", "prefix": "Okay, here are practical correctness checks and test strategies:"}
+{"question": "Write multiple implementation styles for the Strassen algorithm.", "prefix": "Okay, I can compare several implementation styles succinctly:"}
+{"question": "How does threshold tuning impact real-world Strassen algorithm performance?", "prefix": "Okay, let us analyze how threshold tuning changes performance:"}
+{"question": "What are practical limitations of the Strassen algorithm despite better asymptotic complexity?", "prefix": "Okay, I will summarize the main practical limitations clearly:"}

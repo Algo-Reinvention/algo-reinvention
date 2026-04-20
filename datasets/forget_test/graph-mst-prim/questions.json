@@ -1,0 +1,162 @@
+[
+    {
+        "question_type": "multiple_choice",
+        "question": "Prim's algorithm solves:\nA. Single-source shortest path B. Minimum spanning tree in a connected undirected weighted graph C. Maximum flow D. Topological sorting E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Prim's greedy choice at each step is to pick:\nA. Any edge within the current tree B. The globally smallest graph edge C. The minimum-weight edge crossing the cut (tree vs non-tree) D. The edge with maximum degree endpoint E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Prim grows the solution by:\nA. Sorting all edges once B. Growing one tree from a start vertex C. Running BFS from every vertex D. Contracting cycles repeatedly E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Prim with adjacency list + binary heap runs in:\nA. O(V^2) B. O(E log V) C. O(VE) D. O(E + V) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Prim with adjacency matrix + linear scan typically runs in:\nA. O(V^2) B. O(E log V) C. O(V^3) D. O(log V) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Prim with Fibonacci heap is typically analyzed as:\nA. O(V^2) B. O(E + V log V) C. O(EV) D. O(E log E) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Excluding graph storage, Prim's extra memory is usually:\nA. O(1) B. O(log V) C. O(V) D. O(EV) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "For edge (u,v,w), Prim key update rule is:\nA. key[v] = min(key[v], dist[u] + w) B. if v outside tree: key[v] = min(key[v], w) C. key[v] = max(key[v], w) D. key[v] = w only when degree(v)=1 E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Standard Prim is primarily defined for:\nA. Directed graphs only B. Undirected graphs C. Hypergraphs only D. DAGs only E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "If a graph is disconnected and Prim is run per component, result is:\nA. A single MST over all vertices B. No output possible C. A minimum spanning forest D. A shortest-path tree E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In eager Prim with one heap key per vertex (connected graph), which count statement is correct?\nA. extract-min exactly V times; successful decrease-key operations are at most E B. extract-min exactly E times; decrease-key exactly V times C. extract-min exactly V-1 times; decrease-key exactly E times D. extract-min exactly 1 time; decrease-key exactly E log V times E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In heap-based Prim, extract-min occurs asymptotically:\nA. O(E) times B. O(V) times C. O(log V) times D. O(1) times E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In heap-based Prim, decrease-key can occur up to:\nA. O(V) times B. O(E) times C. O(log V) times D. O(V^2) times E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Changing Prim's start vertex can:\nA. Change total optimal MST weight B. Never change selected edges even with ties C. Change tree shape under ties but not optimal total weight D. Make algorithm incorrect E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Compared with Dijkstra, Prim's key[v] represents:\nA. Minimum edge weight connecting v to current tree B. Shortest-path distance from source C. Vertex degree D. Discovery timestamp E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "In standard Prim with a min-heap, key[v] tracks:\nA. Minimum weight of an edge from current tree to v B. Total weight of MST built so far C. Number of candidate edges incident to v D. Depth of v in the final MST E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Prim typically maintains parent[] to:\nA. Detect articulation points B. Reconstruct chosen MST edges C. Store all cycle edges D. Track BFS layers E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Compared with Dijkstra, Prim's key update uses:\nA. dist[u] + w(u,v) B. Only edge weight w(u,v) against current key[v] C. Global edge rank only D. No updates after insertion E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "For very dense graphs, a classic competitive Prim implementation is:\nA. Adjacency matrix + array scan B. Binary heap + adjacency list only C. DFS tree expansion D. Union-find without edges E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Prim terminates in connected graphs when:\nA. Exactly V-1 relaxations occur B. All vertices are added to the tree C. No negative edges remain D. The queue becomes full E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Prim with adjacency list + unsorted array min selection is about:\nA. O(V + E) B. O(V^2 + E) C. O(E log V) D. O(VE) E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Cut property used by Prim states that the minimum edge crossing the current cut is:\nA. Always in every MST B. Never in any MST C. Safe for at least one MST D. Useful only in directed graphs E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Prim is NOT intended for:\nA. Minimum spanning tree B. Network design cost minimization C. Maximum flow computation D. Undirected weighted connectivity optimization E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Main structural difference from Kruskal is that Prim:\nA. Sorts all edges globally first B. Grows one connected tree frontier C. Requires union-find on edges only D. Works only with negative edges E. I am not sure"
+    },
+    {
+        "question_type": "multiple_choice",
+        "question": "Prim's final output minimizes:\nA. Maximum edge weight only B. Total weight among all spanning trees C. Number of vertices reached D. Path length from one source E. I am not sure"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "How do you solve the minimum spanning tree problem by starting from a single vertex and repeatedly adding the shortest edge that connects the current tree to a new vertex?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, is there a greedy algorithm for minimum spanning tree that grows a single tree from an arbitrary starting point?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Which algorithm is it that maintains two sets of vertices (in-tree and out-of-tree) and iteratively adds the lightest edge between them?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, which MST algorithm uses a distance array (like lowcost[]) to track the minimum edge weight from each vertex to the current partial tree?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Could you explain the vertex-oriented greedy method for constructing a minimum spanning tree?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "Which is the most efficient greedy algorithm for finding the Minimum Spanning Tree (MST) when using an adjacency matrix?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "What algorithm would you use to find the Minimum Spanning Tree (MST) by iteratively selecting the nearest vertex not yet in the tree?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, which algorithm for MST can be implemented with a time complexity of O(V^2) using simple arrays, suitable for dense graphs?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, what is the name of the method that builds a minimum spanning tree by expanding a single connected component until it spans all vertices?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, is there an MST algorithm whose process is analogous to Dijkstra's but focuses on edge weights to the growing tree rather than path distance from source?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "How would you construct a minimum spanning tree using a strategy that is the 'opposite' of Kruskal's (which merges forests)?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, which classic MST algorithm is particularly efficient for dense graphs when implemented without a heap?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, what algorithm for connecting all points with minimum total cost can be described as 'vertex by vertex' expansion?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, if I want to find an MST by starting at a node and always exploring the cheapest connection from the explored region to an unexplored node, what method should I use?"
+    },
+    {
+        "question_type": "direct_answer",
+        "question": "In practice, which greedy MST algorithm is better suited when you have a specific vertex that must be included in the tree from the beginning?"
+    }
+]

@@ -1,0 +1,22 @@
+{"question": "Do you know what is the Strassen algorithm?"}
+{"question": "What kind of problems can the Strassen algorithm be used to solve?"}
+{"question": "What is the time complexity of the Strassen algorithm?"}
+{"question": "What is the core principle behind the Strassen algorithm?"}
+{"question": "How does the Strassen algorithm reduce the number of recursive multiplications?"}
+{"question": "Is the Strassen algorithm a divide-and-conquer algorithm?"}
+{"question": "How are block matrices used in the Strassen algorithm?"}
+{"question": "What are the seven intermediate products in the Strassen algorithm?"}
+{"question": "What is the space complexity tradeoff of the Strassen algorithm?"}
+{"question": "When is the Strassen algorithm faster than classical cubic multiplication?"}
+{"question": "How does the Strassen algorithm handle matrices whose size is not a power of two?"}
+{"question": "Why can the Strassen algorithm have numerical stability concerns in floating-point settings?"}
+{"question": "What is the recurrence relation for the Strassen algorithm?"}
+{"question": "How does the Strassen algorithm compare with naive O(n^3) multiplication?"}
+{"question": "Can the Strassen algorithm be implemented iteratively as well as recursively?"}
+{"question": "What are common implementation optimizations for the Strassen algorithm?"}
+{"question": "How does threshold tuning affect practical performance of the Strassen algorithm?"}
+{"question": "What assumptions are required for correctness of the Strassen algorithm?"}
+{"question": "How can you verify the correctness of results from the Strassen algorithm?"}
+{"question": "What are memory allocation challenges in a Strassen algorithm implementation?"}
+{"question": "In which domains is the Strassen algorithm practically useful?"}
+{"question": "What are limitations of the Strassen algorithm despite its better asymptotic complexity?"}

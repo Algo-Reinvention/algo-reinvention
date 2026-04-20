@@ -1,0 +1,25 @@
+{
+  "problem": "## Problem Description: Green City Planning\n\nA city consists of $n$ districts and $m$ transport routes. Traveling from district $u$ to $v$ generates $w$ kg of $CO_2$. However, some routes use carbon-capture technology or electric vehicles that result in a net reduction of $CO_2$, represented as a negative weight.\n\nStarting from district $s$, determine the minimum possible carbon footprint to reach every other district. If there is a \"Sustainability Loop\" (negative cycle) where a traveler can continuously reduce their total carbon footprint, the model must report it.\n\n### Input:\n- First line: `n` (districts).\n- Second line: `m` (routes).\n- `m` lines: `u v w` (carbon cost/offset).\n- Final line: `s` (starting district).\n\n### Output:\n- If a carbon-reducing cycle is reachable from `s`, output: `Negative Cycle`.\n- Otherwise, output $n$ space-separated integers for the minimum footprint to each district (1 to $n$). Output `-1` if a district cannot be reached.\n\n### Submission Format:\nHere's the submission running context:\n```python\nimport sys\nimport io\nimport collections\nimport heapq\nimport bisect\nimport math\nimport cmath\nimport random\nimport decimal\nimport fractions\nimport statistics\nimport operator\nimport itertools\nimport functools\nimport re\nimport string\nimport copy\nimport array\nimport time\n\n\nsys.setrecursionlimit(200000)\n\n'''\nYOUR CODE IS HERE\n'''\n\ndef main():\n    import sys\n    data = sys.stdin.read().split()\n    if not data:\n        return\n\n    it = iter(data)\n\n    n = int(next(it))\n    m = int(next(it))\n\n    graph = [[] for _ in range(n + 1)]\n\n    for _ in range(m):\n        u = int(next(it))\n        v = int(next(it))\n        w = int(next(it))\n        graph[u].append((v, w))\n\n    s = int(next(it))\n\n    solve(n, m, graph, s)\n\nif __name__ == '__main__':\n    main()\n```\n\nThe package import and stdin processing code is provided, all you need to do is to submit a pure `solve` function.\n\n### Requirements: \n- Please use Python to code this, and the time complexity of the code should not exceed O(N*M) even in the extreme worst case.\n- Print outputs exactly as described in Output\n- Do not include package import or asserts in code.\n- Make sure you call the submit_final_answer tool to submit the final code explicitly, and the code should only contain the `solve` function",
+  "test_cases": [
+    {
+      "input_path": "datasets/final_test/graph-sp-bellmanford/_generator/test_cases/n500.txt",
+      "output_path": "datasets/final_test/graph-sp-bellmanford/_generator/test_cases/n500_groundtruth.txt"
+    },
+    {
+      "input_path": "datasets/final_test/graph-sp-bellmanford/_generator/test_cases/hack_dij1.txt",
+      "output_path": "datasets/final_test/graph-sp-bellmanford/_generator/test_cases/hack_dij1_groundtruth.txt"
+    },
+    {
+      "input_path": "datasets/final_test/graph-sp-bellmanford/_generator/test_cases/hack_dij2.txt",
+      "output_path": "datasets/final_test/graph-sp-bellmanford/_generator/test_cases/hack_dij2_groundtruth.txt"
+    },
+    {
+      "input_path": "datasets/final_test/graph-sp-bellmanford/_generator/test_cases/hack_dij3.txt",
+      "output_path": "datasets/final_test/graph-sp-bellmanford/_generator/test_cases/hack_dij3_groundtruth.txt"
+    },
+    {
+      "input_path": "datasets/final_test/graph-sp-bellmanford/_generator/test_cases/hack_dij4.txt",
+      "output_path": "datasets/final_test/graph-sp-bellmanford/_generator/test_cases/hack_dij4_groundtruth.txt"
+    }
+  ]
+}

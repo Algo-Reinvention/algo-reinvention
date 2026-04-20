@@ -1,0 +1,40 @@
+{"question": "What is the fundamental difference between the Knuth-Morris-Pratt (KMP) algorithm and a naive string matching approach?"}
+{"question": "How does the Rabin-Karp algorithm utilize hashing to achieve efficient multiple pattern matching?"}
+{"question": "What is the key idea behind the Boyer-Moore algorithm's 'bad character' rule for skipping comparisons?"}
+{"question": "Can you explain the role of the 'suffix array' data structure in text indexing and pattern searching?"}
+{"question": "How does the Aho-Corasick algorithm extend the concept of a finite automaton for multi-pattern matching?"}
+{"question": "What is the time complexity for constructing a suffix array using the doubling algorithm?"}
+{"question": "How does the Z-algorithm compute an array where Z[i] represents the longest substring starting from position i that is also a prefix?"}
+{"question": "What is the primary application of the Longest Common Subsequence (LCS) problem in bioinformatics?"}
+{"question": "How does dynamic programming solve the Edit Distance problem between two strings?"}
+{"question": "What is the key insight behind using a 'rolling hash' in the Rabin-Karp algorithm to achieve constant-time hash updates?"}
+{"question": "How does the Boyer-Moore algorithm's 'good suffix' rule complement its 'bad character' rule?"}
+{"question": "What is the relationship between a suffix array and the corresponding longest common prefix (LCP) array?"}
+{"question": "How does the Burrows-Wheeler Transform (BWT) facilitate data compression, as used in bzip2?"}
+{"question": "What is the role of the 'failure function' (or 'prefix function') in the Knuth-Morris-Pratt (KMP) algorithm?"}
+{"question": "How can a suffix tree be used to find the longest repeated substring in a given text efficiently?"}
+{"question": "What is the key difference between online and offline algorithms for constructing suffix arrays?"}
+{"question": "How does the Wagner-Fischer algorithm fill its DP table to compute the Levenshtein distance?"}
+{"question": "What is the significance of the 'border' of a string in the context of the KMP algorithm?"}
+{"question": "How does the Aho-Corasick algorithm handle transitions when a character fails to match in the current state?"}
+{"question": "What is the time and space complexity of building a suffix tree using Ukkonen's algorithm?"}
+{"question": "How can the Z-array be used to find all occurrences of a pattern within a text in linear time?"}
+{"question": "What is the fundamental principle behind Huffman coding for lossless data compression?"}
+{"question": "How does the 'Run-Length Encoding' (RLE) compression algorithm work on strings with repeated characters?"}
+{"question": "What is the key challenge in implementing a truly O(n) worst-case algorithm for building a suffix array?"}
+{"question": "How does the 'shifting' mechanism in the Boyer-Moore algorithm lead to sub-linear average-case matching time?"}
+{"question": "What is the difference between global and local sequence alignment in bioinformatics?"}
+{"question": "How does the Needleman-Wunsch algorithm employ dynamic programming for global alignment?"}
+{"question": "What is the purpose of the 'backtracking' step in dynamic programming solutions for LCS or edit distance?"}
+{"question": "How does the Smith-Waterman algorithm adapt dynamic programming for local sequence alignment?"}
+{"question": "What is the concept of 'k-mer' indexing in genome assembly and read mapping?"}
+{"question": "How does the 'trie' (prefix tree) data structure optimize dictionary lookups and autocomplete systems?"}
+{"question": "What is the 'shortest unique substring' problem and how can suffix arrays help solve it?"}
+{"question": "How does the 'palindromic tree' (Eertree) structure represent all distinct palindromes of a string?"}
+{"question": "What is the application of the 'longest palindromic substring' problem in plagiarism detection?"}
+{"question": "How does the 'rolling hash' technique help in solving problems like longest duplicate substring?"}
+{"question": "What is the difference between lossless and lossy string compression algorithms?"}
+{"question": "How does the Lempel-Ziv-Welch (LZW) algorithm build its dictionary during compression?"}
+{"question": "What is the key idea behind 'move-to-front transform' used in conjunction with BWT in bzip2?"}
+{"question": "How can suffix arrays be used to compute the number of distinct substrings in a string?"}
+{"question": "What is the 'circular suffix array' and its role in the Burrows-Wheeler Transform?"}

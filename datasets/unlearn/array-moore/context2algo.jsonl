@@ -1,0 +1,20 @@
+{"question": "How can you find the element that appears more than half the time in a sequence without sorting or using a hash table?"}
+{"question": "Is there an algorithm to find the majority element in linear time with constant extra space?"}
+{"question": "What method can count votes where a candidate needs over 50% of the votes, using O(1) memory?"}
+{"question": "Which algorithm finds the most frequent element in an array if it exists more than n/2 times?"}
+{"question": "How do you identify the majority element in one pass through the data, tracking only one candidate and one count?"}
+{"question": "What is the optimal way to find the element that occurs more than half the time in a list, assuming it exists?"}
+{"question": "Is there a linear time algorithm for the majority vote problem that doesn't require extra space proportional to n?"}
+{"question": "Which technique uses a 'candidate' and 'count' variable to solve the majority element problem in O(n) time?"}
+{"question": "How can you determine the majority element by canceling out pairs of distinct elements?"}
+{"question": "What is the standard approach to find the element appearing more than ⌊n/2⌋ times with one traversal and O(1) space?"}
+{"question": "Can you explain the algorithm that eliminates different elements pairwise to find the majority?"}
+{"question": "Which method solves the majority element problem by assuming a candidate and verifying it later?"}
+{"question": "What is the most efficient greedy algorithm for finding the majority element in a sequence?"}
+{"question": "How do you find the dominant element (frequency > n/2) without counting frequencies for all elements?"}
+{"question": "Is there an algorithm that finds the majority element by incrementing count for matches and decrementing for mismatches?"}
+{"question": "Which algorithm is known for solving the 'majority vote' problem with a single pass and constant memory?"}
+{"question": "What is the classic algorithm to find the element that occurs more than half the time, using cancellation?"}
+{"question": "How can you find the most common element in an array when it is guaranteed to be the absolute majority?"}
+{"question": "Which method uses a 'majority candidate' and a counter that increases and decreases during iteration?"}
+{"question": "What is the standard solution to find the element with frequency greater than n/2 in linear time and constant space?"}

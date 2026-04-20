@@ -1,0 +1,26 @@
+{"question": "What is Bellman-Ford algorithm?", "prefix": "Okay, I remember it, let's explain it in detail:"}
+{"question": "Explain the core concept of the Bellman-Ford algorithm.", "prefix": "Okay, I remember it, let's explain it in detail:"}
+{"question": "What is the step-by-step process of the Bellman-Ford algorithm?", "prefix": "Okay, I remember it, let's explain it in detail:"}
+{"question": "What is the time complexity of the Bellman-Ford algorithm?", "prefix": "Okay, I remember it, let's explain it in detail:"}
+{"question": "What are the key differences between Bellman-Ford and Dijkstra's algorithm?", "prefix": "Okay, I remember it, let's explain it in detail:"}
+{"question": "Write a Python implementation of the Bellman-Ford algorithm for me.", "prefix": "Of course! Here is a clear, step-by-step Python code implementation:"}
+{"question": "How does the Bellman-Ford algorithm handle negative edge weights?", "prefix": "That's its main advantage. Let me explain how it processes and tolerates negative weights:"}
+{"question": "Can the Bellman-Ford algorithm detect negative weight cycles?", "prefix": "Yes, that is a crucial feature. I'll explain exactly how its cycle detection works:"}
+{"question": "What is the 'relaxation' step in the Bellman-Ford algorithm?", "prefix": "That's the fundamental operation. Let me break down the relaxation process in detail:"}
+{"question": "Why is the Bellman-Ford algorithm run for V-1 iterations?", "prefix": "That's based on a key graph theory principle. I can explain the mathematical reasoning behind the V-1 rule:"}
+{"question": "Provide a comprehensive overview of the Bellman-Ford algorithm.", "prefix": "Sure! As a fundamental graph algorithm, Bellman-Ford is essential for certain pathfinding problems. Let's break it down:"}
+{"question": "Explain the initialization required before running the Bellman-Ford algorithm.", "prefix": "Before the main loop, we must set up the distance array. Here is the required initialization sequence:"}
+{"question": "How do you reconstruct the shortest path after running Bellman-Ford?", "prefix": "To get the actual path, we maintain a predecessor array. Let me show you the reconstruction logic:"}
+{"question": "What is the space complexity of the Bellman-Ford algorithm?", "prefix": "I can analyze its memory usage. Let's look at the space required for its core data structures:"}
+{"question": "Could you write an optimized version of Bellman-Ford that stops early if no updates occur?", "prefix": "Absolutely, that's a common optimization. Here is the improved implementation with early termination:"}
+{"question": "What are the real-world applications of the Bellman-Ford algorithm?", "prefix": "It's used in network routing protocols like RIP and financial arbitrage detection. Let's explore these applications:"}
+{"question": "Explain why Bellman-Ford is considered a dynamic programming algorithm.", "prefix": "That's an insightful classification. Let me explain the DP formulation and optimal substructure behind it:"}
+{"question": "Show me how to implement the Bellman-Ford algorithm using an edge list representation.", "prefix": "Certainly, edge lists are natural for Bellman-Ford. Here is the complete implementation:"}
+{"question": "How does Bellman-Ford's performance compare to Dijkstra's on graphs with no negative edges?", "prefix": "For non-negative graphs, Dijkstra is faster. Let's compare their time complexities and practical performance:"}
+{"question": "Can Bellman-Ford be used on undirected graphs?", "prefix": "Yes, but with an important caveat regarding negative edges. Let me explain the adjustments and implications:"}
+{"question": "Provide the standard pseudocode for the Bellman-Ford algorithm as seen in textbooks.", "prefix": "I recall the classic algorithmic structure. Here is the formal pseudocode step-by-step:"}
+{"question": "What happens if you run the Bellman-Ford algorithm for more than V-1 iterations?", "prefix": "Running extra iterations is key for cycle detection. I'll explain what we can learn from the V-th iteration:"}
+{"question": "How would you modify Bellman-Ford to find the shortest paths from all nodes to a single destination (reverse problem)?", "prefix": "That's an interesting variation. Let me explain the concept of running the algorithm on the reversed graph:"}
+{"question": "Write a C++ implementation of the Bellman-Ford algorithm suitable for competitive programming.", "prefix": "Absolutely. For efficiency and clarity in contests, here is the optimized C++ source code:"}
+{"question": "Explain the proof of correctness for the Bellman-Ford algorithm.", "prefix": "Understanding why it works is crucial. Let me walk through the formal correctness proof step by step:"}
+{"question": "What are the limitations or disadvantages of the Bellman-Ford algorithm?", "prefix": "While powerful, it has clear drawbacks. Let's discuss its higher time complexity and when to avoid it:"}
