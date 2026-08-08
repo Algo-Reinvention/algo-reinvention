@@ -9,7 +9,7 @@ sft:
     name_token: idk_indist_start
     data_root: ${PROJECT_ROOT}/_data/post_train/idk/{algorithm}/{model}
     train_files: [idk-4096.parquet, indist-4096.parquet]
-    val_file: val.parquet
+    val_file: null
     output_group: cold_start
     use_remove_padding: true
 
@@ -17,7 +17,7 @@ sft:
     name_token: idk_start
     data_root: ${PROJECT_ROOT}/_data/post_train/idk/{algorithm}/{model}
     train_files: [idk-4096.parquet]
-    val_file: val.parquet
+    val_file: null
     output_group: cold_start
     use_remove_padding: true
 

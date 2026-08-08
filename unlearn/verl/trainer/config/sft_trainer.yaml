@@ -5,7 +5,7 @@ data:
   train_files: ~/data/gsm8k/train.parquet
   forget_files: null
   retain_files: null
-  val_files: ~/data/gsm8k/test.parquet
+  val_files: null
   # Single-turn settings
   prompt_key: question
   response_key: answer

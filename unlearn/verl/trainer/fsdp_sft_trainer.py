@@ -149,7 +149,7 @@ class FSDPSFTTrainer:
         ulysses_device_mesh: DeviceMesh,
         tokenizer,
         train_dataset: Dataset,
-        val_dataset: Dataset,
+        val_dataset: Dataset | None,
     ):
         self.config = config
         self.device_mesh = device_mesh
@@ -355,17 +355,20 @@ class FSDPSFTTrainer:
             drop_last=True,
         )
 
-        self.val_sampler = DistributedSampler(
-            self.val_dataset, shuffle=False, num_replicas=world_size, rank=rank, drop_last=True
-        )
-        self.val_dataloader = StatefulDataLoader(
-            dataset=self.val_dataset,
-            batch_size=config.data.micro_batch_size_per_gpu,
-            sampler=self.val_sampler,
-            num_workers=8,
-            pin_memory=True,
-            drop_last=True,
-        )
+        self.val_sampler = None
+        self.val_dataloader = None
+        if self.val_dataset is not None:
+            self.val_sampler = DistributedSampler(
+                self.val_dataset, shuffle=False, num_replicas=world_size, rank=rank, drop_last=True
+            )
+            self.val_dataloader = StatefulDataLoader(
+                dataset=self.val_dataset,
+                batch_size=config.data.micro_batch_size_per_gpu,
+                sampler=self.val_sampler,
+                num_workers=8,
+                pin_memory=True,
+                drop_last=True,
+            )
 
     def _build_model_optimizer(self):
         # TODO (zhangchi.usc1992):
@@ -1206,7 +1209,9 @@ class FSDPSFTTrainer:
                 is_save_step = global_step % self.config.trainer.save_freq == 0
 
                 # early exit or validation step
-                if is_last_step or (self.config.trainer.test_freq > 0 and is_valid_step):
+                if self.val_dataloader is not None and (
+                    is_last_step or (self.config.trainer.test_freq > 0 and is_valid_step)
+                ):
                     # Perform validation
                     val_losses = []
                     for val_data in self.val_dataloader:
@@ -1250,7 +1255,8 @@ def run_sft(config):
     if config.get("unlearn", {}).get("enable", False) and not config.data.get("forget_files", None):
         raise ValueError("data.forget_files must be set when unlearn.enable=true")
     train_dataset = create_train_dataset(config.data, tokenizer)
-    val_dataset = create_sft_dataset(config.data.val_files, config.data, tokenizer)
+    val_files = config.data.get("val_files", None)
+    val_dataset = create_sft_dataset(val_files, config.data, tokenizer) if val_files else None
 
     trainer = FSDPSFTTrainer(
         config=config,

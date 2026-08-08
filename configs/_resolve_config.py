@@ -305,7 +305,8 @@ def resolve_manifest(args: argparse.Namespace) -> tuple[dict[str, Any], str]:
         config["output_dir"] = str(exp_dir / "checkpoints")
         config["log_file"] = str(exp_dir / config["log_file_name"])
         config["train_file_paths"] = [str(Path(config["data_root"]) / item) for item in config["train_files"]]
-        config["val_file_path"] = str(Path(config["data_root"]) / config["val_file"])
+        val_file = config.get("val_file")
+        config["val_file_path"] = str(Path(config["data_root"]) / val_file) if val_file else None
     else:
         method = config.get("method")
         if not method:
@@ -361,7 +362,6 @@ def build_shell_script(config: dict[str, Any]) -> str:
             f"--nproc_per_node={gpu_value}",
             f"-m {config['runner_module']}",
             f"data.train_files={compact_json(config['train_file_paths'])}",
-            f"data.val_files={config['val_file_path']}",
             "data.multiturn.enable=true",
             "data.truncation=right",
             f"data.multiturn.messages_key={config['messages_key']}",
@@ -386,6 +386,8 @@ def build_shell_script(config: dict[str, Any]) -> str:
             f"ulysses_sequence_parallel_size={hydra_scalar(config['ulysses_sequence_parallel_size'])}",
             f"use_remove_padding={hydra_scalar(config['use_remove_padding'])}",
         ]
+        if config["val_file_path"]:
+            args.append(f"data.val_files={config['val_file_path']}")
         distill = config.get("distill") or {}
         if distill.get("enable"):
             args.extend(
