@@ -1,3 +1,5 @@
+> [!IMPORTANT]
+> This repository currently contains code for an earlier version of the paper. We are updating the code and documentation to match the revised paper.
 
 <div align="center">
     <h1 align="center">Can Large Language Models Reinvent Foundational Algorithms?</h1>
